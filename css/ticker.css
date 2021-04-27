@@ -31,12 +31,13 @@
     animation-duration: 40s;
   }
 
-  .ticker-move:hover{
-    animation-play-state: paused; /* Pause scroll on mouse hover */
-  }
+/*  .ticker-move:hover {
+        animation-play-state: paused; /* Pause scroll on mouse hover
+    } 
+*/
   
   /* ITEMS */
-  .ticker-item{
+  .ticker-item {
     display: inline-block; /* Lay items in a horizontal line */
     padding: 0 2rem;
 
