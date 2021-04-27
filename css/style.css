@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+}
+
+#canvasplace {
+    z-index: 0;
+}
+
+#logo {
+    position:absolute; top: 10px; left: 10px;
+}
+
+#clearButton {
+    position:absolute; 
+    top: 10px; 
+    right: 10px;
+}
+
+#toDoListContainer {
+    position:absolute; 
+    top: 45vh; 
+    left: 45vw;
+}
+
+#toDoList {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 150%;
+    
+    color: #001AFF;
+}
