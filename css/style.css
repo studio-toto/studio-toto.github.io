@@ -17,9 +17,13 @@ body {
 }
 
 #toDoListContainer {
-    position:absolute; 
-    top: 45vh; 
-    left: 45vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10%;
+    margin-left: -10%;
+    width: 20%;
+    height: 20%;
 }
 
 #toDoList {
