@@ -1,0 +1,23 @@
+body {
+    overflow: hidden;
+}
+
+#canvasplace {
+    z-index: 0;
+}
+
+.toDoList {
+    position:absolute; 
+    top: 45vh; 
+    left: 45vw;
+}
+
+#logo {
+    position:absolute; top: 10px; left: 10px;
+}
+
+#clearButton {
+    position:absolute; 
+    top: 10px; 
+    right: 10px;
+}
