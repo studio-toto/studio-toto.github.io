@@ -1,9 +1,9 @@
 body {
-    overflow: hidden;
 }
 
 #canvasplace {
     z-index: 1;
+    overflow:hidden;
 }
 
 #logo {
