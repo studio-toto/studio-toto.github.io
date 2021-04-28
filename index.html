@@ -19,12 +19,18 @@
         <link rel="stylesheet" href="css/ticker.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/sound-onclick.js"></script>
     
     </head>
 
     <body scroll="no">
 
-        <img id="logo" src="media/logo.png" alt="logo" height="280em">
+        <a href="javascript:playclip();">
+            
+            <img id="logo" src="media/logo.png" alt="logo" height="280em">
+        
+        </a>
 
         <button id="clearButton" onclick="reset()">Clear</button>
 
@@ -52,6 +58,12 @@
         </div></div></div>
 
         <script type="text/javascript" src="js/script.js"></script>
+
+
+        <!-- https://allwebco-templates.com/support/S_audio_onmouseover.htm -->
+        <audio>
+            <source src="media/hellototo.m4a" type="audio/x-m4a">
+        </audio>
     
     </body>
 
