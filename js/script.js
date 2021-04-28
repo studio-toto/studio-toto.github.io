@@ -12,7 +12,14 @@ function setCanvas() {
 }
 
 setCanvas();
-
+function expand() {
+    if ($(".expand").css('display') == 'block'){
+        $(".expand").css({'display': 'none'});
+      } else {
+        $(".expand").css({'display': 'block'});
+      }
+ 
+}
 function reset() {
     clickX = new Array();
     clickY = new Array();

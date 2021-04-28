@@ -46,6 +46,9 @@ body {
 
     margin-top: 0;
 }
+.expand {
+    display: none;
+}
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
