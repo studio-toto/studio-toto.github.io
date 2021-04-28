@@ -12,11 +12,12 @@ function setCanvas() {
 }
 
 setCanvas();
-function expand() {
-    if ($(".expand").css('display') == 'block'){
-        $(".expand").css({'display': 'none'});
+function expand(selection) {
+    var item = $("#"+selection)
+    if (item.css('display') == 'block'){
+        item.css({'display': 'none'});
       } else {
-        $(".expand").css({'display': 'block'});
+        item.css({'display': 'block'});
       }
  
 }
