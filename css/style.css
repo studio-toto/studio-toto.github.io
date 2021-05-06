@@ -3,7 +3,7 @@ body {
 }
 
 #canvasplace {
-    z-index: 1;
+    z-index: 10;
     overflow:hidden;
 }
 
@@ -68,7 +68,10 @@ body {
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
   }
-
+.drawable {
+    position:relative;
+    z-index: -1;
+}
 .center {
     position: absolute;
     width: 300px;

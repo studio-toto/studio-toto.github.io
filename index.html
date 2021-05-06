@@ -24,24 +24,20 @@
     
     </head>
 
-    <body>
-
-        <a href="javascript:playclip();">
+    <body class="noselect">
             
-            <img id="logo" src="media/logo.png" alt="logo" height="280em">
+            <img id="logo" onclick="playclip()" src="media/logo.png" alt="logo" height="280em">
         
-        </a>
 
         <!-- <img id="logo" class="noselect" src="media/logo.png" alt="logo" height="150em"> -->
 
-        <button id="clearButton" class="noselect" onclick="reset()">Clear</button>
+        <button id="clearButton" onclick="reset()">Clear</button>
 
-        <div id="canvasplace">
-        </div>
+
 
         <div id="toDoListContainer">
             
-            <img class="noselect" src="media/todo.png" height="150em"></img>
+            <img class="noselect drawable" src="media/todo.png" height="150em"></img>
 
             <ul id="toDoList">
                 <li><ul onclick="expand('rubbel')">tickling/rubbellos</ul></li>
@@ -58,7 +54,6 @@
                     <br>
                     what can it be used for: website of a studio? redesign burgeramt?
                 </li>
-                <li>???</li>
                 <li><ul onclick="expand('fort')">fortune wheel</ul></li>
                 <li id="fort" class="expand">was the original idea for our portfolio: a user opens a website and presses the lever of the wheel of fortune. then a random project appears. The user can view all previous projects while scrolling, but cannot select them on their own.
                 </li>
@@ -68,7 +63,8 @@
                 </li>
               </ul>
         </div>
-
+        <div id="canvasplace">
+        </div>
         <div class="ticker-container"><div class="ticker-wrap"><div class="ticker-move">
 
             <div class="ticker-item">toto is a temporal 1 semester gathering for the sake of creating mostly meaningless but joyful web experiences. this website is toto to-do list and your playground. made by nilya musaeva + lucca vitters + julia vollmer</div>

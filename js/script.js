@@ -1,3 +1,4 @@
+// Canvas is initialized after the page loaded in order to get the screen size
 var width = $(window).width();
 var height = $(window).height();
 var canvasDiv = document.getElementById('canvasplace');
@@ -12,27 +13,21 @@ function setCanvas() {
 }
 
 setCanvas();
-function expand(selection) {
-    var item = $("#"+selection)
-    if (item.css('display') == 'block'){
-        item.css({'display': 'none'});
-      } else {
-        item.css({'display': 'block'});
-      }
- 
-}
+
+// reset sets canvas size back and also hides the menu items
 function reset() {
     clickX = new Array();
     clickY = new Array();
     clickDrag = new Array();
-
+    canvas.setAttribute('height', height);
     context.clearRect(0, 0, canvas.width, canvas.height);
-
+    $(".expand").css({'display': 'none'});
     console.log("test");
 
 }
 
-$('#canvas').mousedown(function(e) {
+// draw functions
+$('body').mousedown(function(e) {
     var mouseX = e.pageX - this.offsetLeft;
     var mouseY = e.pageY - this.offsetTop;
 
@@ -41,18 +36,18 @@ $('#canvas').mousedown(function(e) {
     redraw();
 });
 
-$('#canvas').mousemove(function(e){
+$('body').mousemove(function(e){
     if(paint){
         addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
         redraw();
     }
 });
 
-$('#canvas').mouseup(function(e){
+$('body').mouseup(function(e){
     paint = false;
 });
 
-$('#canvas').mouseleave(function(e){
+$('body').mouseleave(function(e){
     paint = false;
 });
 
@@ -85,4 +80,20 @@ function redraw() {
             context.closePath();
             context.stroke();
     }
+}
+
+// show list elements and adjust canvas size
+
+function expand(selection) {
+    var item = $("#"+selection)
+    if (item.css('display') == 'block'){
+        item.css({'display': 'none'});
+      } else {
+        item.css({'display': 'block'});
+      }
+    
+      canvas.setAttribute('height', $(document).height());
+      
+      redraw();
+ 
 }
