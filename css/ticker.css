@@ -3,10 +3,11 @@
 /* OUTER CONTAINER */
 .ticker-container {
     z-index: -1;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     padding-left: 85vw;
     top: 0;
+    bottom: 0;
   }
    
   /* MIDDLE CONTAINER */
