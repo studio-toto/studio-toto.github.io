@@ -19,7 +19,7 @@ body {
 
 .buttons {
     float: right;
-    position:absolute; 
+    position:fixed; 
     bottom: 20px; 
     right: 10vw;
     font-family: Arial;
@@ -27,6 +27,7 @@ body {
     font-weight: normal;
     font-size: 30px;
     line-height: 150%;
+    z-index: 5;
 }
 #clearButton {
     right: 10px;
