@@ -29,26 +29,22 @@ body {
     line-height: 150%;
     z-index: 5;
 }
-
 #clearButton {
     right: 10px;
     background-color: white;
 }
-
 #colorButton {
     right: 0%;
     width: 30px;
     height: 30px;
     background-color: black;
 }
-
 #colorButtonr {
     right: 3%;
     width: 30px;
     height: 30px;
     background-color: red;
 }
-
 #colorButtonb {
     right: 6%;
     width: 30px;
@@ -66,14 +62,6 @@ body {
     height: 20%;
 }
 
-.blueline {
-    background-color: #B0F1FF;
-    width: 100vw;
-    left: 0;
-    position: fixed;
-    height: 0.2vh;
-}
-
 #toDoListContainer {
     position: absolute;
     width: 120%;
@@ -83,16 +71,34 @@ body {
 
 li {
     border-top: 3px solid #B0F1FF;
-    width: 100%;
+    width: 100%;;
+    line-height: 115%;  
+    padding-left: 2%;
+}
+
+.lastElement {
+    border-bottom: 3px solid #B0F1FF;
+}
+
+ol {
+    list-style: decimal inside;
+    
+}
+
+ul {
+    display: inline;
+    padding: 0;
 }
 
 #toDoList {
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 8vh;
-    line-height: 150%;
-    color:black;
+    font-size: 65px;
+    line-height: 100%;
+    
+    color: black;
+
     margin-top: 0;
 }
 
