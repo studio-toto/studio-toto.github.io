@@ -16,8 +16,8 @@
   
   /* INNER CONTAINER */
   @keyframes ticker {
-    0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-100%, 0, 0); }
+    0% { transform: translate3d(-15%, 0, 0); }
+    100% { transform: translate3d(-15%, -100%, 0); }
   }
   
   .ticker-move {
@@ -49,4 +49,6 @@
     /* identical to box height, or 45px */
     
     color: #FF0000;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
   }
