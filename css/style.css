@@ -11,7 +11,8 @@ body {
 }
 
 #logoContainer {
-    width: 20%;
+    float:right;
+    width: 10vw;
     margin-top: 1%;
     margin-right: 1%;
 }
@@ -31,18 +32,21 @@ body {
     right: 10px;
     background-color: white;
 }
+
 #colorButton {
     right: 7%;
     width: 30px;
     height: 30px;
     background-color: black;
 }
+
 #colorButtonr {
     right: 10%;
     width: 30px;
     height: 30px;
     background-color: red;
 }
+
 #colorButtonb {
     right: 13%;
     width: 30px;
@@ -69,19 +73,21 @@ body {
 
 #toDoListContainer {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -10%;
-    margin-left: -10%;
-    width: 40%;
+    width: 120%;
     height: 20%;
+    margin-left: -3vw;
+}
+
+li {
+    border-top: 3px solid #B0F1FF;
+    width: 100%;
 }
 
 #toDoList {
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 65px;
     line-height: 150%;
     
     color: #001AFF;
