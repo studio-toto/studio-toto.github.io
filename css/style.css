@@ -27,6 +27,16 @@ body {
 
     background-color: white;
 }
+.colorButton {
+    position:absolute; 
+    top: 10px; 
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    line-height: 150%;
+    border-radius: 30;
+    background-color: red;
+}
 
 #img {
     position: absolute;

@@ -51,21 +51,31 @@ $('body').mouseleave(function(e){
     paint = false;
 });
 
+
+var color = "black";
+var curColor = color;
+
+function changeColor(ncolor){
+    curColor = ncolor;
+}
+
 var clickX = new Array();
 var clickY = new Array();
 var clickDrag = new Array();
+var clickColor = new Array();
 var paint;
 
 function addClick(x, y, dragging) {
     clickX.push(x);
     clickY.push(y);
     clickDrag.push(dragging);
+    clickColor.push(curColor);
 }
 
 function redraw() {
     context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
 
-    context.strokeStyle = "black";
+    // context.strokeStyle = "black";
     context.lineJoin = "round";
     context.lineWidth = 5;
 
@@ -78,6 +88,7 @@ function redraw() {
         }
             context.lineTo(clickX[i], clickY[i]);
             context.closePath();
+            context.strokeStyle = clickColor[i];
             context.stroke();
     }
 }
