@@ -26,10 +26,12 @@
     </head>
 
     <body class="noselect">
+        <div class="buttons">
         <button id="colorButtonb" onclick="changeColor('blue')"></button>
         <button id="colorButtonr" onclick="changeColor('red')"></button>
         <button id="colorButton" onclick="changeColor('black')"></button>
     <button id="clearButton" onclick="reset()">Clear</button>
+    </div>
     
         <div id="logoContainer">
             
@@ -38,30 +40,35 @@
             <img id="logo" src="media/logo.png" alt="logo">
 
         </div>
-           
-        <div id="toDoListContainer">
+                <div id="toDoListContainer">
             
             <img class="noselect drawable" src="media/todo.png" height="150em"></img>
 
-            <ul id="toDoList">
+            <ol id="toDoList">
                 <li><ul onclick="expand('rubbel')">tickling/rubbellos</ul></li>
+                
                 <li id="rubbel" class="expand">there is something hidden under the surface of the website, to get it, user needs to tickle/scratch the layout with the cursor. <br>features: regulate intensivity? 
                     what can be hidden? anecdotes/jokes. something else?
                     <br>
                     inspo: find a cow website </li>
+                    
                 <li ondblclick="window.location='/sites/grill/bbq.html'"><ul onclick="expand('wurst')">lustwurst: bbq scroll</ul></li>
-                <li id="wurst" class="expand">on the website is nothing but a bbq grill. on the grilll is a 3d model of a sausage. when you scroll, the sausage turns. too much scrolling and the sausage starts to burn. additional you can think about changing the sausage to other 3d models and grill them on the bbq.</li>
+               <li id="wurst" class="expand">on the website is nothing but a bbq grill. on the grilll is a 3d model of a sausage. when you scroll, the sausage turns. too much scrolling and the sausage starts to burn. additional you can think about changing the sausage to other 3d models and grill them on the bbq.</li>
                 <li><ul onclick="expand('data')">data bike</ul></li>
+                
                 <li id="data" class="expand">use the mechanism of mountain bike game but  mountain height is defined with an actual data, such as, for example, corona cases in germany. user plays for a motorbike rider, maybe there is a multiplayer for diff countries. the data will be display on the lower part of the mountains. inspiration: https://2020game.io/</li>
                 <li><ul onclick="expand('tag')">werktage und wochenende</ul></li>
+                
                 <li id="tag" class="expand">make website work differently according to a day of the week. during the weekdays, the website is plain, contains tables, ux is pretty reasonable, even dry. during the weekends it turns crazy: some pages are closed, some of them have weird animations/interactions. maybe there are fireworks animation, spilled beer in the bottom of the page...
                     <br>
                     what can it be used for: website of a studio? redesign burgeramt?
                 </li>
                 <li><ul onclick="expand('fort')">fortune wheel</ul></li>
+                
                 <li id="fort" class="expand">was the original idea for our portfolio: a user opens a website and presses the lever of the wheel of fortune. then a random project appears. The user can view all previous projects while scrolling, but cannot select them on their own.
                 </li>
                 <li><ul onclick="expand('scroll')">scroll (playground)</ul></li>
+                
                 <li id="scroll" class="expand"> 
                     different tiny website that only offer different scrolling experiences. e.x.: scroll from bottom to top like a mountain hiker. moving from right to top left like someone on some stairs. circular scroll like a hamster roll: the whole sites turns (maybe other elements will have gravity and fall down?).
                 </li>
