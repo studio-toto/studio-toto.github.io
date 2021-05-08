@@ -88,11 +88,9 @@ li {
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 65px;
+    font-size: 5em;
     line-height: 150%;
-    
-    color: #001AFF;
-
+    color:black;
     margin-top: 0;
 }
 
