@@ -10,9 +10,10 @@ body {
     left: 0;
 }
 
-.logo {
-    float:left;
-    height: 10%;
+#logoContainer {
+    width: 20%;
+    margin-top: 1%;
+    margin-left: 1%;
 }
 
 #clearButton {
@@ -24,7 +25,6 @@ body {
     font-weight: normal;
     font-size: 30px;
     line-height: 150%;
-
     background-color: white;
 }
 

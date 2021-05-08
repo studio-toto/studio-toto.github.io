@@ -21,6 +21,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <script type="text/javascript" src="js/sound-onclick.js"></script>
+        <script type="text/javascript" src="js/logoChange.js"></script>
     
     </head>
 
@@ -28,12 +29,12 @@
 
         <div id="logoContainer">
             
-            <img class="logo" onclick="playclip()" src="media/cat1.png" alt="logo">
+            <img id="logoPic" class="logo" onclick="playclip()" src="media/cat1.png" alt="logo">
 
-            <img class="logo" onclick="playclip()" src="media/studio.png" alt="logo">
-        
+            <img id="logo" src="media/logo.png" alt="logo">
+
         </div>
-
+        
         <button id="clearButton" onclick="reset()">Clear</button>
 
         <div id="toDoListContainer">
