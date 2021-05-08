@@ -21,7 +21,7 @@ body {
     float: right;
     position:fixed; 
     bottom: 20px; 
-    right: 10vw;
+    right: 1vw;
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
@@ -29,27 +29,28 @@ body {
     line-height: 150%;
     z-index: 5;
 }
+
 #clearButton {
     right: 10px;
     background-color: white;
 }
 
 #colorButton {
-    right: 7%;
+    right: 0%;
     width: 30px;
     height: 30px;
     background-color: black;
 }
 
 #colorButtonr {
-    right: 10%;
+    right: 3%;
     width: 30px;
     height: 30px;
     background-color: red;
 }
 
 #colorButtonb {
-    right: 13%;
+    right: 6%;
     width: 30px;
     height: 30px;
     background-color: blue;
@@ -64,6 +65,7 @@ body {
     width: 20%;
     height: 20%;
 }
+
 .blueline {
     background-color: #B0F1FF;
     width: 100vw;
@@ -88,7 +90,7 @@ li {
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 5em;
+    font-size: 8vh;
     line-height: 150%;
     color:black;
     margin-top: 0;
