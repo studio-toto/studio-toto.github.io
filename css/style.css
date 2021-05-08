@@ -3,14 +3,16 @@ body {
 }
 
 #canvasplace {
-    z-index: 10;
+    z-index: -1;
     overflow:hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-#logo {
-    position:absolute; 
-    top: 10px; 
-    left: 10px;
+.logo {
+    float:left;
+    height: 10%;
 }
 
 #clearButton {
@@ -25,6 +27,7 @@ body {
 
     background-color: white;
 }
+
 #img {
     position: absolute;
     top: 50%;
@@ -34,6 +37,7 @@ body {
     width: 20%;
     height: 20%;
 }
+
 #toDoListContainer {
     position: absolute;
     top: 50%;
@@ -55,10 +59,12 @@ body {
 
     margin-top: 0;
 }
+
 .expand {
     display: none;
     font-size: 20px;
 }
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
@@ -67,11 +73,13 @@ body {
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
-  }
+}
+
 .drawable {
     position:relative;
     z-index: -1;
 }
+
 .center {
     position: absolute;
     width: 300px;

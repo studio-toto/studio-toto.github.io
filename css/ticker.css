@@ -4,7 +4,7 @@
 .ticker-container {
     width: 100%;
     overflow: hidden; /* Hide scroll bar */
-    position: sticky;
+    position: fixed;
     bottom: 0px;
   }
    
