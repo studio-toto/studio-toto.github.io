@@ -12,13 +12,25 @@ body {
 
 #logoContainer {
     float:right;
-    width: 10vw;
+    height: 200px;
     margin-top: 1%;
-    margin-right: 1%;
+    z-index: 1;
+    position: relative;
+}
+
+#logo {
+width: 16vw;
+}
+
+#toDoIMG {
+    width: 35%;
+    height: 14%;
+    padding-left: 1.5%;
 }
 
 .buttons {
     float: right;
+    margin-right: 1%;
     position:fixed; 
     bottom: 20px; 
     right: 1vw;
@@ -30,8 +42,8 @@ body {
     z-index: 5;
 }
 #clearButton {
-    right: 10px;
     background-color: white;
+    margin-left:10px ;
 }
 #colorButton {
     right: 0%;
@@ -74,7 +86,21 @@ li {
     width: 100%;;
     line-height: 115%;  
     padding-left: 2%;
+
 }
+
+.hide {
+    display: none;
+  }
+  
+  .myDIV:hover + .hide {
+    display: block;
+    width: 100vw;
+    height: 100vw;
+    background-color: blue;
+    color:white;
+    z-index: 1;
+  }
 
 .lastElement {
     border-bottom: 3px solid #B0F1FF;
@@ -82,10 +108,11 @@ li {
 
 ol {
     list-style: decimal inside;
-    
+    margin-top: 20px;
 }
 
 ul {
+
     display: inline;
     padding: 0;
 }
@@ -99,7 +126,7 @@ ul {
     
     color: black;
 
-    margin-top: 0;
+    margin-top: -25px;;
 }
 
 .expand {
@@ -131,3 +158,9 @@ ul {
     left: 50%;
     margin: -100px 0 0 -150px;
 }
+
+@media only screen and (max-width: 1920) {
+    #logoContainer {
+        width: 10vw;
+    }
+ }
