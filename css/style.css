@@ -100,16 +100,23 @@ li {
 
 .hide {
     display: none;
-}
-  
-.listItem:hover + .hide {
-    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
     width: 100vw;
     height: 100vw;
     background-color: blue;
     color:white;
     z-index: 1;
     padding-left: 2vw;
+    
+    transition: all 3s ease;
+}
+
+.listItem:hover + .hide {
+    display: block;
+    /* transition: display 3s ease-in; */
+
 }
 
 .lastElement {
@@ -119,6 +126,7 @@ li {
 ol {
     list-style: decimal inside;
     margin-top: 20px;
+    margin-left: -1vw;
 }
 
 ul {
@@ -130,7 +138,7 @@ ul {
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 65px;
+    font-size: 35px;
     line-height: 100%;
     
     color: black;
