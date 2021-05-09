@@ -8,30 +8,50 @@
     padding-left: 85vw;
     top: 0;
     bottom: 0;
+    /* overflow: hidden; */
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 100%;
+    /* identical to box height, or 45px */
+    
+    color: #FF0000;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
   }
    
   /* MIDDLE CONTAINER */
-  .ticker-wrap {
-    height: 100%;
-    padding-top: 100%;
-  }
   
   /* INNER CONTAINER */
   @keyframes ticker {
     from { transform: translateY(100%); }
     to { transform: translateY(-100%); }
   }
-  
+  @keyframes ticker2 {
+    from { transform: translateY(100%); }
+    to { transform: translateY(-100%); }
+  }
   .ticker-move {
     /* Basically move items from right side of screen to left in infinite loop */
     display: inline-block;
     position: absolute;
     white-space: nowrap;
-    padding-bottom: 100%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
     animation-duration: 30s;
+  }
+  .ticker-move2 {
+    /* Basically move items from right side of screen to left in infinite loop */
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker2;
+    animation-duration: 30s;
+    animation-delay: 15s;
   }
 
 /*  .ticker-move:hover {
@@ -43,14 +63,4 @@
   .ticker-item {
     display: inline-block; /* Lay items in a horizontal line */
 
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 100%;
-    /* identical to box height, or 45px */
-    
-    color: #FF0000;
-    text-orientation: upright;
-    writing-mode: vertical-lr;
   }
