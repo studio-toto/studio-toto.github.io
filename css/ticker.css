@@ -41,7 +41,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
-    animation-duration: 30s;
+    animation-duration: 40s;
 }
 
 .ticker-move2 {
@@ -52,8 +52,8 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker2;
-    animation-duration: 30s;
-    animation-delay: 15s;
+    animation-duration: 40s;
+    animation-delay: 20s;
   }
 
 /*  .ticker-move:hover {
