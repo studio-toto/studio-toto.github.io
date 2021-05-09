@@ -71,7 +71,7 @@ body {
     right: 6%;
     width: 30px;
     height: 30px;
-    background-color: blue;
+    background-color: #B0F1FF;
 }
 
 #img {
@@ -135,7 +135,7 @@ ul {
 }
 
 #toDoList {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Arial;
     font-style: normal;
     font-weight: normal;
     font-size: 6vh;
