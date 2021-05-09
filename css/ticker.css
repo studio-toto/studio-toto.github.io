@@ -1,6 +1,5 @@
 /* https://code-boxx.com/html-css-news-ticker-horizontal-vertical/ */
 
-/* OUTER CONTAINER */
 .ticker-container {
     z-index: -1;
     height: 100vh;
@@ -14,26 +13,23 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 100%;
-    /* identical to box height, or 45px */
     
     color: #FF0000;
     text-orientation: upright;
     writing-mode: vertical-lr;
-  }
-   
-  /* MIDDLE CONTAINER */
-  
-  /* INNER CONTAINER */
-  @keyframes ticker {
+}
+
+@keyframes ticker {
     from { transform: translateY(100%); }
     to { transform: translateY(-100%); }
-  }
-  @keyframes ticker2 {
+}
+
+@keyframes ticker2 {
     from { transform: translateY(100%); }
     to { transform: translateY(-100%); }
-  }
-  .ticker-move {
-    /* Basically move items from right side of screen to left in infinite loop */
+}
+
+.ticker-move {
     display: inline-block;
     position: absolute;
     white-space: nowrap;
@@ -41,9 +37,9 @@
     animation-timing-function: linear;
     animation-name: ticker;
     animation-duration: 30s;
-  }
-  .ticker-move2 {
-    /* Basically move items from right side of screen to left in infinite loop */
+}
+
+.ticker-move2 {
     display: inline-block;
     position: absolute;
     white-space: nowrap;
@@ -58,9 +54,7 @@
         animation-play-state: paused; /* Pause scroll on mouse hover
     } 
 */
-  
-  /* ITEMS */
-  .ticker-item {
-    display: inline-block; /* Lay items in a horizontal line */
 
-  }
+.ticker-item {
+    display: inline-block;
+}
