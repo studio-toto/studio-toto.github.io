@@ -4,15 +4,17 @@
     z-index: -1;
     height: 100vh;
     position: fixed;
-    padding-left: 85vw;
+    margin-left: 85vw;
+    width: 6vh;
     top: 0;
     bottom: 0;
     /* overflow: hidden; */
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 6vh;
     line-height: 100%;
+    /* background-color: #FF0000; */
     
     color: #FF0000;
     text-orientation: upright;
@@ -20,18 +22,21 @@
 }
 
 @keyframes ticker {
-    from { transform: translateY(100%); }
-    to { transform: translateY(-100%); }
+    from { transform: translateY(0%); }
+    to { transform: translateY(-200%); }
 }
 
 @keyframes ticker2 {
-    from { transform: translateY(100%); }
-    to { transform: translateY(-100%); }
+    from {
+      transform: translateY(0%); }
+    to { 
+      transform: translateY(-200%); }
 }
 
 .ticker-move {
     display: inline-block;
     position: absolute;
+    top: 100%;
     white-space: nowrap;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -42,6 +47,7 @@
 .ticker-move2 {
     display: inline-block;
     position: absolute;
+    top: 100%;
     white-space: nowrap;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
