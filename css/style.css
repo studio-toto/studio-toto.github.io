@@ -98,6 +98,11 @@ li {
     padding-left: 2%;
 }
 
+li:hover {
+    background-color: blue;
+    color: white;
+}
+
 .hide {
     display: none;
     top: 0;
