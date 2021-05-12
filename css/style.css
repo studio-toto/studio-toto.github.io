@@ -35,7 +35,7 @@ body {
 }
 
 .buttons {
-    float: right;
+    float: center;
     margin-right: 1%;
     position:fixed; 
     bottom: 20px; 
@@ -43,35 +43,38 @@ body {
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 5vh;
+       /* min-width: 5vh; */
+       width: 6vh;
     line-height: 150%;
     z-index: 5;
 }
 
 #clearButton {
     background-color: white;
-    margin-left:10px ;
+    height: 5vh;
+    /* margin-left:5vh ; */
 }
 
 #colorButton {
-    right: 0%;
-    width: 30px;
-    height: 30px;
+    /* right: 5vh; */
+    width: 5vh;
+    height: 5vh;
     background-color: black;
 }
 
 #colorButtonr {
-    right: 3%;
-    width: 30px;
-    height: 30px;
+    /* right: 10vh; */
+    width: 5vh;
+    height: 5vh;
     background-color: red;
 }
 
 #colorButtonb {
-    right: 6%;
-    width: 30px;
-    height: 30px;
-    background-color: #B0F1FF;
+    /* right: 15vh; */
+    width: 5vh;
+    height: 5vh;
+    background-color: blue;
 }
 
 #img {
@@ -98,13 +101,15 @@ li {
     padding-left: 2%;
 }
 
-li:hover {
+.listText:hover {
     background-color: blue;
     color: white;
 }
 
 .hide {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
     top: 0;
     left: 0;
     position: fixed;
@@ -112,17 +117,12 @@ li:hover {
     height: 100vw;
     background-color: blue;
     color:white;
-    z-index: 1;
+    z-index: 6;
     padding-left: 2vw;
     
-    transition: all 3s ease;
+    transition: visibility 1s linear, opacity 1s;
 }
 
-.listItem:hover + .hide {
-    display: block;
-    /* transition: display 3s ease-in; */
-
-}
 
 .lastElement {
     border-bottom: 3px solid #B0F1FF;

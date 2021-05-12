@@ -60,7 +60,3 @@
         animation-play-state: paused; /* Pause scroll on mouse hover
     } 
 */
-
-.ticker-item {
-    display: inline-block;
-}
