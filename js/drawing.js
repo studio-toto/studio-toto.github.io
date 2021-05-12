@@ -1,6 +1,6 @@
 // Canvas is initialized after the page loaded in order to get the screen size
 var width = $(window).width();
-var height = $(window).height();
+var height = document.documentElement.scrollHeight;
 var canvasDiv = document.getElementById('canvasplace');
 
 function setCanvas() {
@@ -91,17 +91,4 @@ function redraw() {
             context.strokeStyle = clickColor[i];
             context.stroke();
     }
-}
-
-// show list elements and adjust canvas size
-function expand(selection) {
-    var item = $("#"+selection)
-    if (item.css('visibility') == 'visible'){
-        item.css({'visibility': 'hidden'});
-        item.css({'opacity': '0'});
-    } else {
-        item.css({'visibility': 'visible'});
-        item.css({'opacity': '1'});
-    }
- 
 }
