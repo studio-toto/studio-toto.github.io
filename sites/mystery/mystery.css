@@ -1,0 +1,84 @@
+p {
+  font-family: "Omnigraf5";
+  font-size: 68px;
+  margin-left: 2vw;
+  margin-top: -2vw;
+  transition: all 0.1s ease;
+}
+
+@keyframes font-change {
+  0% {
+    font-family: "Omnigraf5";
+  }
+  25% {
+    font-family: "Omnigraf4";
+  }
+  50% {
+    font-family: "Omnigraf3";
+  }
+  75% {
+    font-family: "Omnigraf2";
+  }
+  100% {
+    font-family: "Omnigraf1";
+  }
+}
+
+p:hover {
+  animation-name: font-change;
+  animation-duration: 2s;
+  animation: font-change 2s timing-function delay iteration-count direction fill-mode;
+
+}
+
+@font-face {
+  font-family: "RF-Rostin";
+  src: /* url('webfont.eot'); IE9 Compat Modes */
+      /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+           /* url('webfont.woff') format('woff'), Modern Browsers */ url("../../fonts/RF-Rostin-Regular.otf")
+    format("truetype"); /* Safari, Android, iOS */
+  /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Omnigraf1";
+  src: /* url('webfont.eot'); IE9 Compat Modes */
+      /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+           /* url('webfont.woff') format('woff'), Modern Browsers */ url("../../fonts/Omnigraf32-Regular.otf")
+    format("truetype"); /* Safari, Android, iOS */
+  /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Omnigraf2";
+  src: /* url('webfont.eot'); IE9 Compat Modes */
+      /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+           /* url('webfont.woff') format('woff'), Modern Browsers */ url("../../fonts/Omnigraf32-Semi-Regular.otf")
+    format("truetype"); /* Safari, Android, iOS */
+  /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Omnigraf3";
+  src: /* url('webfont.eot'); IE9 Compat Modes */
+      /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+           /* url('webfont.woff') format('woff'), Modern Browsers */ url("../../fonts/Omnigraf32-Semi-Irregular.otf")
+    format("truetype"); /* Safari, Android, iOS */
+  /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Omnigraf4";
+  src: /* url('webfont.eot'); IE9 Compat Modes */
+      /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+           /* url('webfont.woff') format('woff'), Modern Browsers */ url("../../fonts/Omnigraf32-Irregular.otf")
+    format("truetype"); /* Safari, Android, iOS */
+  /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Omnigraf5";
+  src: /* url('webfont.eot'); IE9 Compat Modes */
+    /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+         /* url('webfont.woff') format('woff'), Modern Browsers */ url("../../fonts/Omnigraf32-Non-Regular.otf")
+    format("truetype"); /* Safari, Android, iOS */
+  /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
