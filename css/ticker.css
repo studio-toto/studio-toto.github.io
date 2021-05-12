@@ -8,14 +8,11 @@
     width: 6vh;
     top: 0;
     bottom: 0;
-    /* overflow: hidden; */
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
     font-size: 6vh;
     line-height: 100%;
-    /* background-color: #FF0000; */
-    
     color: #FF0000;
     text-orientation: upright;
     writing-mode: vertical-lr;
@@ -54,9 +51,4 @@
     animation-name: ticker2;
     animation-duration: 80s;
     animation-delay: 40s;
-  }
-
-/*  .ticker-move:hover {
-        animation-play-state: paused; /* Pause scroll on mouse hover
-    } 
-*/
+}
