@@ -1,0 +1,33 @@
+#box {
+  
+width: 15vw;
+height: 15vw;
+position: absolute;
+display: block;
+left: 45%;
+top: 45%;
+}
+    
+ #message {
+     visibility: visible;
+ }   
+.runner {
+  position: absolute;
+  display: block;
+  left: 45%;
+  top: 45%;
+  transition: all 0.1s linear;
+
+}
+
+#exit1 {
+  width: 10vw;
+  height: auto;
+  visibility: hidden;
+}
+
+#exit2 {
+  width: 6vw;
+  visibility: hidden;
+  height: auto;
+}
