@@ -131,7 +131,6 @@ li {
 
 .linkToSite {
     background-color: white;
-    margin-top: 1vh;
     text-decoration: none;
     animation-name: pulse;
     animation-iteration-count: infinite;
