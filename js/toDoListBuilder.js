@@ -44,9 +44,9 @@ var listData = {
         "link": "sites/no_escape/no_escape.html"
     },
 
-    "placeholder1": {
-        "description": "",
-        "link": ""
+    "mystery": {
+        "description": "Come and see.",
+        "link": "sites/mystery/mystery.html"
     },
 
     "placeholder2": {

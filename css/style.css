@@ -137,14 +137,18 @@ ol {
     top: 0;
     left: 0;
     position: fixed;
-    height: 100vw;
+    height: 100vh;
+    width: 100vw;
     background-color: blue;
     color:white;
     z-index: 6;
     padding-left: 3vw;
-    padding-right: 15vw;
     padding-top: 4vh;
     transition: visibility .5s linear, opacity .5s;
+}
+
+p {
+    padding-right: 18vw;
 }
 
 .linkToSite {
