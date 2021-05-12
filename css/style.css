@@ -113,9 +113,7 @@ ol {
     font-weight: normal;
     font-size: 6vh;
     line-height: 100%;
-    
     color: black;
-
     margin-top: -25px;;
 }
 
@@ -146,7 +144,7 @@ ol {
     padding-left: 3vw;
     padding-right: 15vw;
     padding-top: 4vh;
-    transition: visibility 1s linear, opacity 1s;
+    transition: visibility .5s linear, opacity .5s;
 }
 
 .linkToSite {
