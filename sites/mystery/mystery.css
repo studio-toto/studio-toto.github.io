@@ -23,11 +23,17 @@ p {
     font-family: "Omnigraf1";
   }
 }
+.char {
+  height: 68px;
+  transition: all 50ms ease;
+}
 
-p:hover {
+.word:hover {
+  cursor: zoom-in;
+  
   animation-name: font-change;
   animation-duration: 2s;
-  animation: font-change 2s timing-function delay iteration-count direction fill-mode;
+  animation-fill-mode: forwards;
 
 }
 
