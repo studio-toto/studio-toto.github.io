@@ -123,10 +123,35 @@ li {
     color:white;
     z-index: 6;
     padding-left: 3vw;
-    padding-right: 3vw;
+    padding-right: 15vw;
     padding-top: 4vh;
     
     transition: visibility 1s linear, opacity 1s;
+}
+
+.linkToSite {
+    background-color: white;
+    margin-top: 1vh;
+    text-decoration: none;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: blue;
+        color: white;
+    }
+    50% {
+        background-color: white;
+        color: blue;
+    }
+    100% {
+        background-color: blue;
+        color: white;
+    }
 }
 
 
@@ -199,5 +224,14 @@ ul {
     /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
          /* url('webfont.woff') format('woff'), Modern Browsers */
          url('../fonts/LucidaConsoleRegular.ttf')  format('truetype'); /* Safari, Android, iOS */
+         /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Omnigraf32-Semi';
+    src: /* url('webfont.eot'); IE9 Compat Modes */
+    /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+         /* url('webfont.woff') format('woff'), Modern Browsers */
+         url('../fonts/Omnigraf32-Regular.otf')  format('truetype'); /* Safari, Android, iOS */
          /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
