@@ -15,9 +15,9 @@ var listData = {
         "link": "sites/mystery/mystery.html"
     },
 
-    "bbq/grill": {
+    "bbq grill": {
         "description": "on the website is nothing but a bbq grill. on the grill is a 3d model of a sausage. when you scroll, the sausage turns. too much scrolling and the sausage starts to burn. additional you can think about changing the sausage to other 3d models and grill them on the bbq.",
-        "link": "sites/bbq grill/bbqgrill.html"
+        "link": "sites/bbq_grill/bbq_grill.html"
     },
 
     "tickling/rubbellos": {
