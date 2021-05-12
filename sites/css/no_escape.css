@@ -1,23 +1,33 @@
-#box {
-  
-width: 15vw;
-height: 15vw;
-position: absolute;
-display: block;
-left: 45%;
-top: 45%;
+@font-face {
+  font-family: "RF-Rostin";
+  src: /* url('webfont.eot'); IE9 Compat Modes */
+    /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+         /* url('webfont.woff') format('woff'), Modern Browsers */ url("../../fonts/RF-Rostin-Regular.otf")
+    format("truetype"); /* Safari, Android, iOS */
+  /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-    
- #message {
-     visibility: visible;
- }   
+
+#box {
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  display: block;
+  left: 45%;
+  top: 45%;
+}
+
+#message {
+  visibility: visible;
+  font-family: "RF-Rostin";
+  font-size: 120px;
+  text-align: center;
+}
 .runner {
   position: absolute;
   display: block;
   left: 45%;
   top: 45%;
   transition: all 0.1s linear;
-
 }
 
 #exit1 {
