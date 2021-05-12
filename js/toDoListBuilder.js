@@ -105,14 +105,17 @@ for (var i = 0; i < numberOfElements; i++) {
 
     var br = document.createElement('br');
 
-    var a = document.createElement('a');
-    a.setAttribute('class', 'linkToSite');
-    a.setAttribute('href', element.link);
-    a.innerHTML = "&gt;go to " + title;
-
     div.appendChild(par);
     div.appendChild(br);
-    div.appendChild(a);
+
+    //only create a DOM element if element's link string is not empty
+    if (element.link != "") {
+        var a = document.createElement('a');
+        a.setAttribute('class', 'linkToSite');
+        a.setAttribute('href', element.link);
+        a.innerHTML = "&gt;go to " + title;
+        div.appendChild(a);
+    }
 
     toDoList.appendChild(li);
     toDoList.appendChild(div);
