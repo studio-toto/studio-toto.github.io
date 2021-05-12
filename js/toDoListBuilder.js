@@ -1,17 +1,28 @@
 var listData = {
+
     "about": {
         "description": "studio toto is a temporal 1 semester gathering for the sake of creating mostly meaningless but joyful web experiences for our mock design studio. this website is our no stress todo list and your playground. made by nilya musaeva + lucca vitters + julia vollmer &nbsp",
         "link": ""
     },
 
-    "tickling/rubbellos": {
-        "description":"there is something hidden under the surface of the website, to get it, user needs to tickle/scratch the layout with the cursor. <br>features: regulate intensivity? what can be hidden? anecdotes/jokes. something else?",
-        "link": ""
+    "no escape": {
+        "description": "There is no escape. Your only chance to evacuate is to leave with us.",
+        "link": "sites/no_escape/no_escape.html"
+    },
+
+    "mystery": {
+        "description": "Come and see.",
+        "link": "sites/mystery/mystery.html"
     },
 
     "bbq/grill": {
         "description": "on the website is nothing but a bbq grill. on the grill is a 3d model of a sausage. when you scroll, the sausage turns. too much scrolling and the sausage starts to burn. additional you can think about changing the sausage to other 3d models and grill them on the bbq.",
         "link": "sites/bbq grill/bbqgrill.html"
+    },
+
+    "tickling/rubbellos": {
+        "description":"there is something hidden under the surface of the website, to get it, user needs to tickle/scratch the layout with the cursor. <br>features: regulate intensivity? what can be hidden? anecdotes/jokes. something else?",
+        "link": ""
     },
 
     "data bike": {
@@ -37,16 +48,6 @@ var listData = {
     "scroll playground": {
         "description": "different tiny website that only offer different scrolling experiences. e.x.: scroll from bottom to top like a mountain hiker. moving from right to top left like someone on some stairs. circular scroll like a hamster roll: the whole sites turns (maybe other elements will have gravity and fall down?).",
         "link": ""
-    },
-
-    "no escape": {
-        "description": "There is no escape. Your only chance to evacuate is to leave with us.",
-        "link": "sites/no_escape/no_escape.html"
-    },
-
-    "mystery": {
-        "description": "Come and see.",
-        "link": "sites/mystery/mystery.html"
     },
 
     "placeholder2": {
