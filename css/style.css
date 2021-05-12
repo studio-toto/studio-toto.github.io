@@ -52,6 +52,7 @@ body {
 #clearButton {
     background-color: white;
     height: 5vh;
+    width: 5vh;
 }
 
 #colorButton {
