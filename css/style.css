@@ -53,6 +53,7 @@ body {
     background-color: white;
     height: 5vh;
     width: 5vh;
+    font-size: 1vh;
 }
 
 #colorButton {
