@@ -97,14 +97,16 @@ function redraw() {
 
 function expand(selection) {
     var item = $("#"+selection)
-    if (item.css('display') == 'block'){
-        item.css({'display': 'none'});
+    if (item.css('visibility') == 'visible'){
+        item.css({'visibility': 'hidden'});
+        item.css({'opacity': '0'});
       } else {
-        item.css({'display': 'block'});
+        item.css({'visibility': 'visible'});
+        item.css({'opacity': '1'});
       }
     
-      canvas.setAttribute('height', $(document).height());
+    //   canvas.setAttribute('height', $(document).height());
       
-      redraw();
+    //   redraw();
  
 }

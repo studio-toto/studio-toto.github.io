@@ -41,7 +41,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
-    animation-duration: 60s;
+    animation-duration: 80s;
 }
 
 .ticker-move2 {
@@ -52,15 +52,11 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker2;
-    animation-duration: 60s;
-    animation-delay: 30s;
+    animation-duration: 80s;
+    animation-delay: 40s;
   }
 
 /*  .ticker-move:hover {
         animation-play-state: paused; /* Pause scroll on mouse hover
     } 
 */
-
-.ticker-item {
-    display: inline-block;
-}

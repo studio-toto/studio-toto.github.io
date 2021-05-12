@@ -35,7 +35,7 @@ body {
 }
 
 .buttons {
-    float: right;
+    float: center;
     margin-right: 1%;
     position:fixed; 
     bottom: 20px; 
@@ -43,35 +43,38 @@ body {
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 5vh;
+       /* min-width: 5vh; */
+       width: 6vh;
     line-height: 150%;
     z-index: 5;
 }
 
 #clearButton {
     background-color: white;
-    margin-left:10px ;
+    height: 5vh;
+    /* margin-left:5vh ; */
 }
 
 #colorButton {
-    right: 0%;
-    width: 30px;
-    height: 30px;
+    /* right: 5vh; */
+    width: 5vh;
+    height: 5vh;
     background-color: black;
 }
 
 #colorButtonr {
-    right: 3%;
-    width: 30px;
-    height: 30px;
+    /* right: 10vh; */
+    width: 5vh;
+    height: 5vh;
     background-color: red;
 }
 
 #colorButtonb {
-    right: 6%;
-    width: 30px;
-    height: 30px;
-    background-color: #B0F1FF;
+    /* right: 15vh; */
+    width: 5vh;
+    height: 5vh;
+    background-color: blue;
 }
 
 #img {
@@ -98,26 +101,58 @@ li {
     padding-left: 2%;
 }
 
+.listText:hover {
+    background-color: blue;
+    color: white;
+}
+
 .hide {
-    display: none;
+    /* display: none; */
+    font-family: 'LucidaConsole';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vh;
+    line-height: 100%;
+    visibility: hidden;
+    opacity: 0;
     top: 0;
     left: 0;
     position: fixed;
-    width: 100vw;
     height: 100vw;
     background-color: blue;
     color:white;
-    z-index: 1;
-    padding-left: 2vw;
+    z-index: 6;
+    padding-left: 3vw;
+    padding-right: 15vw;
+    padding-top: 4vh;
     
-    transition: all 3s ease;
+    transition: visibility 1s linear, opacity 1s;
 }
 
-.listItem:hover + .hide {
-    display: block;
-    /* transition: display 3s ease-in; */
-
+.linkToSite {
+    background-color: white;
+    text-decoration: none;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
 }
+
+@keyframes pulse {
+    0% {
+        background-color: blue;
+        color: white;
+    }
+    50% {
+        background-color: white;
+        color: blue;
+    }
+    100% {
+        background-color: blue;
+        color: white;
+    }
+}
+
 
 .lastElement {
     border-bottom: 3px solid #B0F1FF;
@@ -181,3 +216,21 @@ ul {
         width: 10vw;
     }
  }
+
+@font-face {
+    font-family: 'LucidaConsole';
+    src: /* url('webfont.eot'); IE9 Compat Modes */
+    /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+         /* url('webfont.woff') format('woff'), Modern Browsers */
+         url('../fonts/LucidaConsoleRegular.ttf')  format('truetype'); /* Safari, Android, iOS */
+         /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Omnigraf32-Semi';
+    src: /* url('webfont.eot'); IE9 Compat Modes */
+    /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+         /* url('webfont.woff') format('woff'), Modern Browsers */
+         url('../fonts/Omnigraf32-Regular.otf')  format('truetype'); /* Safari, Android, iOS */
+         /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
