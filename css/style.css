@@ -110,7 +110,7 @@ ol {
 }
 
 #toDoList {
-    font-family: Arial;
+    font-family: 'PermanentMarker';
     font-style: normal;
     font-weight: normal;
     font-size: 6vh;
@@ -210,9 +210,40 @@ p {
 
 @font-face {
     font-family: 'LucidaConsole';
-    src: /* url('webfont.eot'); IE9 Compat Modes */
-    /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
-         /* url('webfont.woff') format('woff'), Modern Browsers */
-         url('../fonts/LucidaConsoleRegular.ttf')  format('truetype'); /* Safari, Android, iOS */
-         /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('../fonts/LucidaConsoleRegular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'IndieFlower';
+    src: url('../fonts/IndieFlower-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Lilly';
+    src: url('../fonts/Lilly__.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Daniel';
+    src: url('../fonts/daniel/Daniel-Regular.otf')  format('opentype');
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url('../fonts/Kalam/Kalam-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Patrick';
+    src: url('../fonts/PatrickHand-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'PermanentMarker';
+    src: url('../fonts/PermanentMarker-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'RFRostin';
+    src: url('../fonts/RF-Rostin-Regular.otf')  format('opentype');
 }
