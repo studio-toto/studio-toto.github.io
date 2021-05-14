@@ -1,9 +1,9 @@
 Splitting();
 
 function changeText(value) {
-
-    var div = document.getElementById("div");
+    var description = $("#description");
     var text = "";
+    console.log(description.text())
 
     if (value == 1) text += "description lost";
     if (value == 2) text += "Neustadt";
@@ -19,5 +19,12 @@ function changeText(value) {
     if (value == 12) text += "no description";
     if (value == 13) text += "Hallo! Ich suche Schrittgurtschnalle von Croozer  Modellbaujahr 2013. Vielen Dank !";
 
-    div.innerHTML = text;
+    description.text(text);
 }
+
+$("[data-id]").each(function() {
+    $(this).click(function () {
+        changeText($(this).data("id"))
+    })
+    $(this).draggable()
+})

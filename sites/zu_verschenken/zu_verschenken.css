@@ -78,4 +78,14 @@ body {
 .object {
   height: 30%;
   width: auto;
+  margin-top: 3%;
+}
+
+#description{
+  position: absolute;
+  font-family: arial;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+
 }
