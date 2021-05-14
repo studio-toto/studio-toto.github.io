@@ -1,5 +1,7 @@
 body {
     overflow-x: hidden;
+    background-image: url("../media/paper.jpg");
+    background-repeat: no-repeat;
 }
 
 #canvasplace {
@@ -29,7 +31,7 @@ body {
 
 #toDoIMG {
     width:25%;
-    padding-left: 1.5%;
+    padding-left: 5%;
     padding-top: 2.5%;
     padding-bottom: 3.5%;
 }
@@ -50,10 +52,18 @@ body {
 }
 
 #clearButton {
-    background-color: white;
-    height: 5vh;
-    width: 5vh;
-    font-size: 1vh;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#clearPic {
+    width: 80px;
+    margin-left: -22px;
+    margin-top: 15px;
 }
 
 #colorButton {
@@ -72,6 +82,7 @@ body {
     width: 5vh;
     height: 5vh;
     background-color: blue;
+
 }
 
 #img {
@@ -89,18 +100,23 @@ body {
     width: 120%;
     height: 20%;
     margin-left: -3vw;
+    margin-top: -10px;
 }
 
 li {
     border-top: 3px solid #B0F1FF;
     width: 100%;;
     line-height: 115%;  
-    padding-left: 2%;
+    padding-left: 3%;
 }
 
 .listText:hover {
-    background-color: blue;
-    color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    color: black;
+    text-decoration-thickness: 3.5px;
+    text-decoration-skip-ink: none;
 }
 
 ol {
@@ -110,13 +126,15 @@ ol {
 }
 
 #toDoList {
-    font-family: 'PermanentMarker';
+    font-family: 'Handwritten';
     font-style: normal;
     font-weight: normal;
-    font-size: 6vh;
+    font-size: 8.5vh;
     line-height: 100%;
     color: black;
-    margin-top: -25px;;
+    margin-top: -25px;
+
+
 }
 
 .lastElement {
@@ -239,11 +257,6 @@ p {
 }
 
 @font-face {
-    font-family: 'PermanentMarker';
-    src: url('../fonts/PermanentMarker-Regular.ttf')  format('truetype');
-}
-
-@font-face {
-    font-family: 'RFRostin';
-    src: url('../fonts/RF-Rostin-Regular.otf')  format('opentype');
+    font-family: 'Handwritten';
+    src: url('../fonts/Propisi_W01_Medium.ttf')  format('truetype');
 }

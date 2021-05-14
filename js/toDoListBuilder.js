@@ -42,7 +42,7 @@ var listData = {
 
     "zu verschenken pile": {
         "description": '"use the mechanism of <a href="http://www.mloh.ru/">this</a>  website and the Gratisladen Bremen group inputs and create a pile of zu verschenken website."',
-        "link": ""
+        "link": "sites/zu_verschenken/zu_verschenken.html"
     },
 
     "scroll playground": {
@@ -50,8 +50,8 @@ var listData = {
         "link": ""
     },
 
-    "placeholder2": {
-        "description": "",
+    "karaoke website": {
+        "description": "you are my fire, <br> my one desire <br> believe when i say <br> i want it that way",
         "link": ""
     },
 

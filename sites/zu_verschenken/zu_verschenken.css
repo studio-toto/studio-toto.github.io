@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+  display: flex;
+}
+body {
+}
+html,
+body {
+  background: #00043c;
+  color: #fff;
+  font: normal 200 7vw/1.5 Kanit, sans-serif;
+  text-align: center;
+  font-family: Pupok;
+  font-display: auto;
+}
+
+.rainbow-text {
+  margin-top: 1vw;
+  margin-left: 3vw;
+
+}
+
+.rainbow-text .char {
+  font-size: 75%;
+  animation: rainbow-colors 4s ease infinite;
+
+  animation-delay: calc(-4s * var(--char-percent));
+}
+/* Unfortunately, browsers try to take the shortest distance between transition/animation properties, so a simple `0turn` to `1turn` doesn't get the proper effect. */
+@keyframes rainbow-colors {
+  0% {
+    color: #5383ec;
+  }
+  20% {
+    color: #d85140;
+  }
+  40% {
+    color: #f1bf42;
+  }
+  60% {
+    color: #58a65c;
+  }
+  80% {
+    color: #ed762f;
+  }
+  100% {
+    color: #69bbc4;
+  }
+}
+@font-face {
+  font-family: "Pupok";
+  src: /* url('webfont.eot'); IE9 Compat Modes */
+      /* src:  url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 */
+           /* url('webfont.woff') format('woff'), Modern Browsers */ url("../../fonts/SK Pupok-Solid Demo.ttf")
+    format("truetype"); /* Safari, Android, iOS */
+  /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.splitting .char {
+  /* Percent (0-1) of the char's position */
+  --char-percent: calc(var(--char-index) / var(--char-total));
+
+  /* Offset from center, positive & negative */
+  --char-offset: calc(var(--char-index) - var(--char-center));
+
+  /* Absolute distance from center, only positive */
+  --distance: calc(
+    (var(--char-offset) * var(--char-offset)) / var(--char-center)
+  );
+
+  /* Distance from center where -1 is the far left, 0 is center, 1 is far right */
+  --distance-sine: calc(var(--char-offset) / var(--char-center));
+
+  /* Distance from center where 1 is far left/far right, 0 is center */
+  --distance-percent: calc((var(--distance) / var(--char-center)));
+}
+
+.object {
+  height: 30%;
+  width: auto;
+}

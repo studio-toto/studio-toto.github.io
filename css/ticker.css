@@ -1,7 +1,7 @@
 /* https://code-boxx.com/html-css-news-ticker-horizontal-vertical/ */
 
 .ticker-container {
-    z-index: -1;
+    z-index: 1;
     height: 100vh;
     position: fixed;
     margin-left: 85vw;
@@ -11,7 +11,7 @@
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 6vh;
+    font-size: 5vh;
     line-height: 100%;
     color: #FF0000;
     text-orientation: upright;
