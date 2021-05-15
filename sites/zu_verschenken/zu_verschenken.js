@@ -17,8 +17,13 @@ function changeText(value) {
     if (value == 10) text += "A3 Zeichenblöcke zu verschenken - liegen draußen in der hemelinger Straße vor nr 68";
     if (value == 11) text += "Kinderteller zu verschenkeb";
     if (value == 12) text += "no description";
-    if (value == 13) text += "Hallo! Ich suche Schrittgurtschnalle von Croozer  Modellbaujahr 2013. Vielen Dank !";
+    if (value == 13) text += "kinder neustadt";
+    if (value == 14) text += "eine Zauberbox (ab 6 Jahren, vollständig, gut erhalten";
+    if (value == 15) text += "Utrusta backofen halterung (neu, wurde falsch geliefert)";
 
+
+
+    
     description.text(text);
 }
 
