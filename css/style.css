@@ -107,16 +107,20 @@ li {
     border-top: 3px solid #B0F1FF;
     width: 100%;;
     line-height: 115%;  
-    padding-left: 3%;
+    padding-left: 2%;
 }
 
 .listText:hover {
+    background-color: blue;
+    color: white;
+    /* Nilya's changes
     text-decoration: underline;
     text-decoration-color: red;
     text-decoration-style: wavy;
     color: black;
     text-decoration-thickness: 3.5px;
     text-decoration-skip-ink: none;
+    */
 }
 
 ol {
@@ -126,10 +130,10 @@ ol {
 }
 
 #toDoList {
-    font-family: 'Handwritten';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: normal;
-    font-size: 8.5vh;
+    font-size: 6vh;
     line-height: 100%;
     color: black;
     margin-top: -25px;
@@ -232,6 +236,16 @@ p {
 }
 
 @font-face {
+    font-family: 'PermanentMarker';
+    src: url('../fonts/PermanentMarker-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'RFRostin';
+    src: url('../fonts/RF-Rostin-Regular.otf')  format('opentype');
+}
+
+@font-face {
     font-family: 'IndieFlower';
     src: url('../fonts/IndieFlower-Regular.ttf')  format('truetype');
 }
@@ -257,6 +271,6 @@ p {
 }
 
 @font-face {
-    font-family: 'Handwritten';
+    font-family: 'Proposi';
     src: url('../fonts/Propisi_W01_Medium.ttf')  format('truetype');
 }
