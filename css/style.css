@@ -1,11 +1,11 @@
 body {
     overflow-x: hidden;
-    background-image: url("../media/paper.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("../media/paper.jpg");
+    background-repeat: no-repeat; */
 }
 
 #canvasplace {
-    z-index: -1;
+    z-index: 1;
     overflow:hidden;
     position: absolute;
     top: 0;
@@ -15,7 +15,7 @@ body {
 #logoContainer {
     float: right;
     width: 10vw;
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 
@@ -48,7 +48,7 @@ body {
     font-size: 5vh;
     width: 6vh;
     line-height: 150%;
-    z-index: 5;
+    z-index: 2;
 }
 
 #clearButton {
@@ -108,8 +108,14 @@ li {
     width: 100%;;
     line-height: 115%;  
     padding-left: 2%;
+    z-index: -1;
 }
-
+.listText {
+    position: absolute;
+    z-index: 2!important;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
 .listText:hover {
     background-color: blue;
     color: white;
