@@ -1,4 +1,8 @@
 /* https://code-boxx.com/html-css-news-ticker-horizontal-vertical/ */
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('../fonts/SpaceMono-Regular.ttf')  format('truetype');
+}
 
 .ticker-container {
     z-index: 2;
@@ -8,16 +12,20 @@
     width: 6vh;
     top: 0;
     bottom: 0;
-    font-family: Arial;
-    font-style: normal;
+    font-family: SpaceMono;
+    font-style: "normal";
     font-weight: normal;
-    font-size: 5vh;
+    font-size: 2vh;
     line-height: 100%;
+    /* word-spacing: -1.5vh;
+    letter-spacing: -0.5vh; */
     color: #FF0000;
+    /* font-weight: bold; */
     /* text-orientation:sideways-right; */
      /* Original style: Please change back to see what you like the best. */
     text-orientation:upright; 
     writing-mode: vertical-lr;
+    /* transition: all 0.5s; */
 }
 
 @keyframes ticker {
@@ -57,7 +65,9 @@ Changing the animation keyframes also changes speed. */
     animation-duration: 20s;
     animation-delay: 10s;
 }
-
+.ticker-container:hover {
+    font-size: 4vh;
+}
 .ticker-container:hover .ticker-move{
     animation-duration: 60s;
   }
