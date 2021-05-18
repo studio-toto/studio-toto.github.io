@@ -14,9 +14,9 @@
     font-size: 5vh;
     line-height: 100%;
     color: #FF0000;
-    text-orientation:sideways-right;
+    /* text-orientation:sideways-right; */
      /* Original style: Please change back to see what you like the best. */
-    /* text-orientation:upright;  */
+    text-orientation:upright; 
     writing-mode: vertical-lr;
 }
 
@@ -43,7 +43,7 @@ Changing the animation keyframes also changes speed. */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
-    animation-duration: 10s;
+    animation-duration: 20s;
 }
 
 .ticker-move2 {
@@ -54,15 +54,15 @@ Changing the animation keyframes also changes speed. */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker2;
-    animation-duration: 10s;
-    animation-delay: 5s;
+    animation-duration: 20s;
+    animation-delay: 10s;
 }
 
 .ticker-container:hover .ticker-move{
-    animation-duration: 40s;
+    animation-duration: 60s;
   }
 
   .ticker-container:hover .ticker-move2 {
-    animation-duration: 40s;
-    animation-delay: 20s;
+    animation-duration: 60s;
+    animation-delay: 30s;
 }
