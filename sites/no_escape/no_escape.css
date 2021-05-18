@@ -6,7 +6,9 @@
     format("truetype"); /* Safari, Android, iOS */
   /* url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
+body {
+  overflow: hidden;
+}
 #box {
   width: 15vw;
   height: 15vw;
