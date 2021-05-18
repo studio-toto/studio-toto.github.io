@@ -1,7 +1,7 @@
 /* https://code-boxx.com/html-css-news-ticker-horizontal-vertical/ */
 
 .ticker-container {
-    z-index: 1;
+    z-index: 2;
     height: 100vh;
     position: fixed;
     margin-left: 85vw;
@@ -14,7 +14,9 @@
     font-size: 5vh;
     line-height: 100%;
     color: #FF0000;
-    text-orientation: upright;
+    text-orientation:sideways-right;
+     /* Original style: Please change back to see what you like the best. */
+    /* text-orientation:upright;  */
     writing-mode: vertical-lr;
 }
 
@@ -30,6 +32,9 @@
       transform: translateY(-200%); }
 }
 
+/* The animation duration and delay have to all be adjusted when the speed is changed. 
+Changing the animation keyframes also changes speed. */
+
 .ticker-move {
     display: inline-block;
     position: absolute;
@@ -38,7 +43,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
-    animation-duration: 80s;
+    animation-duration: 10s;
 }
 
 .ticker-move2 {
@@ -49,6 +54,15 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker2;
-    animation-duration: 80s;
-    animation-delay: 40s;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+.ticker-container:hover .ticker-move{
+    animation-duration: 40s;
+  }
+
+  .ticker-container:hover .ticker-move2 {
+    animation-duration: 40s;
+    animation-delay: 20s;
 }
