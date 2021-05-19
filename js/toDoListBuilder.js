@@ -6,7 +6,7 @@ var listData = {
     },
 
     "style fight": {
-        "description": 'Choose a style: <br> <button class="styleButton" style="background-image: url(\'../media/nilya.png\');" onclick="cssChange(\'css/nilya.css\')"></button><button class="styleButton" style="background-image: url(\'../media/lucca.png\');" onclick="cssChange(\'css/lucca.css\')"></button><button class="styleButton" style="background-image: url(\'../media/julia.png\');" onclick="cssChange(\'css/julia.css\')"></button>',
+        "description": 'Choose a style: <br> <button class="styleButton" style="background-image: url(\'..+/media/nilya.png\');" onclick="cssChange(\'css/nilya.css\')"></button><button class="styleButton" style="background-image: url(\'../media/lucca.png\');" onclick="cssChange(\'css/lucca.css\')"></button><button class="styleButton" style="background-image: url(\'../media/julia.png\');" onclick="cssChange(\'css/julia.css\')"></button>',
         "link": ""
     },
 
@@ -60,8 +60,8 @@ var listData = {
         "link": ""
     },
 
-    "placeholder4": {
-        "description": "",
+    "style generator": {
+        "description": "Drag your favoured styles to a area to make the whole page appear like that.",
         "link": ""
     },
 
