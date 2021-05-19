@@ -5,6 +5,11 @@ var listData = {
         "link": ""
     },
 
+    "font fight": {
+        "description": 'Choose: <br> <button class="button" onclick="cssChange(\'css/nilya.css\')">nilya</button><button class="button" onclick="cssChange(\'css/lucca.css\')">lucca</button><button class="button" onclick="cssChange(\'css/julia.css\')">julia</button>',
+        "link": ""
+    },
+
     "no escape": {
         "description": "There is no escape. Your only chance to evacuate is to leave with us.",
         "link": "sites/no_escape/no_escape.html"
@@ -52,11 +57,6 @@ var listData = {
 
     "karaoke website": {
         "description": "you are my fire, <br> my one desire <br> believe when i say <br> i want it that way",
-        "link": ""
-    },
-
-    "font fight": {
-        "description": 'Choose: <br> <button class="button" onclick="cssChange(\'css/nilya.css\')">nilya</button><button class="button" onclick="cssChange(\'css/lucca.css\')">lucca</button><button class="button" onclick="cssChange(\'css/julia.css\')">julia</button>',
         "link": ""
     },
 

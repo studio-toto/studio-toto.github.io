@@ -1,4 +1,4 @@
-// show list elements and adjust canvas size
+//show list elements and adjust canvas size
 function expand(selection) {
     var item = $("#"+selection)
     if (item.css('visibility') == 'visible'){
@@ -8,9 +8,9 @@ function expand(selection) {
         item.css({'visibility': 'visible'});
         item.css({'opacity': '1'});
     }
- 
 }
 
+//exchange the css file for individual style
 function cssChange(version) {
     if (document.getElementById('csschange').href!=version) {
         document.getElementById('csschange').href=version;
