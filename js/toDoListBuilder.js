@@ -5,8 +5,8 @@ var listData = {
         "link": ""
     },
 
-    "font fight": {
-        "description": 'Choose: <br> <button class="button" onclick="cssChange(\'css/nilya.css\')">nilya</button><button class="button" onclick="cssChange(\'css/lucca.css\')">lucca</button><button class="button" onclick="cssChange(\'css/julia.css\')">julia</button>',
+    "style fight": {
+        "description": 'Choose a style: <br> <button class="styleButton" style="background-image: url(\'../media/nilya.png\');" onclick="cssChange(\'css/nilya.css\')"></button><button class="styleButton" style="background-image: url(\'../media/lucca.png\');" onclick="cssChange(\'css/lucca.css\')"></button><button class="styleButton" style="background-image: url(\'../media/julia.png\');" onclick="cssChange(\'css/julia.css\')"></button>',
         "link": ""
     },
 

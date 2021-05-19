@@ -80,7 +80,14 @@ body {
     width: 5vh;
     height: 5vh;
     background-color: blue;
+}
 
+.styleButton {
+    margin-top: 10vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 20vw;
+    height: 20vw;
 }
 
 #img {
