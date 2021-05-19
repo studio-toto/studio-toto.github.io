@@ -56,7 +56,7 @@ var listData = {
     },
 
     "font fight": {
-        "description": "Choose: <br> <button class='button' onclick='cssChange('file.css')'>change</button>",
+        "description": 'Choose: <br> <button class="button" onclick="cssChange(\'css/nilya.css\')">nilya</button><button class="button" onclick="cssChange(\'css/lucca.css\')">lucca</button><button class="button" onclick="cssChange(\'css/julia.css\')">julia</button>',
         "link": ""
     },
 
