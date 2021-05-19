@@ -67,6 +67,7 @@ Changing the animation keyframes also changes speed. */
 }
 .ticker-container:hover {
     font-size: 4vh;
+    word-spacing: -4vh;
 }
 .ticker-container:hover .ticker-move{
     animation-duration: 60s;
