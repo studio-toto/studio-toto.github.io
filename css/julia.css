@@ -1,7 +1,9 @@
 body {
     overflow-x: hidden;
-    /* background-image: url("../media/paper.jpg");
-    background-repeat: no-repeat; */
+    /* 
+    background-image: url("../media/paper.jpg");
+    background-repeat: no-repeat; 
+    */
 }
 
 #canvasplace {
@@ -119,14 +121,6 @@ li {
 .listText:hover {
     background-color: blue;
     color: white;
-    /* Nilya's changes
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-style: wavy;
-    color: black;
-    text-decoration-thickness: 3.5px;
-    text-decoration-skip-ink: none;
-    */
 }
 
 ol {
@@ -136,15 +130,13 @@ ol {
 }
 
 #toDoList {
-    font-family: 'Arial';
+    font-family: 'PermanentMarker';
     font-style: normal;
     font-weight: normal;
     font-size: 6vh;
     line-height: 100%;
     color: black;
     margin-top: -25px;
-
-
 }
 
 .lastElement {
