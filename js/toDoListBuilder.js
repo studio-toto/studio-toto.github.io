@@ -25,6 +25,16 @@ var listData = {
         "link": "sites/bbq_grill/bbq_grill.html"
     },
 
+    "zu verschenken pile": {
+        "description": '"use the mechanism of <a href="http://www.mloh.ru/">this</a>  website and the Gratisladen Bremen group inputs and create a pile of zu verschenken website."',
+        "link": "sites/zu_verschenken/zu_verschenken.html"
+    },
+
+    "scroll playground": {
+        "description": "different tiny website that only offer different scrolling experiences. e.x.: scroll from bottom to top like a mountain hiker. moving from right to top left like someone on some stairs. circular scroll like a hamster roll: the whole sites turns (maybe other elements will have gravity and fall down?).",
+        "link": "sites/scroll/up.html"
+    },
+
     "tickling/rubbellos": {
         "description":"there is something hidden under the surface of the website, to get it, user needs to tickle/scratch the layout with the cursor. <br>features: regulate intensivity? what can be hidden? anecdotes/jokes. something else?",
         "link": ""
@@ -45,16 +55,6 @@ var listData = {
         "link": ""
     },
 
-    "zu verschenken pile": {
-        "description": '"use the mechanism of <a href="http://www.mloh.ru/">this</a>  website and the Gratisladen Bremen group inputs and create a pile of zu verschenken website."',
-        "link": "sites/zu_verschenken/zu_verschenken.html"
-    },
-
-    "scroll playground": {
-        "description": "different tiny website that only offer different scrolling experiences. e.x.: scroll from bottom to top like a mountain hiker. moving from right to top left like someone on some stairs. circular scroll like a hamster roll: the whole sites turns (maybe other elements will have gravity and fall down?).",
-        "link": "sites/scroll/up.html"
-    },
-
     "karaoke website": {
         "description": "you are my fire, <br> my one desire <br> believe when i say <br> i want it that way",
         "link": ""
@@ -62,16 +62,6 @@ var listData = {
 
     "style generator": {
         "description": "Drag your favoured styles to a area to make the whole page appear like that.",
-        "link": ""
-    },
-
-    "placeholder5": {
-        "description": "",
-        "link": ""
-    },
-
-    "placeholder6": {
-        "description": "",
         "link": ""
     }
 };
