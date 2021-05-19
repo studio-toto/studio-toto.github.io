@@ -1,0 +1,239 @@
+body {
+    overflow-x: hidden;
+}
+
+#canvasplace {
+    z-index: 1;
+    overflow:hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logoContainer {
+    float: right;
+    width: 10vw;
+    z-index: 2;
+    position: relative;
+}
+
+#logoPic {
+    width: 8vw;
+    float: right;
+}
+
+#logoText {
+    width: 8vw;
+    float: right;
+}
+
+#toDoIMG {
+    width:30%;
+    padding-left: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 3.5%;
+}
+
+.buttons {
+    float: center;
+    margin-right: 1%;
+    position:fixed; 
+    bottom: 20px; 
+    right: 1vw;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vh;
+    width: 6vh;
+    line-height: 150%;
+    z-index: 2;
+}
+
+#clearButton {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#clearPic {
+    width: 80px;
+    margin-left: -22px;
+    margin-top: 15px;
+}
+
+#colorButton {
+    width: 5vh;
+    height: 5vh;
+    background-color: black;
+}
+
+#colorButtonr {
+    width: 5vh;
+    height: 5vh;
+    background-color: red;
+}
+
+#colorButtonb {
+    width: 5vh;
+    height: 5vh;
+    background-color: blue;
+}
+
+.styleButton {
+    margin-top: 10vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 20vw;
+    height: 20vw;
+}
+
+#img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10%;
+    margin-left: -10%;
+    width: 20%;
+    height: 20%;
+}
+
+#toDoListContainer {
+    position: absolute;
+    width: 120%;
+    height: 20%;
+    margin-left: -3vw;
+    margin-top: -10px;
+}
+
+li {
+    border-top: 3px solid #B0F1FF;
+    width: 100%;;
+    line-height: 115%;  
+    padding-left: 2%;
+    z-index: -1;
+}
+
+.listText {
+    position: absolute;
+    z-index: 2!important;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.listText:hover {
+    background-color: blue;
+    color: white;
+}
+
+ol {
+    list-style: decimal inside;
+    margin-top: 20px;
+    margin-left: -1vw;
+}
+
+#toDoList {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vh;
+    line-height: 100%;
+    color: black;
+    margin-top: -25px;
+}
+
+.lastElement {
+    border-bottom: 3px solid #B0F1FF;
+}
+
+.expand {
+    display: none;
+    font-size: 20px;
+}
+
+.hide {
+    font-family: 'LucidaConsole';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vh;
+    line-height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    color:white;
+    z-index: 6;
+    padding-left: 3vw;
+    padding-top: 4vh;
+    transition: visibility .5s linear, opacity .5s;
+}
+
+p {
+    padding-right: 18vw;
+}
+
+.linkToSite {
+    background-color: white;
+    text-decoration: none;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: blue;
+        color: white;
+    }
+    50% {
+        background-color: white;
+        color: blue;
+    }
+    100% {
+        background-color: blue;
+        color: white;
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.drawable {
+    position:relative;
+    z-index: -1;
+}
+
+.center {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+}
+
+@media only screen and (max-width: 1920) {
+    #logoContainer {
+        width: 10vw;
+    }
+}
+
+@font-face {
+    font-family: 'LucidaConsole';
+    src: url('../fonts/LucidaConsoleRegular.ttf')  format('truetype');
+}
