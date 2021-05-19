@@ -8,4 +8,11 @@ function expand(selection) {
         item.css({'visibility': 'visible'});
         item.css({'opacity': '1'});
     }
+ 
+}
+
+function cssChange(version) {
+    if (document.getElementById('csschange').href!=version) {
+        document.getElementById('csschange').href=version;
+    }    
 }
