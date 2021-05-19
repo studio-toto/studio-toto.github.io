@@ -60,8 +60,8 @@ var listData = {
         "link": ""
     },
 
-    "placeholder4": {
-        "description": "",
+    "style generator": {
+        "description": "Drag your favoured styles to a area to make the whole page appear like that.",
         "link": ""
     },
 
