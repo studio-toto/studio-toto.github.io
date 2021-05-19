@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
-    /* background-image: url("../media/paper.jpg");
-    background-repeat: no-repeat; */
+    background-image: url("../media/paper.jpg");
+    background-repeat: no-repeat;
 }
 
 #canvasplace {

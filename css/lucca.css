@@ -1,7 +1,5 @@
 body {
     overflow-x: hidden;
-    /* background-image: url("../media/paper.jpg");
-    background-repeat: no-repeat; */
 }
 
 #canvasplace {
@@ -119,14 +117,6 @@ li {
 .listText:hover {
     background-color: blue;
     color: white;
-    /* Nilya's changes
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-style: wavy;
-    color: black;
-    text-decoration-thickness: 3.5px;
-    text-decoration-skip-ink: none;
-    */
 }
 
 ol {
@@ -136,7 +126,7 @@ ol {
 }
 
 #toDoList {
-    font-family: 'Arial';
+    font-family: 'PermanentMarker';
     font-style: normal;
     font-weight: normal;
     font-size: 6vh;
@@ -244,34 +234,4 @@ p {
 @font-face {
     font-family: 'PermanentMarker';
     src: url('../fonts/PermanentMarker-Regular.ttf')  format('truetype');
-}
-
-@font-face {
-    font-family: 'RFRostin';
-    src: url('../fonts/RF-Rostin-Regular.otf')  format('opentype');
-}
-
-@font-face {
-    font-family: 'IndieFlower';
-    src: url('../fonts/IndieFlower-Regular.ttf')  format('truetype');
-}
-
-@font-face {
-    font-family: 'Lilly';
-    src: url('../fonts/Lilly__.ttf')  format('truetype');
-}
-
-@font-face {
-    font-family: 'Daniel';
-    src: url('../fonts/daniel/Daniel-Regular.otf')  format('opentype');
-}
-
-@font-face {
-    font-family: 'Kalam';
-    src: url('../fonts/Kalam/Kalam-Regular.ttf')  format('truetype');
-}
-
-@font-face {
-    font-family: 'Patrick';
-    src: url('../fonts/PatrickHand-Regular.ttf')  format('truetype');
 }
