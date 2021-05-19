@@ -275,8 +275,3 @@ p {
     font-family: 'Patrick';
     src: url('../fonts/PatrickHand-Regular.ttf')  format('truetype');
 }
-
-@font-face {
-    font-family: 'Proposi';
-    src: url('../fonts/Propisi_W01_Medium.ttf')  format('truetype');
-}
