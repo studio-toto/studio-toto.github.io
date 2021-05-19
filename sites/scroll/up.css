@@ -1,0 +1,66 @@
+html {
+    overflow: auto;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#main {
+    height: 5000px;
+    position: relative;
+}
+.static {
+    position: absolute;
+    width: 100%;
+}
+
+.moving {
+    position: fixed;
+    width: 100%;
+}
+
+#mountain {
+    bottom: 0;
+}
+
+#mountain2 {
+    width: 50%;
+    height: auto;
+    bottom: 12%;
+}
+#mountain3 {
+    z-index: -1;
+    top: 10%;
+}
+#mountain4 {
+    z-index: 3;
+    top: 0;
+}
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 100px;
+    /* background-color: #F5F5F5; */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    /* border: 4px solid transparent; */
+    z-index: 1;
+    background-clip: inherit;
+}
+
+body::-webkit-scrollbar-thumb {
+    /* background: #000; */
+    background-image: url('media/animal.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    height: 120px;
+}
