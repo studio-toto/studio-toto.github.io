@@ -10,3 +10,9 @@ function expand(selection) {
     }
  
 }
+
+function cssChange(version) {
+    if (document.getElementById('csschange').href!=version) {
+        document.getElementById('csschange').href=version;
+    }    
+}
