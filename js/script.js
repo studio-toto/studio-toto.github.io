@@ -8,5 +8,4 @@ function expand(selection) {
         item.css({'visibility': 'visible'});
         item.css({'opacity': '1'});
     }
- 
 }
