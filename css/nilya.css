@@ -11,13 +11,14 @@ body {
     color: black;
     text-decoration-thickness: 3.5px;
     text-decoration-skip-ink: none;
+    background-color: transparent;
 }
 
 #toDoList {
     font-family: 'Proposi';
     font-style: normal;
     font-weight: normal;
-    font-size: 6vh;
+    font-size: 8vh;
     line-height: 100%;
     color: black;
     margin-top: -25px;
@@ -26,4 +27,9 @@ body {
 @font-face {
     font-family: 'Proposi';
     src: url('../fonts/Propisi_W01_Medium.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Gruenewald';
+    src: url('../fonts/Gruenewald.ttf')  format('truetype');
 }

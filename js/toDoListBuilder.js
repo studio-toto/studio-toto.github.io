@@ -6,7 +6,7 @@ var listData = {
     },
 
     "style fight": {
-        "description": 'Choose a style: <br> <button class="styleButton" style="background-image: url(\'../media/nilya.png\');" onclick="cssChange(\'css/nilya.css\')"></button><button class="styleButton" style="background-image: url(\'../media/lucca.png\');" onclick="cssChange(\'css/lucca.css\')"></button><button class="styleButton" style="background-image: url(\'../media/julia.png\');" onclick="cssChange(\'css/julia.css\')"></button>',
+        "description": 'Choose your fighter: <br> <button class="styleButton" style="background-image: url(\'../media/nilya.png\');" onclick="cssChange(\'css/nilya.css\')"></button><button class="styleButton" style="background-image: url(\'../media/lucca.png\');" onclick="cssChange(\'css/lucca.css\')"></button><button class="styleButton" style="background-image: url(\'../media/julia.png\');" onclick="cssChange(\'css/julia.css\')"></button>',
         "link": ""
     },
 
