@@ -1,0 +1,18 @@
+body::-webkit-scrollbar {
+    width: 2vw;
+    /* background-color: #F5F5F5; */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    /* border: 4px solid transparent; */
+    z-index: 1;
+    background-clip: inherit;
+}
+
+body::-webkit-scrollbar-thumb {
+    /* background: #000; */
+    background-color: black;
+    border-radius: 2vw;
+    max-height: 4vw;
+}
