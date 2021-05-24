@@ -23,6 +23,5 @@ var styles = ['css/nilya.css', 'css/lucca.css', 'css/julia.css'];
 //choose a random file out of the three style files
 window.onload = function randomStyle() {
     var randomise = Math.floor(Math.random() * 3);
-    console.log(randomise);
     cssChange(styles[randomise]);
 }
