@@ -151,7 +151,6 @@ ol {
 
 .expand {
     display: none;
-    font-size: 20px;
 }
 
 .hide {
@@ -178,11 +177,16 @@ ol {
 svg {
     height: 70vh;
     width: auto;
+    position: relative;
+    float: right;
+    padding-right: 10vw;
+    padding-top: 5vh;
 }
 
 a svg:hover { 
     fill: #111;
-  }
+}
+
 p {
     padding-right: 18vw;
 }
