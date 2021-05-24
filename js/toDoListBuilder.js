@@ -1,7 +1,7 @@
 var listData = {
 
     "about": {
-        "description": "studio toto is a temporal 1 semester gathering for the sake of creating mostly meaningless but joyful web experiences for our mock design studio. this website is our no stress todo list and your playground. made by nilya musaeva + lucca vitters + julia vollmer &nbsp",
+        "description": "studio toto is a temporal 1 semester gathering for the sake of creating mostly meaningless but joyful web experiences for our mock design studio. this website is our no stress todo list and your playground. <br><br>made by nilya musaeva + lucca vitters + julia vollmer &nbsp",
         "link": ""
     },
 
