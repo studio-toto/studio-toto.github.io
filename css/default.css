@@ -180,7 +180,9 @@ svg {
     width: auto;
 }
 
-
+a svg:hover { 
+    fill: #111;
+  }
 p {
     padding-right: 18vw;
 }
