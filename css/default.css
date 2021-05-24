@@ -9,10 +9,6 @@ body {
     top: 0;
     left: 0;
 }
-svg {
-    height: 70vh;
-    width: auto;
-}
 
 #logoContainer {
     float: right;
@@ -178,6 +174,12 @@ ol {
     padding-top: 4vh;
     transition: visibility .5s linear, opacity .5s;
 }
+
+svg {
+    height: 70vh;
+    width: auto;
+}
+
 
 p {
     padding-right: 18vw;
