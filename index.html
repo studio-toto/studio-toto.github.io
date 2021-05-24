@@ -47,7 +47,37 @@
         <div id="toDoListContainer">
 
             <ol id="toDoList">
-              
+
+                <li class="listItem">
+                    <span class="listText" onclick="expand('hide0')">about</span>
+                </li>
+
+                <div class="hide" id="hide0" onclick="expand('hide0')" style="visibility: hidden; opacity: 0;">
+                    <p>studio toto is a temporal 1 semester gathering for the sake of creating mostly meaningless but joyful web experiences for our mock design studio. this website is our no stress todo list and your playground. <br><br>made by nilya musaeva + lucca vitters + julia vollmer &nbsp;</p>
+                    <br>
+                </div>
+
+                <li class="listItem">
+                    <span class="listText" onclick="expand('hide1')">style fight</span>
+                </li>
+
+                <div class="hide" id="hide1" onclick="expand('hide1')" style="visibility: hidden; opacity: 0;">
+                    <p>Choose your fighter: 
+                        <br>
+                        <br>
+                        <video style="height: 70vh;" autoplay="autoplay" loop="yes" usemap="video_map">
+                            <source src="media/face.mp4" type="video/mp4"/>
+                        </video>
+                        <map name="video_map">
+                            <area alt="julia" title="julia" href="#" onClick="cssChange('css/julia.css')" coords="535,730,904,964" shape="rect">
+                            <area alt="juli" title="juli" href="#" onClick="cssChange('css/juli.css')" coords="1047,730,1398,959" shape="rect">
+                            <area alt="nilya" title="nilya" href="#" onClick="cssChange('css/nilya.css')" coords="858,608,1138,1229" shape="rect">
+                            <area alt="lucca" title="lucca" href="#" onClick="cssChange('css/lucca.css')" coords="728,1211,1294,1505" shape="rect">
+                          </map>
+                    </p>
+                    <br>
+                </div>
+
             </ol>
         
         </div> 

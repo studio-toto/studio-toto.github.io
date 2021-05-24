@@ -1,5 +1,6 @@
 var listData = {
 
+    /* 
     "about": {
         "description": "studio toto is a temporal 1 semester gathering for the sake of creating mostly meaningless but joyful web experiences for our mock design studio. this website is our no stress todo list and your playground. <br><br>made by nilya musaeva + lucca vitters + julia vollmer &nbsp",
         "link": ""
@@ -9,6 +10,7 @@ var listData = {
         "description": 'Choose your fighter: <br> <button class="styleButton" style="background-image: url(\'media/nilya.png\');" onclick="cssChange(\'css/nilya.css\')"></button><button class="styleButton" style="background-image: url(\'media/lucca.png\');" onclick="cssChange(\'css/lucca.css\')"></button><button class="styleButton" style="background-image: url(\'media/julia.png\');" onclick="cssChange(\'css/julia.css\')"></button>',
         "link": ""
     },
+    */
 
     "no escape": {
         "description": "There is no escape. Your only chance to evacuate is to leave with us.",
@@ -74,7 +76,7 @@ for (var i = 0; i < numberOfElements; i++) {
 
     var title = Object.keys(listData)[i];
     var element = listData[title];
-    var hide = 'hide' + parseInt(i);
+    var hide = 'hide' + parseInt(i) + 2;    //edit here if zusätzliche list items are hardcoded in html file
     
     var li = document.createElement('li');
     li.setAttribute('class', 'listItem');
