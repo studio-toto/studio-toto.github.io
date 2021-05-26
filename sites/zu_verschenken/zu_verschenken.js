@@ -20,16 +20,41 @@ function changeText(value) {
     if (value == 13) text += "kinder neustadt";
     if (value == 14) text += "eine Zauberbox (ab 6 Jahren, vollständig, gut erhalten";
     if (value == 15) text += "Utrusta backofen halterung (neu, wurde falsch geliefert)";
-
-
-
+    if (value == 16) text += "Wanduhr.... funktioniert leider nicht....";
+    if (value == 17) text += "Bremen Schwachhausen....";
+    if (value == 18) text += "Schwachhausen....";
+    if (value == 19) text += "Silikon Backform Reserviert";
+    if (value == 20) text += "Spiegel Massiv Eisen Durchmesser: 62 cm";
+    if (value == 21) text += "no description";
+    if (value == 22) text += "Sprechblase die mit einem abwischbaren Stift (whiteboard maker) beschriftet werden kann. Den Stift hab ich nicht mehr";
+    if (value == 23) text += "Große haarklammer und zopfband im Viertel RESERVIERT";
+    if (value == 24) text += "Jemand interessiert? Kann CD, USB und SD Karte. Kabel fehlt. Ist aber auch mit Batterien zu betreiben. Weiß leider nicht, ob der noch geht.";
+    if (value == 25) text += "Kerzenständer zu verschenken in Mitte. - reserviert";
+    if (value == 26) text += "Zwei einwandfreie Stühle. Abzuholen in der Neustadt! Reserviert";
+    if (value == 27) text += "In der Neustadt";
+    if (value == 28) text += "Mandoline (?) in der Neustadt reserviert";
+    if (value == 29) text += "description lost";
+    if (value == 30) text += "description lost";
+    if (value == 31) text += "Selbstverständlich unbenutzt. Nur ein mal geöffnet, um zu prüfen, ob dieses auf meine Maschine passt. Schwachhausen";
+    if (value == 32) text += "Kratzbaumelement: Hängematte für Kitten oder kleine Katzen. Hat einen Riss, kann aber repariert werden oder neu bezogen werden. Müsste aber ein Kitten auch so aushalten :) Neustadt";
+    if (value == 33) text += "Hallo liebe Leute habe eine große halal Geflügelwurst 900g abzugeben bei der Ritterhuder Straße 1 in Gröpelingen bitte PN";
+    if (value == 34) text += "I’m Viertel";
+    if (value == 35) text += "[Reserviert] Plüschiges Sparschweinchen in Schwachhausen abzugeben.";
+    if (value == 36) text += "Buntstifte in der Bahnhofsvorstadt zu verschenken";
+    if (value == 37) text += "Stuhl abzugeben im Viertel :)";
+    if (value == 38) text += "Funktioniert. Sound halt Werbe- Geschenk-entsprechend. Schwachhausen  RESERVIERT";
+    if (value == 39) text += "Tauscht jemand diese nagelneue Gugelhupfform gegen eine Tarte-Form (kann gerne schon alt sein, mag keine neuen Sachen). PN Büdde";
+    if (value == 40) text += "no description";
+    if (value == 41) text += "Zu verschenken in sebaldsbrück";
+    if (value == 42) text += "Klo Bär 🤣 in der Neustadt";
     
     description.text(text);
 }
 
-$("[data-id]").each(function() {
+$("[data-id]").each(function(element) {
     $(this).click(function () {
         changeText($(this).data("id"))
     })
     $(this).draggable()
 })
+
