@@ -2,8 +2,6 @@ html {
   height: 100%;
   display: flex;
 }
-body {
-}
 html,
 body {
   background: #00043c;
@@ -12,6 +10,8 @@ body {
   text-align: center;
   font-family: Pupok;
   font-display: auto;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .rainbow-text {
@@ -79,6 +79,8 @@ body {
   height: 30%;
   width: auto;
   margin-top: 3%;
+  position: fixed;
+
 }
 
 #description{
