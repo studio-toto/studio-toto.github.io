@@ -17,7 +17,9 @@ body {
 .rainbow-text {
   margin-top: 1vw;
   margin-left: 3vw;
-
+position: absolute;
+text-align: center;
+    width: 100%;
 }
 
 .rainbow-text .char {
@@ -78,7 +80,7 @@ body {
 .object {
   height: 30%;
   width: auto;
-  margin-top: 3%;
+  /* margin-top: 10%; */
   position: fixed;
 
 }

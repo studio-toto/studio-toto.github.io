@@ -58,3 +58,9 @@ $("[data-id]").each(function(element) {
     $(this).draggable()
 })
 
+$(".object").each(function(element) {
+    var number = Math.floor(Math.random() * 80) + 10;
+    $(this).css("marginTop", number +"vh");
+    var numberleft = Math.floor(Math.random() * 90) + 0;
+    $(this).css("marginLeft", numberleft +"vw");
+})
