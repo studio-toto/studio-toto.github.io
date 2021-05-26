@@ -1,9 +1,11 @@
 // Canvas is initialized after the page loaded in order to get the screen size
-var width = $(window).width();
-var height = document.documentElement.scrollHeight;
-var canvasDiv = document.getElementById('canvasplace');
+
 
 function setCanvas() {
+    var width = $(window).width();
+    var height = document.documentElement.scrollHeight;
+    console.log(height);
+    var canvasDiv = document.getElementById('canvasplace');
     canvas = document.createElement('canvas');
     canvas.setAttribute('width', width);
     canvas.setAttribute('height', height);
@@ -22,7 +24,7 @@ function reset() {
     canvas.setAttribute('height', height);
     context.clearRect(0, 0, canvas.width, canvas.height);
     $(".expand").css({'display': 'none'});
-    console.log("test");
+    
 
 }
 
