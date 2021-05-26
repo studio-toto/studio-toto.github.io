@@ -1,10 +1,8 @@
-// Canvas is initialized after the page loaded in order to get the screen size
-
+//Canvas is initialized after the page loaded in order to get the screen size
 
 function setCanvas() {
     var width = $(window).width();
     var height = document.documentElement.scrollHeight;
-    console.log(height);
     var canvasDiv = document.getElementById('canvasplace');
     canvas = document.createElement('canvas');
     canvas.setAttribute('width', width);
@@ -16,7 +14,7 @@ function setCanvas() {
 
 setCanvas();
 
-// reset sets canvas size back and also hides the menu items
+//reset sets canvas size back and also hides the menu items
 function reset() {
     clickX = new Array();
     clickY = new Array();
@@ -24,11 +22,9 @@ function reset() {
     canvas.setAttribute('height', height);
     context.clearRect(0, 0, canvas.width, canvas.height);
     $(".expand").css({'display': 'none'});
-    
-
 }
 
-// draw functions
+//draw functions
 $('body').mousedown(function(e) {
     var mouseX = e.pageX - this.offsetLeft;
     var mouseY = e.pageY - this.offsetTop;
@@ -52,7 +48,6 @@ $('body').mouseup(function(e){
 $('body').mouseleave(function(e){
     paint = false;
 });
-
 
 var color = "black";
 var curColor = color;
