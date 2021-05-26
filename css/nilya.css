@@ -33,8 +33,3 @@ body {
     font-family: 'Proposi';
     src: url('../fonts/Propisi_W01_Medium.ttf')  format('truetype');
 }
-
-@font-face {
-    font-family: 'Gruenewald';
-    src: url('../fonts/Gruenewald.ttf')  format('truetype');
-}
