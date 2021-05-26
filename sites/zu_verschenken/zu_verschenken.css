@@ -13,9 +13,11 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-
+#draggable { 
+  width: 150px; height: 150px; padding: 0.5em; 
+}
 .rainbow-text {
-  margin-top: 1vw;
+  margin-top: 1vh;
   margin-left: 3vw;
 position: absolute;
 text-align: center;
@@ -89,7 +91,7 @@ text-align: center;
   position: absolute;
   font-family: arial;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-top: 2vh;
   margin-left: 10%;
 
 }
