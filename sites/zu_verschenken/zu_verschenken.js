@@ -1,4 +1,5 @@
-var descriptionList = [ "description lost",
+var descriptionList = [ "",
+                        "description lost",
                         "Neustadt",
                         "Sehr großes Bild 1,20x1,20m angzugeben, Acryl auf Leinwand, Viertel, bitte PN",
                         "Travel Makeup Brushes von Ecotools in Hemelingen zu verschenken",
