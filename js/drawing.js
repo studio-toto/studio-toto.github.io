@@ -13,7 +13,6 @@ function setCanvas() {
     canvasDiv.appendChild(canvas);
     context = canvas.getContext("2d");
 }
-
 setCanvas();
 
 // reset sets canvas size back and also hides the menu items
