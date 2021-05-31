@@ -119,7 +119,7 @@ $.get('https://spreadsheets.google.com/feeds/cells/1ESs-bNXfZXeRIq08HuNKmRuP1B9N
 })
 
 function dataProcess(value) {
-// console.log(value);
+console.log(value);
 var lists = value.feed.entry;
 var numberOfElements = value.feed.entry.length;
 
@@ -136,6 +136,9 @@ for (var i = 5; i < numberOfElements; i+=5) {
     span.setAttribute('class', 'listText');
     span.setAttribute('onClick', 'expand("' + hide + '")');
     span.innerHTML = title.toString();
+    if (lists[i+4].content.$t === "TRUE") {
+        span.innerHTML += " &#10003";
+    }
     
     li.appendChild(span);
 
