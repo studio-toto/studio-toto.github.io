@@ -123,7 +123,7 @@ function dataProcess(value) {
 var lists = value.feed.entry;
 var numberOfElements = value.feed.entry.length;
 
-for (var i = 4; i < numberOfElements; i+=4) {
+for (var i = 5; i < numberOfElements; i+=5) {
 
     var title = lists[i+1].content.$t;
     // var element = listData[title];
