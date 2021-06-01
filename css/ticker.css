@@ -3,6 +3,10 @@
     font-family: 'SpaceMono';
     src: url('../fonts/SpaceMono-Regular.ttf')  format('truetype');
 }
+@font-face {
+    font-family: 'IBMPlex';
+    src: url('../fonts/IBMPlexMono-Regular.ttf')  format('truetype');
+}
 
 .ticker-container {
     z-index: 2;
@@ -12,7 +16,7 @@
     width: 6vh;
     top: 0;
     bottom: 0;
-    font-family: SpaceMono;
+    font-family: IBMPlex;
     font-style: "normal";
     font-weight: normal;
     font-size: 2vh;

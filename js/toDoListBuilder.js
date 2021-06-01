@@ -135,9 +135,14 @@ function dataProcess(value) {
         var span = document.createElement('span');
         span.setAttribute('class', 'listText');
         span.setAttribute('onClick', 'expand("' + hide + '")');
-        span.innerHTML = title.toString();
+
+        //if item is done, style differently:
+
         if (lists[i+4].content.$t === "TRUE") {
-            span.innerHTML += " &#10003";
+        span.innerHTML = "<s>" + title.toString() + "</s>";
+            // span.innerHTML += " &#10003";
+        } else {
+            span.innerHTML = title.toString() ;
         }
         
         li.appendChild(span);
