@@ -114,11 +114,11 @@ var toDoList = document.getElementById("toDoList");
 //     toDoList.appendChild(div);
 // }
 $.get('https://spreadsheets.google.com/feeds/cells/1ESs-bNXfZXeRIq08HuNKmRuP1B9NPV8j_-9jxhG6mK0/o6r1dy2/public/basic?alt=json', function(data) {
-    
+    console.log(data);
     dataProcess(data);
 })
 
-    function dataProcess(value) {
+function dataProcess(value) {
     console.log(value);
     var lists = value.feed.entry;
     var numberOfElements = value.feed.entry.length;
@@ -156,13 +156,13 @@ $.get('https://spreadsheets.google.com/feeds/cells/1ESs-bNXfZXeRIq08HuNKmRuP1B9N
         div.appendChild(br);
 
         //only create a DOM element if element's link string is not empty
-        if (element.link != "") {
+        
             var a = document.createElement('a');
             a.setAttribute('class', 'linkToSite');
             a.setAttribute('href', lists[i+3].content.$t);
             a.innerHTML = "&gt;go to " + title;
             div.appendChild(a);
-        }
+        
 
         toDoList.appendChild(li);
         toDoList.appendChild(div);
