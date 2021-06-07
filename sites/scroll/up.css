@@ -46,7 +46,10 @@ body {
 /* Scrollbar */
 
 body::-webkit-scrollbar {
-    width: 100px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    width: 15vh;
+    display: none;
     /* background-color: #F5F5F5; */
 }
 
@@ -59,8 +62,29 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     /* background: #000; */
-    background-image: url('media/animal.png');
-    background-repeat: no-repeat;
-    background-size: 100px;
-    height: 120px;
+    /* background-image: url('media/coin1.png'); */
+    background: url('media/coin1.png') center/15vh no-repeat;
+    /* background-repeat: no-repeat;
+    background-size: 15vh; */
+    height: 15vh;
+    
+    animation: coins 20s linear infinite;
+}
+#scrollimage {
+    height: 15vh;
+    width: auto;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    transition: bottom 1ms linear;
+    animation: coins 15s linear infinite;
+}
+
+@keyframes coins {
+    from {
+       transform: rotate(0deg);
+    }
+    to {
+       transform: rotate(360deg);
+    }
 }
