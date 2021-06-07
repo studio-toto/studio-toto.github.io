@@ -40,7 +40,20 @@ var descriptionList = [ "",
                         "Tauscht jemand diese nagelneue Gugelhupfform gegen eine Tarte-Form (kann gerne schon alt sein, mag keine neuen Sachen). PN Büdde",
                         "no description",
                         "Zu verschenken in sebaldsbrück",
-                        "Klo Bär 🤣 in der Neustadt" ]
+                        "Klo Bär 🤣 in der Neustadt",
+                        "RESERVIERT  2 Poster abzugeben, 1x A4, 1x 40*60cm Nähe Hollerallee",
+                        "Bismarckstraße gegenüber vom netto gesichtet",
+                        "Zu verschenken :) Neustadt Buntentor",
+                        "Neustadt",
+                        "*reserviert* Lange runde Bürste. Neustadt",
+                        "Reeder -/ ecke kreuzstr.",
+                        "Neustadt, Sessel, braun-beige",
+                        "Wir hätten voll gerne ein Hängeregal, um es in unserem mini Bad an die Tür zu hängen 😍 Muss auch nicht so cool sein wie dieses 😅 Und falls irgendwo noch ein Handfeger Schaufel Pärchen ungebraucht rumliegt, würden wir uns dem auch dankbar annehmen!",
+                        "*reserviert* Bastelkram: Herzen aus Styropor,  bunte Federn und Schmetterling-pailetten",
+                        "Sehr alte Tinte zum nachfüllen von Druckerpatronen.. in der Innenstadt",
+                        "Noch ein paar Messer, ein faltbarer Trichter und ein kleiner Thermobehälter alles zusammen in Gröpelingen. Wegen der Messer nur ü18 Reserviert",
+                        
+                     ]
 
 //for rainbow text
 Splitting();

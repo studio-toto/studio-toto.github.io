@@ -1,0 +1,8 @@
+.scroll {
+    overflow: auto;
+    height: 600px;
+}
+
+#lyrics {
+font-size: 60px;
+}
