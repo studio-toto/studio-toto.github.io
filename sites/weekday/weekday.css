@@ -214,7 +214,7 @@ h1.navSkip,
 #wrapperContent {
     width: 52em;
     float: left;
-    padding-bottom: 150px
+
 }
 
 .altGrid #wrapperContent {
@@ -2093,14 +2093,19 @@ label {
 }
 
 #siteInfo {
-    margin-top: 8.5em;
+    margin-top: 9.5em;
     background: #003f97;
+    height: 4§1 q~ 0vh;
     position: relative
 }
 
 #siteInfo .sitemapInfo {
     width: 96em;
-    margin: 0 auto
+    margin: 0 auto;
+}
+
+#moin {
+    margin-top: 30px;
 }
 
 #siteInfo>div:after {
@@ -2111,7 +2116,8 @@ label {
 
 #siteInfo div div {
     float: left;
-    width: 16.6%
+    width: 16.6%;
+    height: 20vh;
 }
 
 #siteInfo h2 {
@@ -2134,7 +2140,7 @@ label {
     top: 2.3em;
     left: 0;
     border-right: 1px solid #1b55a6;
-    min-height: 44em;
+    min-height: 26em;
     list-style: none
 }
 
@@ -2155,13 +2161,22 @@ label {
 
 #siteInfo .sitemapInfo .site-info {
     color: #fff;
-    padding: 16em 0 2em;
+    padding: 2em 0 2em;
     float: left;
     line-height: 1.5;
     clear: both;
-    width: 40em
-}
+    width: 40em;
+    height: 5vh;
 
+}
+#siteInfo .sitemapInfo .site-info-right {
+    float: right;
+    color: #fff;
+    font-size: 120%;
+    padding: 2em 0em 2em 0;
+    width: 31em;
+    height: 5vh;
+}
 #siteInfo .site-info p {
     font-size: 130%
 }
@@ -3633,13 +3648,7 @@ html>body .media-state {
     padding-left: 50px
 }
 
-#siteInfo .sitemapInfo .site-info-right {
-    float: right;
-    color: #fff;
-    font-size: 120%;
-    padding: 13.5em 10em 0 0;
-    width: 31em
-}
+
 
 #content .links li:last-child {
     border-bottom: 0
