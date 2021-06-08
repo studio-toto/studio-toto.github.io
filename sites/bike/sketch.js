@@ -6,7 +6,7 @@ function preload() {}
 
 function setup() {
     //general settings
-    createCanvas(windowWidth, windowHeight - 4);
+    createCanvas(windowWidth, windowHeight);
     frameRate(60);
 
     //initiate mountainRanges
