@@ -11,7 +11,7 @@ function dataProcess(value) {
     for (var i = 5; i < numberOfElements; i += 5) {
 
         var title = lists[i+1].content.$t;
-        // var element = listData[title];
+        //var element = listData[title];
         var hide = 'hide' + parseInt(lists[i].content.$t);    //edit here if zusätzliche list items are hardcoded in html file
         
         var li = document.createElement('li');
