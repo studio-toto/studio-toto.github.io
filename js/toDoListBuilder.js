@@ -21,13 +21,13 @@ function dataProcess(value) {
         span.setAttribute('class', 'listText');
         span.setAttribute('onClick', 'expand("' + hide + '")');
 
-        //if item is done, style differently:
-
-        if (lists[i+4].content.$t === "TRUE") {
-        span.innerHTML = "<s>" + title.toString() + "</s>";
-            // span.innerHTML += " &#10003";
+        //style according to status
+        if (lists[i+4].content.$t === "0") {                        //in progress
+            span.innerHTML = title.toString();
+        } else if (lists[i+4].content.$t === "1"){
+            span.innerHTML = title.toString() + " &#10003";         //done
         } else {
-            span.innerHTML = title.toString() ;
+            span.innerHTML = "<s>" + title.toString() + "</s>"; /   //abandoned
         }
         
         li.appendChild(span);
