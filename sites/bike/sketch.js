@@ -2,18 +2,37 @@ let a, b, c, d;
 let drops = [];
 let clouds = [];
 
-function preload() {}
+var rain;
+var howlingWind;
+var thunderSound;
+var t;
+
+function preload() {
+	soundFormats = ('mp3');
+	this.rain = loadSound('media/rainForest.mp3');
+	this.howlingWind = loadSound('media/howlingWind.mp3');
+	this.thunderSound = loadSound('media/thunder.mp3');
+}
 
 function setup() {
     //general settings
     createCanvas(windowWidth, windowHeight);
     frameRate(60);
 
+    //sound
+    this.rain.setVolume(.5);
+	this.howlingWind.setVolume(.6);
+	this.rain.loop();
+	this.howlingWind.loop();
+
     //initiate mountainRanges
 	a = new MountainRange(0.25, '#699783', 90, -30);
 	b = new MountainRange(.5, '#477983', 70, 0);
 	c = new MountainRange(.75, '#345964', 50, 30);
 	d = new MountainRange(1, '#2d4d56', 30, 80);
+
+    //initiate thunder
+  	t = new Thunder();
 
     //initiate rain
 	for (var i = 0; i < 300; i++) {
@@ -28,6 +47,8 @@ function setup() {
 
 function draw() {
     background('#cff1c9');
+
+    t.thunder();
 
     //display mountainRanges
 	a.display();
@@ -67,7 +88,7 @@ function MountainRange(speed, c, w, h) {
 		for (var x = 0; x < width; x++) {
 			var p = (this.n + x) / this.wideVar;        //increase 
 			var nv = noise(p);                          //generate noise value
-			var y = ((nv * height) + this.heightVar);   //get y position for ends of lines
+			var y = ((nv * height/2 + height/3) + this.heightVar);   //get y position for ends of lines
 
             strokeWeight(1);
 			stroke(this.color);
@@ -75,6 +96,37 @@ function MountainRange(speed, c, w, h) {
 		}
 		this.n += this.inc;                             //increase noise variable
 	}
+}
+
+function Thunder(){
+  
+    var randInterval = int(random(1000));
+
+    this.thunder = function() {
+        if (frameCount % randInterval == 0) {
+        thunderSound.play();
+        randInterval = int(random(500));
+            if (thunderSound.isPlaying()) {
+                for (var i = 0; i < 50; i++) {
+                background(255);
+                background('#cff1c9');
+                background(255);
+                background(255);
+                background(255);
+                background(255);
+                background(255);
+                background('#cff1c9');
+                background('#cff1c9');
+                background('#cff1c9');
+                background(255);
+                background(255);
+                background(255);
+            }
+        } else {
+                background('#cff1c9');
+        }
+        }
+    }
 }
 
 function Cloud(x, y, size, speed) {
