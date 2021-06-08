@@ -24,10 +24,10 @@ function dataProcess(value) {
         //style according to status
         if (lists[i+4].content.$t === "0") {                        //in progress
             span.innerHTML = title.toString();
-        } else if (lists[i+4].content.$t === "1"){
+        } else if (lists[i+4].content.$t === "1") {
             span.innerHTML = title.toString() + " &#10003";         //done
-        } else {
-            span.innerHTML = "<s>" + title.toString() + "</s>"; /   //abandoned
+        } else if (lists[i+4].content.$t === "2") {
+            span.innerHTML = "<s>" + title.toString() + "</s>";     //abandoned
         }
         
         li.appendChild(span);
