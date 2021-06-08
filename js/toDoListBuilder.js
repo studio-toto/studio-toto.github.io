@@ -46,12 +46,13 @@ function dataProcess(value) {
         div.appendChild(br);
 
         //only create a DOM element if element's link string is not empty
-        
+        if (!(lists[i+3].content.$t === "link")) {
             var a = document.createElement('a');
             a.setAttribute('class', 'linkToSite');
             a.setAttribute('href', lists[i+3].content.$t);
             a.innerHTML = "&gt;go to " + title;
             div.appendChild(a);
+        }
         
 
         toDoList.appendChild(li);
