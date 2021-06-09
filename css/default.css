@@ -1,6 +1,6 @@
 /* Reset CSS thanks LKR */
 html, body {
-    background: #fff;
+    background: transparent;
     z-index: 1;
     font-size: 16px;
     padding: 0;
