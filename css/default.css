@@ -1,3 +1,17 @@
+/* Reset CSS thanks LKR */
+html, body {
+    background: #fff;
+    z-index: 1;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     overflow-x: hidden;
 }
