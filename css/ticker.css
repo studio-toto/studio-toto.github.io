@@ -1,8 +1,5 @@
 /* https://code-boxx.com/html-css-news-ticker-horizontal-vertical/ */
-@font-face {
-    font-family: 'SpaceMono';
-    src: url('../fonts/SpaceMono-Regular.ttf')  format('truetype');
-}
+
 @font-face {
     font-family: 'IBMPlex';
     src: url('../fonts/IBMPlexMono-Regular.ttf')  format('truetype');
@@ -16,7 +13,7 @@
     width: 6vh;
     top: 0;
     bottom: 0;
-    font-family: IBMPlex;
+    font-family: 'IBMPlex';
     font-style: "normal";
     font-weight: normal;
     font-size: 2vh;

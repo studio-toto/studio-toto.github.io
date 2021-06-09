@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('../fonts/SpaceMono-Regular.ttf')  format('truetype');
+}
+.ticker-container {
+    font-family: 'SpaceMono';
+}
 body::-webkit-scrollbar {
     width: 2vw;
     /* background-color: #F5F5F5; */
@@ -13,6 +24,37 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     /* background: #000; */
     background-color: black;
-    border-radius: 2vw;
+    border-radius: 0.5vw;
     max-height: 4vw;
+}
+
+.buttons {
+    float: center;
+    margin-right: 1%;
+    position:fixed; 
+    bottom: 20px; 
+    right: 1vw;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vh;
+    width: 6vh;
+    line-height: 150%;
+    z-index: 2;
+    border: none !important;
+}
+#toDoList {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vh;
+    line-height: 100%;
+    color: black;
+    margin-top: -25px;
+}
+.listText:hover {
+    color: rgb(0, 0, 255);
+    background-color: transparent;
+    transition: color 5ms fade;
+    /* color: white; */
 }
