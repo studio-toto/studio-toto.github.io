@@ -13,15 +13,18 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-#draggable { 
-  width: 150px; height: 150px; padding: 0.5em; 
+#draggable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
 }
+
 .rainbow-text {
   margin-top: 1vh;
   margin-left: 3vw;
-position: absolute;
-text-align: center;
-    width: 100%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .rainbow-text .char {
@@ -82,16 +85,15 @@ text-align: center;
 .object {
   height: 30%;
   width: auto;
-  /* margin-top: 10%; */
   position: fixed;
-
 }
 
-#description{
+#description {
   position: absolute;
   font-family: arial;
   font-size: 20px;
-  margin-top: 2vh;
+  margin-top: 16vh;
   margin-left: 10%;
-
+  text-align: left;
+  width: 70%;
 }
