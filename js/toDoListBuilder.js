@@ -24,6 +24,9 @@ function dataProcess(value) {
         //style according to status
         if (lists[i+4].content.$t === "0") {                        //in progress
             span.innerHTML = title.toString();
+            if (lists[i+3].content.$t != "link"){ //check if there's already a link
+                span.innerHTML += " <div class='progress'></div>";
+            }
         } else if (lists[i+4].content.$t === "1") {
             span.innerHTML = title.toString() + " &#10003";         //done
         } else if (lists[i+4].content.$t === "2") {
