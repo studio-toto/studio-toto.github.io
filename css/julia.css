@@ -66,16 +66,9 @@ button {
 }
 
 #clearButton {
-    background-color: blue;
     cursor: crosshair;
 }
 
-#clearPic {
-    display: none;
-    width: 80px;
-    margin-left: -22px;
-    margin-top: 15px;
-}
 
 #toDoList {
     font-family: 'OpenSans';
