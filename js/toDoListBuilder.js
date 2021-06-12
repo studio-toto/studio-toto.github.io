@@ -12,7 +12,7 @@ function dataProcess(value) {
 
         var title = lists[i+1].content.$t;
         //var element = listData[title];
-        var hide = 'hide' + parseInt(lists[i].content.$t);    //edit here if zusätzliche list items are hardcoded in html file
+        var hide = 'hide' + parseInt(lists[i].content.$t);          //edit here if zusätzliche list items are hardcoded in html file
         
         var li = document.createElement('li');
         li.setAttribute('class', 'listItem');
@@ -24,7 +24,7 @@ function dataProcess(value) {
         //style according to status
         if (lists[i+4].content.$t === "0") {                        //in progress
             span.innerHTML = title.toString();
-            if (lists[i+3].content.$t != "link"){ //check if there's already a link
+            if (lists[i+3].content.$t != "link"){                   //check if there's already a link
                 span.innerHTML += " <div class='progress'></div>";
             }
         } else if (lists[i+4].content.$t === "1") {
