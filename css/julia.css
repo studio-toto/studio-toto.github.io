@@ -17,7 +17,9 @@ body::-webkit-scrollbar {
     background-color: white;
 }
 
-body::-webkit-scrollbar-track {}
+body::-webkit-scrollbar-track {
+
+}
 
 body::-webkit-scrollbar-thumb {
     background-color: #B0F1FF;
@@ -26,7 +28,6 @@ body::-webkit-scrollbar-thumb {
 
 button {
     appearance: auto;
-    -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     color: transparent;
     letter-spacing: normal;
@@ -83,6 +84,8 @@ button {
 .listText:hover {
     color: rgb(0, 0, 255);
     background-color: transparent;
+    /* color: white;
+    background-color: blue; */
     transition: color 5ms fade;
 }
 

@@ -88,6 +88,7 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     transition: all 1ms linear;
     animation: coins 15s linear infinite;
+    animation-play-state: paused;
 }
 #scrollimage {
     right: 0;
