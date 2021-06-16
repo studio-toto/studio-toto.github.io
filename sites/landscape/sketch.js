@@ -20,7 +20,7 @@ function setup() {
     frameRate(60);
 
     //sound
-    this.rain.setVolume(.5);
+    this.rain.setVolume(.8);
 	this.howlingWind.setVolume(.6);
 	this.rain.loop();
 	this.howlingWind.loop();
@@ -59,8 +59,8 @@ function draw() {
     //display clouds and move them over to the right side again when they go out of left bound
 	for (var i = 0; i < clouds.length; i++) {
 		clouds[i].display();
-		if (clouds[i].x < -60) {
-			clouds[i].x = 1040;
+		if (clouds[i].x < - 100) {
+			clouds[i].x = windowWidth + 100;
 			clouds[i].y = random(30, 111);
 			clouds[i].size = random(0.7, 1.1);
 			clouds[i].speed = random(-2, -0.4);
@@ -100,12 +100,12 @@ function MountainRange(speed, c, w, h) {
 
 function Thunder(){
   
-    var randInterval = int(random(1000));
+    var randInterval = int(random(5000));
 
     this.thunder = function() {
         if (frameCount % randInterval == 0) {
         thunderSound.play();
-        randInterval = int(random(500));
+        randInterval = int(random(5000));
             if (thunderSound.isPlaying()) {
                 for (var i = 0; i < 50; i++) {
                 background(255);
@@ -167,6 +167,7 @@ function Drop() {
 			this.y = -500;
 			this.yspeed = map(this.z, 0, 20, 4, 10);
 		}
+		
 		//left bound
 		if (this.x < -10) {
 			this.x = random(width + 30, width + 70);
