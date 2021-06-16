@@ -1,0 +1,21 @@
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#toto {
+  z-index: 1;
+  width: 30px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
