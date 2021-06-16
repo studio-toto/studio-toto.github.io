@@ -22,3 +22,13 @@ body, html {
 #logoPic {
     max-height: 4vh;
 }
+
+#scrollbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+#outer {
+    transform-origin: center top;
+}

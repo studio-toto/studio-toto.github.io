@@ -26,3 +26,13 @@ function onClick(element) {
 
  $( function() {
     $( "*" ).draggable(); });
+
+var slider = document.getElementById("slider");
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+   var view =  document.body;
+    var zoom = this.value/100;
+    $("#outer").css("transform", "scale("+zoom+")");
+    //view.style.zoom = zoom;
+//   output.innerHTML = this.value;
+}
