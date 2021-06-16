@@ -106,6 +106,7 @@ function Thunder(){
         if (frameCount % randInterval == 0) {
         thunderSound.play();
         randInterval = int(random(5000));
+		console.log(frameCount + " " + randInterval);
             if (thunderSound.isPlaying()) {
                 for (var i = 0; i < 50; i++) {
                 background(255);
@@ -167,7 +168,7 @@ function Drop() {
 			this.y = -500;
 			this.yspeed = map(this.z, 0, 20, 4, 10);
 		}
-		
+
 		//left bound
 		if (this.x < -10) {
 			this.x = random(width + 30, width + 70);
