@@ -71,10 +71,10 @@ Changing the animation keyframes also changes speed. */
     word-spacing: -4vh;
 }
 .ticker-container:hover .ticker-move{
-    animation-duration: 60s;
+    animation-duration: 100s;
   }
 
   .ticker-container:hover .ticker-move2 {
-    animation-duration: 60s;
-    animation-delay: 30s;
+    animation-duration: 100s;
+    animation-delay: 50s;
 }
