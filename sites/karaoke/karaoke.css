@@ -1,17 +1,22 @@
-html, body {
-    overflow: hidden;
-    height: 100%;
+html,
+body {
+  overflow: hidden;
+  height: 100%;
 }
 .scroll {
-    position: sticky;
-    overflow-y: scroll;
+  position: sticky;
+  overflow-y: scroll;
   height: 90%;
 }
-.inside{
-    height: 2000%;
+.inside {
+  height: 2000%;
 }
 #lyrics {
-    position: absolute;
-    top: 100px;
+  position: absolute;
+  width: 50%;
+  left: 25vw;
 font-size: 60px;
+  top: 40vh;
+  margin:auto;
+  text-align: center;
 }

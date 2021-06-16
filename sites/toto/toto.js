@@ -1,8 +1,28 @@
 //click on toto
+
+var index;
+index = index + 1;
+
+var waldoPics = [ "media/waldo2.jpeg",
+                  "media/waldo3.jpeg",
+                  "media/waldo4.jpeg",
+                  "media/waldo5.jpeg",
+                  "media/waldo6.jpeg",
+                  "media/waldo7.jpeg",
+                  "media/waldo8.jpeg",
+];
+
+
+
 $("#toto").click(function() {
     //console.log("hey");
-    $("#waldo1").attr('src',"media/waldo2.jpeg");
+    if  (index > waldoPics.length) {
+        index = 0;
+    }
+    $("#waldo1").attr("src", waldoPics[index]);
+    console.log("moin");
     changePosition();
+    
 });
    
 //change position on load
