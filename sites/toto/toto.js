@@ -1,7 +1,5 @@
-//click on toto
+var index = 0;
 
-var index;
-index = index + 1;
 
 var waldoPics = [ "media/waldo2.jpeg",
                   "media/waldo3.jpeg",
@@ -12,15 +10,15 @@ var waldoPics = [ "media/waldo2.jpeg",
                   "media/waldo8.jpeg",
 ];
 
-
-
+//click on toto
 $("#toto").click(function() {
     //console.log("hey");
-    if  (index > waldoPics.length) {
+    if  (index < waldoPics.length) {
+        index = index + 1;
+    } else {
         index = 0;
     }
     $("#waldo1").attr("src", waldoPics[index]);
-    console.log("moin");
     changePosition();
     
 });
