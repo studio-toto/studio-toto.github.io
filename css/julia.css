@@ -82,10 +82,6 @@ button {
     margin-top: -25px;
 }
 
-#toDoListContainer {
-    margin-left: -3vw;
-}
-
 .listText:hover {
     color: rgb(0, 0, 255);
     background-color: transparent;
