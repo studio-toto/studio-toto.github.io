@@ -11,7 +11,7 @@ function setCanvas() {
     canvasDiv.appendChild(canvas);
     context = canvas.getContext("2d");
 }
-setCanvas();
+setTimeout(setCanvas, 1000);
 
 //reset sets canvas size back and also hides the menu items
 function reset() {
