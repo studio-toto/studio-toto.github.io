@@ -8,11 +8,6 @@
     margin-top: -25px;
 }
 
-@font-face {
-    font-family: 'PermanentMarker';
-    src: url('../fonts/PermanentMarker-Regular.ttf')  format('truetype');
-}
-
 .progress {
     border-radius: 50%;
     height: 4vh;
@@ -36,4 +31,9 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+@font-face {
+    font-family: 'PermanentMarker';
+    src: url('../fonts/PermanentMarker-Regular.ttf')  format('truetype');
 }
