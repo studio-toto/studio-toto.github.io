@@ -12,8 +12,8 @@ function setCanvas() {
     context = canvas.getContext("2d");
 }
 
-//setTimeout(setCanvas, 1000);
-setCanvas();
+setTimeout(setCanvas, 1000);
+//setCanvas();
 
 //reset sets canvas size back and also hides the menu items
 function reset() {
