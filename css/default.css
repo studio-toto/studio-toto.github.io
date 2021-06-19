@@ -149,7 +149,7 @@ li {
 ol {
     list-style: decimal inside;
     margin-top: 20px;
-    margin-left: -1vw;
+    /* margin-left: -1vw; */
     
 }
 
