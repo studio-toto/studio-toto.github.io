@@ -3,6 +3,8 @@ html, body {
     background: transparent;
     z-index: 1;
     font-size: 16px;
+    top: 0;
+    left: 0;
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -23,8 +25,8 @@ body {
 }
 
 #logoContainer {
-    right: 0;
-    top: 0;
+    right: 0vw;
+    top: 0vh;
     width: 10vw;
     z-index: 2;
     position: absolute;
@@ -117,9 +119,9 @@ body {
 
 #toDoListContainer {
     position: absolute;
-    width: 120%;
-    height: 20%;
-    margin-left: -3vw;
+    width: 100vw;
+    height: auto;
+    margin-left: -3vw!important;
     margin-top: -10px;
 }
 
@@ -133,9 +135,10 @@ li {
 
 .listText {
     position: absolute;
-    z-index: 2!important;
+    z-index: 3!important;
     padding-left: 1vw;
     padding-right: 1vw;
+    
 }
 
 .listText:hover {
@@ -146,7 +149,8 @@ li {
 ol {
     list-style: decimal inside;
     margin-top: 20px;
-    margin-left: -1vw;
+    /* margin-left: -1vw; */
+    
 }
 
 #toDoList {
@@ -240,7 +244,7 @@ p {
 }
 
 .drawable {
-    position:relative;
+    /* position:relative; */
     z-index: -1;
 }
 

@@ -3,15 +3,18 @@
 function setCanvas() {
     var width = $(window).width();
     var height = document.documentElement.scrollHeight;
-    var canvasDiv = document.getElementById('canvasplace');
-    canvas = document.createElement('canvas');
+    var canvas= document.getElementById('canvas');
+    // canvas = document.createElement('canvas');
     canvas.setAttribute('width', width);
     canvas.setAttribute('height', height);
-    canvas.setAttribute('id', 'canvas');
-    canvasDiv.appendChild(canvas);
+    // canvas.setAttribute('id', 'canvas');
+    // canvasDiv.appendChild(canvas);
     context = canvas.getContext("2d");
+    console.log(height);
 }
+
 setTimeout(setCanvas, 1000);
+//setCanvas();
 
 //reset sets canvas size back and also hides the menu items
 function reset() {

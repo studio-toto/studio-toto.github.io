@@ -9,6 +9,7 @@ body, html {
 
 /* Full height image header */
 .bgimg-1 {
+    transform-origin: 50% 50%;
   background-position: center;
   background-size: cover;
   background-image: url("media/mac.jpg");

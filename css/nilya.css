@@ -23,36 +23,6 @@ body {
     margin-top: -25px;
 }
 
-#toDoListContainer {
-    margin-left: -2vw;
-}
-
-
-.progress {
-    border-radius: 50%;
-    height: 4vh;
-    width: 4vh;
-    font-size: 2vh;
-    float: right;
-    margin-top: 3vh;
-    margin-left: 2vh;
-    cursor: wait !important;
-    background-color: transparent;
-    animation: progress 5s linear infinite;
-    background-image: url("../media/thinking.png");
-    background-size: contain;
-}
-
-
-@keyframes progress {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 
 @font-face {
