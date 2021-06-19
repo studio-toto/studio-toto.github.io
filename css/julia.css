@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
     background-color: white;
 }
 
+/* ??? */
 body::-webkit-scrollbar-track {
 
 }
@@ -51,25 +52,9 @@ button {
     border-radius: 0;
 }
 
-.buttons {
-    float: center;
-    margin-right: 1%;
-    position: fixed;
-    bottom: 20px;
-    right: 1vw;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 5vh;
-    width: 6vh;
-    line-height: 150%;
-    z-index: 2;
-}
-
 #clearButton {
     cursor: crosshair;
 }
-
 
 #toDoList {
     font-family: 'OpenSans';

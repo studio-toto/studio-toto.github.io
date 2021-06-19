@@ -12,11 +12,10 @@ function setCanvas() {
     context = canvas.getContext("2d");
     console.log(height);
 }
-// setCanvas();
+
 setTimeout(setCanvas, 1000);
-// // $(document).ready(function(){
-//     setCanvas();
-//     });
+//setCanvas();
+
 //reset sets canvas size back and also hides the menu items
 function reset() {
     clickX = new Array();

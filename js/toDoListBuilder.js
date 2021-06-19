@@ -4,7 +4,7 @@ $.get('https://spreadsheets.google.com/feeds/cells/1ESs-bNXfZXeRIq08HuNKmRuP1B9N
 })
 
 function dataProcess(value) {
-    console.log(value);
+    //console.log(value);
     var lists = value.feed.entry;
     var numberOfElements = value.feed.entry.length;
 

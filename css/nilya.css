@@ -23,11 +23,6 @@ body {
     margin-top: -25px;
 }
 
-#toDoListContainer {
-    margin-left: -2vw;
-}
-
-
 @font-face {
     font-family: 'Proposi';
     src: url('../fonts/Propisi_W01_Medium.ttf')  format('truetype');
