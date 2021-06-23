@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../media/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../media/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../media/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../media/favicon_io//site.webmanifest">
+
+    <title>Interface Spell Checker</title>
+
+    <link rel="stylesheet" href="google.css"/>
+    <link rel="stylesheet" href="asg.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body spellcheck="false">
+      
+    <div id="nav">
+        <button style="float:right" onclick="changevisible('checkcontainer')">Check</button>
+    </div>
+    
+      <div id="maincontainer" >
+          <div id="textcontainer" >
+            <div id="textarea" >
+                
+            <div id="text" contentEditable=true><h1>Iam id ipsum absurdum, maximum malum neglegi.</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> <a href="http://loripsum.net/" target="_blank">Nescio quo modo praetervolavit oratio.</a> Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? <a href="http://loripsum.net/" target="_blank">Ut id aliis narrare gestiant?</a> Certe non potest. <i>Hos contra singulos dici est melius.</i> <a href="http://loripsum.net/" target="_blank">Si mala non sunt, iacet omnis ratio Peripateticorum.</a> Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
+            <p><span class="text-wrong words" id="word1" data-id="wrong1"data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamussagittis lacus vel augue laoreet rutrum faucibus.">They're</span> father was <span class="text-wrong words" id="word2" data-id="wrong2" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamussagittis lacu">embarased</span>.</p>
+           
+            <p><mark>Illa tamen simplicia, vestra versuta.</mark> Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. <a href="http://loripsum.net/" target="_blank">Ac tamen hic mallet non dolere.</a> </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> <a href="http://loripsum.net/" target="_blank">Nescio quo modo praetervolavit oratio.</a> Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? <a href="http://loripsum.net/" target="_blank">Ut id aliis narrare gestiant?</a> Certe non potest. <i>Hos contra singulos dici est melius.</i> <a href="http://loripsum.net/" target="_blank">Si mala non sunt, iacet omnis ratio Peripateticorum.</a> Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
+           <p>This is where the <span class="text-wrong words" id="word3" data-id="wrong3" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">pronouncation</span> is important. Studies have shown that it takes time to get used to things.</p>
+            <p><mark>Illa tamen simplicia, vestra versuta.</mark> Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. <a href="http://loripsum.net/" target="_blank">Ac tamen hic mallet non dolere.</a> </p>
+            
+            <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae tamen esse possunt. It had been <span class="text-wrong words" id="word4" data-id="wrong4" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">all together</span> a relaxing day for everyone. Quamquam te quidem video minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo. Nihil enim iam habes, quod ad corpus referas; </p>
+           
+         
+            <p><mark>Illa tamen simplicia, vestra versuta.</mark> Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. <a href="http://loripsum.net/" target="_blank">Ac tamen hic mallet non dolere.</a> </p>
+            <p>Lorem ipsum dolor <span class="text-wrong words" id="word5" data-id="wrong5" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">aquaintance</span> sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> 
+                <a href="http://loripsum.net/" target="_blank">Nescio quo modo praetervolavit oratio.</a>
+                 Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum <span class="text-wrong words" id="word6" data-id="wrong6" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">seperate</span> principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? <a href="http://loripsum.net/" target="_blank">Ut id aliis narrare gestiant?</a> Certe non potest. <i>Hos contra singulos dici est melius.</i> <a href="http://loripsum.net/" target="_blank">Si mala non sunt, iacet omnis ratio Peripateticorum.</a> Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
+            <p><mark>Illa tamen simplicia, vestra versuta.</mark> Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. <a href="http://loripsum.net/" target="_blank">Ac tamen hic mallet non dolere.</a> </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> <a href="http://loripsum.net/" target="_blank">Nescio quo modo praetervolavit oratio.</a> Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? <a href="http://loripsum.net/" target="_blank">Ut id aliis narrare gestiant?</a> Certe non potest. <i>Hos contra singulos dici est melius.</i> <a href="http://loripsum.net/" target="_blank">Si mala non sunt, iacet omnis ratio Peripateticorum.</a> Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
+            
+        </div>
+            </div>
+            
+        </div>  
+          <div id="checkcontainer">
+            <div id="checkarea">
+                <div id="navspell">test</div>
+                <div id="wordscheck">
+                    <div class="check-wrong words" data-id="word1" id="wrong1">They're
+                    <p class="hidden" id="hidden-wrong1">Test</p></div>
+                </br>
+                    <span class="check-wrong words" data-id="word2" id="wrong2">embarased</span>
+                    <p class="hidden" id="hidden-wrong2">Test</p>
+                </br>
+                <span class="check-wrong words" data-id="word3" id="wrong3">pronouncation</span>
+                <p class="hidden" id="hidden-wrong3">Test</p>
+            </br>
+            <span class="check-wrong words" data-id="word4" id="wrong4">all together</span>
+            <p class="hidden" id="hidden-wrong4">Test</p>
+        </br>
+        <span class="check-wrong words" data-id="word5" id="wrong5">aquaintance</span>
+        <p class="hidden" id="hidden-wrong5">Test</p>
+    </br>
+    <span class="check-wrong words" data-id="word6" id="wrong6">seperate</span>
+    <p class="hidden" id="hidden-wrong6">Test</p>
+                </div>
+            </div>  
+            </div>
+      </div>
+  <script type="text/javascript" src="asg.js"></script>
+  </body>
+  
+</html>
