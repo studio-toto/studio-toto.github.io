@@ -23,6 +23,8 @@ body {
     width: 100vw;
     background-color: darkgrey;
     text-align: justify;
+    background-image: url('menu.png');
+    background-size: cover;
 }
 
 #textcontainer {
