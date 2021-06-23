@@ -98,6 +98,8 @@ body {
 }
 .text-wrong.active{
     color: black;
+    
+    background-color: #3a009e1d;
     opacity: 1;
 }
 .check-wrong {
