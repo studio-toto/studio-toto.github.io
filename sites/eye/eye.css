@@ -1,0 +1,10 @@
+.container {
+    position: absolute;
+    top: 35vh;
+    width: 30vw;
+    height: 30vh;
+    background-color: beige;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    
+}
