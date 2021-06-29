@@ -2,6 +2,17 @@ var speech= new SpeechSynthesisUtterance();
 speech.pitch = 0;
 speech.rate = 0.5;
 
+$('body').not('#container').click(function (event){
+  var x = event.clientX;    
+  var y = event.clientY; 
+  var text = document.createElement('textarea');
+  text.style.top = y + "px";
+  text.style.left= x + "px";
+  text.style.position = "absolute";
+  text.style.animationDelay = Math.random()*10+5;
+  text.focus();
+  document.body.appendChild(text);
+})
 
 function reverseString(str) {
     return str.toLowerCase().split("").reverse().join("");
@@ -34,14 +45,26 @@ function populateVoiceList() {
   }
 
 function speak() {
+  $('#container').css('animation-play-state', 'running');
     var voice = ["Microsoft David - English (United States)"];
     const foundVoice = speechSynthesis.getVoices().find(({ name }) => voice.includes(name));
     // console.log('speaking');
 
     if (foundVoice) speech.voice = foundVoice;
-
-    speech.text = reverseString(document.querySelector("textarea").value);
+    var text = "";
+    $('textarea').each(function(){
+      text += this.value + " ";
+    })
+    speech.text = reverseString(text);
     // console.log(speech.text);
     window.speechSynthesis.speak(speech);
+    speech.onend = function(event) {
+  $('#container').css('animation-play-state', 'paused'); }
   }
   
+  function toggleSpeech() {
+    if(speech.speaking) {
+      speech.pause();
+    $('#container').css('animation-play-state', 'paused');
+    } else { speak();}
+  }

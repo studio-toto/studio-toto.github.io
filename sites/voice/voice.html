@@ -19,9 +19,19 @@
   </head>
 
   <body>
-    <textarea cols="30" rows="10" placeholder="Type here..."></textarea>
-<!-- <p><select id="voiceSelect"></select></p> -->
-      <button onclick="speak();">speak of the devil</button>
+    <div id="space">
+      <div class="stars"></div>
+      <div class="stars"></div>
+      <div class="stars"></div>
+      <div class="stars"></div>
+      <div class="stars"></div>
+    </div>
+    
+    <textarea id="text" cols="30" rows="5" placeholder="...">I'm sorry, Dave</textarea>
+     
+    <div id="container" onclick="toggleSpeech()">
+ <!-- <p><select id="voiceSelect"></select></p> -->
+    </div>
   <script type="text/javascript" src="voice.js"></script>
   </body>
   
