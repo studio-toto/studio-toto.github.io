@@ -10,7 +10,6 @@ function setCanvas() {
     // canvas.setAttribute('id', 'canvas');
     // canvasDiv.appendChild(canvas);
     context = canvas.getContext("2d");
-    console.log(height);
 }
 
 setTimeout(setCanvas, 1000);
