@@ -39,7 +39,8 @@ body, html {
   margin-left: -25vw;
   height: fit-content;
   background-color: #f04545;
-  box-shadow: 0px 0px 15px 5px #f04545;
+  border: 2px groove white;
+  box-shadow: 0px 0px 5px 1px #f04545;
   animation: shine 1s infinite ease alternate;
   z-index: 5;
   border-radius: 10px;
@@ -47,13 +48,14 @@ body, html {
 #puzzlenav:hover {
   animation-play-state: paused;
   
-  box-shadow: inset 0px 0px 15px 5px #ffcf77;
+  box-shadow: inset 0px 0px 5px 1px #ffcf77;
   background-color: #ffcf77;
 }
 #shuffle {
+  border: 2px groove white;
   border-radius: 5px;
   color: #f04545;
-  box-shadow: 0px 0px 15px 5px #ffcf77;
+  box-shadow: 0px 0px 5px 2px #ffcf77;
 position: absolute;
 margin-top: 10px;
 margin-left: 25px;
@@ -61,12 +63,12 @@ margin-left: 25px;
 @keyframes shine {
   from {
     
-  box-shadow: 0px 0px 15px 5px #f04545;
+  box-shadow: 0px 0px 5px 1px #f04545;
   }
   to {
     
-  box-shadow: inset 0px 0px 15px 5px #ffcf77;
-  box-shadow: 0px 0px 15px 5px #ffcf77;
+  box-shadow: inset 0px 0px 5px 1px #ffcf77;
+  box-shadow: 0px 0px 5px 1px #ffcf77;
   }
 }
 input[type=range] {
