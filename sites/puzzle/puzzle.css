@@ -4,7 +4,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
   height: 100%;
+  /* width: 100%; */
   line-height: 1.8;
+  position: relative;
 }
 
 /* Full height image header */
@@ -24,12 +26,64 @@ body, html {
     max-height: 4vh;
 }
 
-#scrollbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-}
+
 #outer {
-    transform-origin: center top;
+  position: absolute;
+  transform-origin: center top;
+}
+#puzzlenav {
+  position: fixed;
+  width: 50vw;
+  top: 10vh;
+  left: 50vw;
+  margin-left: -25vw;
+  height: fit-content;
+  background-color: #f04545;
+  box-shadow: 0px 0px 15px 5px #f04545;
+  animation: shine 1s infinite ease alternate;
+  z-index: 5;
+  border-radius: 10px;
+}
+#puzzlenav:hover {
+  animation-play-state: paused;
+  
+  box-shadow: inset 0px 0px 15px 5px #ffcf77;
+  background-color: #ffcf77;
+}
+#shuffle {
+  border-radius: 5px;
+  color: #f04545;
+  box-shadow: 0px 0px 15px 5px #ffcf77;
+position: absolute;
+margin-top: 10px;
+margin-left: 25px;
+}
+@keyframes shine {
+  from {
+    
+  box-shadow: 0px 0px 15px 5px #f04545;
+  }
+  to {
+    
+  box-shadow: inset 0px 0px 15px 5px #ffcf77;
+  box-shadow: 0px 0px 15px 5px #ffcf77;
+  }
+}
+input[type=range] {
+  height: auto;
+  width: 50%;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 10px;
 }

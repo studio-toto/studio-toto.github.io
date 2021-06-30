@@ -1,5 +1,6 @@
 // From W3school
 // Modal Image Gallery
+
 function onClick(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "block";
@@ -24,15 +25,41 @@ function onClick(element) {
       mySidebar.style.display = "none";
   }
 
+
+  // Julia's part
+
+
+  var currentel = $("#outer");
+
  $( function() {
-    $( "*" ).draggable(); });
+    $( "*" ).not('.puzzle').draggable(); });
+    // $("*").not('.puzzle, #slider, #slider2').mousedown(function(){
+    //   currentel = $(this);
+    //   console.log(currentel);
+
+    // });
 
 var slider = document.getElementById("slider");
 // Update the current slider value (each time you drag the slider handle)
+
 slider.oninput = function() {
-   var view =  document.body;
     var zoom = this.value/100;
-    $("#outer").css("transform", "scale("+zoom+")");
-    //view.style.zoom = zoom;
-//   output.innerHTML = this.value;
+   $('#outer').css("transform", "scale("+zoom+")");
 }
+
+// var slider2 = document.getElementById("slider2");
+
+// slider2.oninput = function() {
+//   var zoom = this.value/100;
+//  currentel.css("transform", "scale("+zoom+")");
+// }
+$('#shuffle').click(function(){
+  console.log(window.outerWidth);
+  $( "*:not('.puzzle, #puzzlenav, .w3-container, .w3-section, body, html, #outer')").each(function(){
+   
+    // this.style.position = "absolute";
+    this.style.top = Math.random()*document.scrollHeight-$(this).height()+"px";
+    this.style.left = Math.random()*window.outerWidth-$(this).width()+"px";
+    console.log(Math.random()*window.outerWidth-$(this).width()+"px");
+  })
+})
