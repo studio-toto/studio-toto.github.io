@@ -3,6 +3,9 @@ html {
 }
 
 body {
+    
+    background-image: url('http://www.glittertextonline.com/imgz/DCglit47.gif');
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;

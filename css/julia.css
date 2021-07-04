@@ -60,7 +60,7 @@ button {
     font-family: 'OpenSans';
     font-style: normal;
     font-weight: normal;
-    font-size: 6vh;
+    font-size: 3vw;
     line-height: 100%;
     color: black;
     margin-top: -25px;
@@ -69,6 +69,7 @@ button {
 .listText:hover {
     color: rgb(0, 0, 255);
     background-color: transparent;
+    cursor: crosshair;
     /* color: white;
     background-color: blue; */
     transition: color 5ms fade;

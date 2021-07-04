@@ -44,7 +44,7 @@ var slider = document.getElementById("slider");
 
 slider.oninput = function() {
     var zoom = this.value/100;
-   $('#outer').css("transform", "scale("+zoom+")");
+    $('#outer').css({"transform-origin": "center top", "transform": "scale("+zoom+")"});
 }
 
 // var slider2 = document.getElementById("slider2");
@@ -54,12 +54,11 @@ slider.oninput = function() {
 //  currentel.css("transform", "scale("+zoom+")");
 // }
 $('#shuffle').click(function(){
-  console.log(window.outerWidth);
+    //  $('#outer').css("transform-origin", "center");
   $( "*:not('.puzzle, #puzzlenav, .w3-container, .w3-section, body, html, #outer')").each(function(){
    
     // this.style.position = "absolute";
     this.style.top = Math.random()*document.scrollHeight-$(this).height()+"px";
     this.style.left = Math.random()*window.outerWidth-$(this).width()+"px";
-    console.log(Math.random()*window.outerWidth-$(this).width()+"px");
   })
 })
