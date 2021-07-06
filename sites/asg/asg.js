@@ -77,18 +77,51 @@ $("*").scroll(function() {
     });
 
 });
+
+// var myDefaultWhiteList = $.fn.popover.Constructor.DEFAULTS.whiteList
+
+// // To allow table elements
+// myDefaultWhiteList.img = ['data-word']
+
+// // To allow td elements and data-option attributes on td elements
+// myDefaultWhiteList.div = ['data-colors']
+
 $(function () {
-    $('[data-toggle="popover"]').popover({
-        trigger : 'click',
+    $('.text-wrong').popover({
+      trigger: 'click',
+        sanitize: false,
         html: true, 
         template: '<div class="popover"><div class="arrow"></div>'+
-                  '<h3 class="popover-title"></h3><div class="popover-content">'+
-                  '</div><div class="popover-footer"><button type="button" class="btn btn-primary popover-submit">'+
-                  '<i class="icon-ok icon-white"></i></button>&nbsp;'+
-                  '<button type="button" class="btn btn-default popover-cancel">'+
-                  '<i class="icon-remove"></i></button></div></div>' 
+                  '<div class="popover-body">'+
+                  '</div><div class="popover-footer">'+
+                  '<span class="popover-cancel">X'+
+                  ' </span><span class="popover-check">✓'+
+                  '</span></div></div>' 
     })
   });
+  $('.words').on('click', function (e) {
+    $('.words').not(this).popover('hide');
+    $('.words').on('shown.bs.popover', function () {
+      $(this).addClass('enabled');   
+    $('.popover').addClass($(this).attr("data-colors"));
+    })
+
+});
+$('.words').on('hidden.bs.popover', function () {
+  $(this).removeClass('enabled');
+})
+$('*').not('.words .text-wrong del b').on('click', function (e) {
+  console.log($(this));
+  console.log($(this).hasClass('words'));
+  if(!$(this).hasClass('.words .popover') && !$(this).is('del b')){
+    $('.words').popover('hide');
+  }
+  e.stopPropagation();
+})
+// $('*').not(".popover .text-wrong").click(function()
+// {  $('[data-toggle="popover"]').popover('hide');
+// });
+
 
   $(".words").hover(function(){
     $(this).addClass("active-hover");
@@ -99,15 +132,70 @@ $(function () {
     $("#"+$(this).attr("data-id")).removeClass("active-hover");
   });
 
+  $("img").click(function(e) {
+    if($(this).attr("data-word")) {
+      speak($(this).attr("data-word"));
+    }
+    e.stopPropagation();
+ });
 
   $('.check-wrong').click(function(){
+    if($(this).is( "img" )){
+      
+    } else {
       clickCheck($(this).attr("data-id"));
       let name = "#hidden-" + $(this).attr("id");
-      console.log(name);
       $('.hidden:not('+name+')').css('display', 'none');
+      $('.check-wrong').removeClass('show');
     if ($(name).css('display') == 'block'){
+      $(this).removeClass('show');
         $(name).css('display', 'none');
     }else {
+      $(this).addClass('show');
         $(name).css('display', 'block');
     }
+    }
   });
+
+  var speech= new SpeechSynthesisUtterance();
+  var myLang = speech.lang;
+  speech.lang = 'en-US';
+  function populateVoiceList() {
+    if(typeof speechSynthesis === 'undefined') {
+      return;
+    }
+  
+    var voices = speechSynthesis.getVoices();
+//   console.log(voices);
+    // speech.voice = voices[1];
+    for(var i = 0; i < voices.length; i++) {
+      var option = document.createElement('option');
+      option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
+  
+      if(voices[i].default) {
+        option.textContent += ' -- DEFAULT';
+      }
+  
+      option.setAttribute('data-lang', voices[i].lang);
+      option.setAttribute('data-name', voices[i].name);
+    //   document.getElementById("voiceSelect").appendChild(option);
+    }
+  }
+  
+  populateVoiceList();
+  if (typeof speechSynthesis !== 'undefined' && speechSynthesis.onvoiceschanged !== undefined) {
+    speechSynthesis.onvoiceschanged = populateVoiceList;
+  }
+
+function speak(word) {
+    var voice = ["Microsoft Matthew - English (United States)"];
+    const foundVoice = speechSynthesis.getVoices().find(({ name }) => voice.includes(name));
+    // console.log('speaking');
+
+    if (foundVoice) speech.voice = foundVoice;
+    var text = word;
+
+    speech.text = text;
+    // console.log(speech.text);
+    window.speechSynthesis.speak(speech);
+  }
