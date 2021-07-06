@@ -1,3 +1,5 @@
+//stolen from http://captcha.der-ringer.com/
+
 var spoon = 'spoon.png';
 
 if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
@@ -48,14 +50,8 @@ function init() {
     renderer.setPixelRatio( window.devicePixelRatio );
     container.appendChild( renderer.domElement );
 
-    //stats = new Stats();
-    //stats.domElement.style.position = 'absolute';
-    //stats.domElement.style.top = '0px';
-    //container.appendChild( stats.domElement );
-
     onWindowResize();
     
-
     window.addEventListener( 'resize', onWindowResize, false );
     window.addEventListener( 'mousemove', onMouseMove, false );
 
@@ -70,14 +66,11 @@ function onWindowResize( event ) {
 
 }
 
-//
-
 function animate() {
 
     requestAnimationFrame( animate );
 
     render();
-    //stats.update();
 
 }
 
@@ -87,18 +80,7 @@ function render() {
     
     uniforms.time.value += 0.009;
     
-    /*
-    oldTime += 0.05;
-    if (oldTime % 4 < 0.1)
-    {
-    uniforms.time.value += 2.0;
-    }
-    */
-
-    
-    
     renderer.render( scene, camera );
-
 }
 
 
@@ -107,20 +89,18 @@ function onMouseMove( event ) {
 
     mouse.x = ( event.clientX / window.innerWidth ) ;
     mouse.y = - ( event.clientY / window.innerHeight ) +1.0;	
-
-    //uniforms.level.value += 0.001;	
+	
     uniforms.mouse.value = mouse;
 
 }
 
-function clampValue(valIn, min, max){
+function clampValue(valIn, min, max) {
     if (valIn < min) {return min;}
     else if (valIn > max) {return max;}
     else {return valIn;}
 
 }
 
-function randomIntFromInterval(min,max)
-{
+function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
