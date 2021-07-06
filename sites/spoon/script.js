@@ -1,124 +1,126 @@
-var imgArray = ['assets/spoon.png'];
+var spoon = 'spoon.png';
 
-   if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
-   var container, stats;
+var container, stats;
 
-   var camera, scene, renderer;
+var camera, scene, renderer;
 
-   var uniforms;
+var uniforms;
 
-   var mouse = new THREE.Vector2();
+var mouse = new THREE.Vector2();
 
-   init();
-   animate();
+init();
+animate();
 
-   function init() {
+function init() {
 
-       container = document.getElementById( 'container' );
+    container = document.getElementById( 'container' );
 
-       camera = new THREE.Camera();
-       camera.position.z = 1;
+    camera = new THREE.Camera();
+    camera.position.z = 1;
 
-       scene = new THREE.Scene();
+    scene = new THREE.Scene();
 
-       var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
+    var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
 
-       uniforms = {
-           time: { type: "f", value: Math.random()*100.0 },
-           level: {type: "f", value: 1.0},
-           resolution: { type: "v2", value: new THREE.Vector2() },
-           mouse: { type: "v2", value: new THREE.Vector2() },
-           texture: { type: "t", value: THREE.TextureLoader( 'assets/spoon.png') }
-       };
+    uniforms = {
+    time: { type: "f", value: Math.random()*100.0 },
+    level: {type: "f", value: 1.0},
+    resolution: { type: "v2", value: new THREE.Vector2() },
+    mouse: { type: "v2", value: new THREE.Vector2() },
+    texture: { type: "t", value: THREE.ImageUtils.loadTexture( spoon ) }
+    };
 
-       var material = new THREE.ShaderMaterial( {
+    var material = new THREE.ShaderMaterial( {
 
-           uniforms: uniforms,
-           vertexShader: document.getElementById( 'vertexShader' ).textContent,
-           fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+    uniforms: uniforms,
+    vertexShader: document.getElementById( 'vertexShader' ).textContent,
+    fragmentShader: document.getElementById( 'fragmentShader' ).textContent
 
-       } );
+    } );
 
-       var mesh = new THREE.Mesh( geometry, material );
+    var mesh = new THREE.Mesh( geometry, material );
 
-       scene.add( mesh );
+    scene.add( mesh );
 
-       renderer = new THREE.WebGLRenderer();
-       renderer.setPixelRatio( window.devicePixelRatio );
-       container.appendChild( renderer.domElement );
+    renderer = new THREE.WebGLRenderer();
+    renderer.setPixelRatio( window.devicePixelRatio );
+    container.appendChild( renderer.domElement );
 
-       //stats = new Stats();
-       //stats.domElement.style.position = 'absolute';
-       //stats.domElement.style.top = '0px';
-       //container.appendChild( stats.domElement );
+    //stats = new Stats();
+    //stats.domElement.style.position = 'absolute';
+    //stats.domElement.style.top = '0px';
+    //container.appendChild( stats.domElement );
 
-       onWindowResize();
-       
+    onWindowResize();
+    
 
-       window.addEventListener( 'resize', onWindowResize, false );
-       window.addEventListener( 'mousemove', onMouseMove, false );
+    window.addEventListener( 'resize', onWindowResize, false );
+    window.addEventListener( 'mousemove', onMouseMove, false );
 
-   }
+}
 
-   function onWindowResize( event ) {
+function onWindowResize( event ) {
 
-       renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( window.innerWidth, window.innerHeight );
 
-       uniforms.resolution.value.x = renderer.domElement.width;
-       uniforms.resolution.value.y = renderer.domElement.height;
+    uniforms.resolution.value.x = renderer.domElement.width;
+    uniforms.resolution.value.y = renderer.domElement.height;
 
-   }
+}
 
-   //
+//
 
-   function animate() {
+function animate() {
 
-       requestAnimationFrame( animate );
+    requestAnimationFrame( animate );
 
-       render();
-       //stats.update();
+    render();
+    //stats.update();
 
-   }
+}
 
-   function render() {
-       var d = new Date();
-       var n = d.getTime(); 
-       
-       uniforms.time.value += 0.009;
-       
-       /*
-       oldTime += 0.05;
-       if (oldTime % 4 < 0.1)
-       {
-           uniforms.time.value += 2.0;
-       }
-       */
-   
-       renderer.render( scene, camera );
+function render() {
+    var d = new Date();
+    var n = d.getTime(); 
+    
+    uniforms.time.value += 0.009;
+    
+    /*
+    oldTime += 0.05;
+    if (oldTime % 4 < 0.1)
+    {
+    uniforms.time.value += 2.0;
+    }
+    */
 
-   }
+    
+    
+    renderer.render( scene, camera );
 
-   
+}
 
-   function onMouseMove( event ) {
 
-       mouse.x = ( event.clientX / window.innerWidth ) ;
-       mouse.y = - ( event.clientY / window.innerHeight ) +1.0;	
 
-       //uniforms.level.value += 0.001;	
-       uniforms.mouse.value = mouse;
+function onMouseMove( event ) {
 
-   }
+    mouse.x = ( event.clientX / window.innerWidth ) ;
+    mouse.y = - ( event.clientY / window.innerHeight ) +1.0;	
 
-   function clampValue(valIn, min, max){
-       if (valIn < min) {return min;}
-       else if (valIn > max) {return max;}
-       else {return valIn;}
+    //uniforms.level.value += 0.001;	
+    uniforms.mouse.value = mouse;
 
-   }
-   
-   function randomIntFromInterval(min,max)
-   {
-       return Math.floor(Math.random()*(max-min+1)+min);
-   }
+}
+
+function clampValue(valIn, min, max){
+    if (valIn < min) {return min;}
+    else if (valIn > max) {return max;}
+    else {return valIn;}
+
+}
+
+function randomIntFromInterval(min,max)
+{
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
