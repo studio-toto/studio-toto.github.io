@@ -12,11 +12,11 @@
 
     <title>Uri Geller Simulator</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
 </head>
 
 <body>
+
+  <!-- stolen from http://captcha.der-ringer.com/ -->
 
   <div id="container"></div>
 
@@ -32,8 +32,6 @@
         vUv = uv;
     }
   </script>
-
-  <!-- stolen from http://captcha.der-ringer.com/ -->
 
   <script id="fragmentShader" type="x-shader/x-fragment">
     uniform sampler2D texture;
@@ -60,7 +58,8 @@
         
         //performance sucks if the cnoise function gets computed twice, so the values are actually the same
         //compiler seems to be clever enough to notice, so no performance drop like this.
-        float offset = cnoise( vec3(pos*7.5, time * 0.065) );
+        float offset = cnoise( vec3(pos * 1.5, time * 0.065) );
+        //float offset = 0.5;
         shift.x = offset * 0.1 * distance;
         shift.y = offset * 0.1 * distance;
         pos += shift;

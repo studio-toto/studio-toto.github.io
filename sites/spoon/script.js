@@ -75,9 +75,6 @@ function animate() {
 }
 
 function render() {
-    var d = new Date();
-    var n = d.getTime(); 
-    
     uniforms.time.value += 0.009;
     
     renderer.render( scene, camera );
