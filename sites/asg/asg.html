@@ -25,58 +25,159 @@
   <body spellcheck="false">
       
     <div id="nav">
-        <button style="float:right" onclick="changevisible('checkcontainer')">Check</button>
+        <button id="menubutton" onclick="changevisible('checkcontainer')"><img onclick="changevisible('checkcontainer')" src="media/spellcheck.svg"/></button>
     </div>
     
       <div id="maincontainer" >
           <div id="textcontainer" >
             <div id="textarea" >
                 
-            <div id="text" contentEditable=true><h1>Iam id ipsum absurdum, maximum malum neglegi.</h1>
+            <div id="text" contentEditable=true>
+              <h1>Iam id ipsum absurdum, maximum malum neglegi.</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> <a href="http://loripsum.net/" target="_blank">Nescio quo modo praetervolavit oratio.</a> Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? <a href="http://loripsum.net/" target="_blank">Ut id aliis narrare gestiant?</a> Certe non potest. <i>Hos contra singulos dici est melius.</i> <a href="http://loripsum.net/" target="_blank">Si mala non sunt, iacet omnis ratio Peripateticorum.</a> Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
-            <p><span class="text-wrong words" id="word1" data-id="wrong1"data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamussagittis lacus vel augue laoreet rutrum faucibus.">They're</span> father was <span class="text-wrong words" id="word2" data-id="wrong2" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamussagittis lacu">embarased</span>.</p>
-           
-            <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. <a href="http://loripsum.net/" target="_blank">Ac tamen hic mallet non dolere.</a> </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> <a href="http://loripsum.net/" target="_blank">Nescio quo modo praetervolavit oratio.</a> Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? <a href="http://loripsum.net/" target="_blank">Ut id aliis narrare gestiant?</a> Certe non potest. <i>Hos contra singulos dici est melius.</i> <a href="http://loripsum.net/" target="_blank">Si mala non sunt, iacet omnis ratio Peripateticorum.</a> Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
-           <p>This is where the <span class="text-wrong words" id="word3" data-id="wrong3" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">pronouncation</span> is important. Studies have shown that it takes time to get used to things.</p>
-            <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. <a href="http://loripsum.net/" target="_blank">Ac tamen hic mallet non dolere.</a> </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> Nescio quo modo praetervolavit oratio. Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
+            <p><span class="text-wrong words" id="word1"  data-colors="seldom" data-id="wrong1"data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamussagittis lacus vel augue laoreet rutrum faucibus.">The<del>y're</del><b>ir</b></span> father was
+               <span class="text-wrong words" id="word2"  data-colors="often" data-id="wrong2" tabindex="-1" data-trigger="focus" title="embarrassed" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<span class='del'>embarased</span></br><em>embarrassed</em><img src='media/volume.svg' data-word='embarrassed' /> </br>em ● bar ● ras ● sed</br>">embar<b>r</b>as<b>s</b>ed</span>.</p>
+            <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac tamen hic mallet non dolere. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> Nescio quo modo praetervolavit oratio. Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
+           <p>This is where the <span class="text-wrong words" id="word3" data-colors="sometimes" data-id="wrong3" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">pronouncation</span> is important. Studies have shown that it takes time to get used to things.</p>
+            <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac tamen hic mallet non dolere. </p>
             
-            <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae tamen esse possunt. It had been <span class="text-wrong words" id="word4" data-id="wrong4" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">all together</span> a relaxing day for everyone. Quamquam te quidem video minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo. Nihil enim iam habes, quod ad corpus referas; </p>
+            <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word4" data-id="wrong4" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">all together</span> a relaxing day for everyone. Quamquam te quidem video minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo. Nihil enim iam habes, quod ad corpus referas; </p>
            
          
-            <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. <a href="http://loripsum.net/" target="_blank">Ac tamen hic mallet non dolere.</a> </p>
-            <p>Lorem ipsum dolor <span class="text-wrong words" id="word5" data-id="wrong5" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">aquaintance</span> sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> 
-                <a href="http://loripsum.net/" target="_blank">Nescio quo modo praetervolavit oratio.</a>
-                 Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum <span class="text-wrong words" id="word6" data-id="wrong6" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">seperate</span> principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? <a href="http://loripsum.net/" target="_blank">Ut id aliis narrare gestiant?</a> Certe non potest. <i>Hos contra singulos dici est melius.</i> <a href="http://loripsum.net/" target="_blank">Si mala non sunt, iacet omnis ratio Peripateticorum.</a> Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
-            <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. <a href="http://loripsum.net/" target="_blank">Ac tamen hic mallet non dolere.</a> </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> <a href="http://loripsum.net/" target="_blank">Nescio quo modo praetervolavit oratio.</a> Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? <a href="http://loripsum.net/" target="_blank">Ut id aliis narrare gestiant?</a> Certe non potest. <i>Hos contra singulos dici est melius.</i> <a href="http://loripsum.net/" target="_blank">Si mala non sunt, iacet omnis ratio Peripateticorum.</a> Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
+            <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac tamen hic mallet non dolere. </p>
+            <p>Lorem ipsum dolor <span class="text-wrong words" id="word5" data-id="wrong5" data-colors="often" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">aquaintance</span> sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> 
+                Nescio quo modo praetervolavit oratio.
+                 Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum <span class="text-wrong words" data-colors="seldom" id="word6" data-id="wrong6" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">seperate</span> principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
+            <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac tamen hic mallet non dolere. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> Nescio quo modo praetervolavit oratio. Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
             
         </div>
             </div>
             
         </div>  
           <div id="checkcontainer">
+            <div id="checknav">
+              <button class="checkbutton" data-colors="seldom"></button> <button class="checkbutton" data-colors="sometimes"></button> <button class="checkbutton" data-colors="often"></button>
+              <button class="checkbutton">History</button>
+            </div>
             <div id="checkarea">
                 <div id="navspell">Spell Check</div>
                 <div id="wordscheck">
-                    <div class="check-wrong words" data-id="word1" id="wrong1">They're
-                    <p class="hidden" id="hidden-wrong1">Test</p></div>
+                    <div class="check-wrong words" data-id="word1" id="wrong1" data-colors="seldom"><span class="mistake">The<del>y're</del><b>ir</b></span>
+                    <div class="hidden checking" id="hidden-wrong1">
+                      <del> They're</del>
+                     </br>
+                    <em>Their</em> <img src="media/volume.svg" data-word="Their" />
+                    </br>
+                    Hi ● nt
+                  </br><hr>
+                  <div class="bar">
+                    <div class="progressbar tooltip-j"style="width: 82%;">error rate 82% 
+                      <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
+                  </div>
+                  <span class="pastsentence">Their father was embarrased.</br>
+                    She seemed faintly embarrassed to see us there.</br>
+                    You have no idea how embarrassed I was.</br>
+                    He felt embarrassed about undressing in front of the doctor.</span>
+                </div>
+                 
+                  </div>
                 </br>
-                    <span class="check-wrong words" data-id="word2" id="wrong2">embarased</span>
-                    <p class="hidden" id="hidden-wrong2">Test</p>
-                </br>
-                <span class="check-wrong words" data-id="word3" id="wrong3">pronouncation</span>
-                <p class="hidden" id="hidden-wrong3">Test</p>
+                    <div class="check-wrong words" data-id="word2" id="wrong2" data-colors="often"><span class="mistake">embar<b>r</b>as<b>s</b>ed</span>
+                    <div class="hidden checking" id="hidden-wrong2">
+                      <del>embarased</del>
+                    </br>
+                   <em>embarrassed</em> <img src="media/volume.svg" data-word="embarrassed" />
+                   </br>
+                   em ● bar ● ras ● sed
+                  </br><hr>
+                  <div class="bar">
+                    <div class="progressbar tooltip-j" style="width: 82%;">error rate 82% 
+                      <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
+                  </div>
+                   <span class="pastsentence">Their father was embarrased.</br>
+                    She seemed faintly embarrassed to see us there.</br>
+                    You have no idea how embarrassed I was.</br>
+                    He felt embarrassed about undressing in front of the doctor.</span>
+                    </div>
+                </div>
+                <div class="check-wrong words" data-id="word3" data-colors="sometimes" id="wrong3"><span class="mistake">pron<del>o</del>uncation</span>
+                <div class="hidden checking" id="hidden-wrong3">
+                  <del>pronouncation</del>
+                    </br>
+                   <em>pronuncation</em> <img src="media/volume.svg" data-word="pronuncation" />
+                   </br>
+                   pro ● nun ● ca ● tion
+                  </br><hr>
+                  <div class="bar">
+                    <div class="progressbar tooltip-j"style="width: 82%;">error rate 82% 
+                      <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
+                  </div>
+                   <span class="pastsentence">Their father was embarrased.</br>
+                    She seemed faintly embarrassed to see us there.</br>
+                    You have no idea how embarrassed I was.</br>
+                    He felt embarrassed about undressing in front of the doctor.</span>
+                    </div>
+              </div>
             </br>
-            <span class="check-wrong words" data-id="word4" id="wrong4">all together</span>
-            <p class="hidden" id="hidden-wrong4">Test</p>
+            <div class="check-wrong words" data-id="word4" data-colors="seldom" id="wrong4"><span class="mistake">al<del style="text-decoration: line-through underline;">l </del>together</span>
+              <div class="hidden checking" id="hidden-wrong4">
+                <del>all together</del>
+                  </br>
+                 <em>altogether</em> <img src="media/volume.svg" data-word="altogether" />
+                 </br>
+                 pro ● nun ● ca ● tion
+                </br><hr>
+                <div class="bar">
+                  <div class="progressbar tooltip-j"style="width: 82%;">error rate 82% 
+                    <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
+                </div>
+                 <span class="pastsentence">Their father was embarrased.</br>
+                  She seemed faintly embarrassed to see us there.</br>
+                  You have no idea how embarrassed I was.</br>
+                  He felt embarrassed about undressing in front of the doctor.</span>
+                  </div>
+                </div>
         </br>
-        <span class="check-wrong words" data-id="word5" id="wrong5">aquaintance</span>
-        <p class="hidden" id="hidden-wrong5">Test</p>
+        <div class="check-wrong words" data-id="word5" data-colors="often"id="wrong5"><span class="mistake">a<b>c</b>quaintance</span>
+        <div class="hidden checking" id="hidden-wrong3">
+          <del>aquaintance</del>
+            </br>
+           <em>acquaintance</em> <img src="media/volume.svg" data-word="acquaintance" />
+           </br>
+           ac ● quain ● tance
+          </br><hr>
+          <div class="bar">
+            <div class="progressbar tooltip-j"style="width: 82%;">error rate 82% 
+              <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
+          </div>
+           <span class="pastsentence">Their father was embarrased.</br>
+            She seemed faintly embarrassed to see us there.</br>
+            You have no idea how embarrassed I was.</br>
+            He felt embarrassed about undressing in front of the doctor.</span>
+            </div>
+      </div>
     </br>
-    <span class="check-wrong words" data-id="word6" id="wrong6">seperate</span>
-    <p class="hidden" id="hidden-wrong6">Test</p>
+    <div class="check-wrong words" data-id="word6" data-colors="seldom" id="wrong6"><span class="mistake">sep<del>e</del><b>a</b>rate</span>
+    <div class="hidden checking" id="hidden-wrong6">
+      <del>seperate</del>
+        </br>
+       <em>separate</em> <img src="media/volume.svg" data-word="separate" />
+       </br>
+       se ● pa ● rate
+      </br><hr>
+      <div class="bar">
+        <div class="progressbar tooltip-j"style="width: 5%;">error rate 5% 
+          <span class="tooltiptext">word spelled wrong 5% of the time</span></div>
+      </div>
+       <span class="pastsentence">Their father was embarrased.</br>
+        She seemed faintly embarrassed to see us there.</br>
+        You have no idea how embarrassed I was.</br>
+        He felt embarrassed about undressing in front of the doctor.</span>
+        </div>
+  </div>
                 </div>
             </div>  
             </div>
