@@ -3,7 +3,7 @@ let meltShader;
 
 function preload() {
 	spoon = loadImage('assets/spoon.png');
-	meltShader = loadShader('assets/meltShader.frag');
+	meltShader = loadShader('assets/meltShader.frag', 'assets/meltShader.vert');
 }
 
 function setup() {
