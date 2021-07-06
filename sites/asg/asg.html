@@ -25,31 +25,50 @@
   <body spellcheck="false">
       
     <div id="nav">
-        <button id="menubutton" onclick="changevisible('checkcontainer')"><img onclick="changevisible('checkcontainer')" src="media/spellcheck.svg"/></button>
+      <img src="media/menubasic2.jpg"/>
+        <button id="menubutton" title="Spellcheck" onclick="changevisible('checkcontainer')">
+          <img onclick="changevisible('checkcontainer')" src="media/spellcheck.svg"/></button>
     </div>
     
       <div id="maincontainer" >
           <div id="textcontainer" >
             <div id="textarea" >
                 
-            <div id="text" contentEditable=true>
-              <h1>Iam id ipsum absurdum, maximum malum neglegi.</h1>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> Nescio quo modo praetervolavit oratio. Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
-            <p><span class="text-wrong words" id="word1"  data-colors="seldom" data-id="wrong1"data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamussagittis lacus vel augue laoreet rutrum faucibus.">The<del>y're</del><b>ir</b></span> father was
-               <span class="text-wrong words" id="word2"  data-colors="often" data-id="wrong2" tabindex="-1" data-trigger="focus" title="embarrassed" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<span class='del'>embarased</span></br><em>embarrassed</em><img src='media/volume.svg' data-word='embarrassed' /> </br>em ● bar ● ras ● sed</br>">embar<b>r</b>as<b>s</b>ed</span>.</p>
+            <div id="text" contentEditable=true><sup style="float: right;">Julia Vollmer</sup>
+              <h1>Spell Checker Protoype</h1>
+              <h3>This is the final assignment for the course <i>"Interface / Interaction Design"</i> at HfK.</h3>
+              <cite>This spell checker is trying to help the user to get better at their orthogrophy.</cite>
+            <p>It is possible to write in this space, but the spell check features here are manually added as a prototype and won't appear automatically while typing. Due to some limitations, not all features might work in the live version. <i>To see one usecase and for more information on all the individual features please click on the help button at the right top corner.</i></br> </p>
+            <p>Based on my research, the spell checker has incorporated sound and visuals to help the user get a better feel for the correct spelling. Studies and blog posts suggest that <strong>hearing the pronuncation of a word</strong> can aid with the correct spelling. Therefore each marked word offers a sound option. Personally I noticed that for many words I do not know <span class="text-wrong words" id="word1"  data-colors="seldom" data-id="wrong1"data-trigger="click focus" title="Check spelling."  data-container="body" data-toggle="popover" data-placement="bottom" data-content="<del> they're (they are)</del></br>           <em>their</em> <img src='media/volume.svg' data-word='their' />           </br>Their belong to them.">the<del>y're</del><b>ir</b></span> right pronunciation, which affected my writing as well. Another method I found to help me was the <strong>chunking method</strong> where the word is broken down in smaller parts. I noticed for myself that I could remember the correct spelling better after seeing the parts clearly. Often times while reading I rather skim over words without having seen all the letters. Therefore the chunking method encouraged me to look closely at the word without being overwhelmed.</p>
+            <p> While one doesn't have to feel <span class="text-wrong words" id="word2"  data-colors="often" data-id="wrong2" tabindex="-1" data-trigger="focus" title="Check spelling."  data-container="body" data-toggle="popover" data-placement="bottom" data-content="<del>embarased</del></br><em>embarrassed</em><img src='media/volume.svg' data-word='embarrassed' /> </br>em ● bar ● ras ● sed</br>">embar<b>r</b>as<b>s</b>ed</span> for using the autocorrecting function to much, I feel that the relation between the mistake and correction can be improved. Therefore I tried to put the correct spelling in closer proximity to the word and also show which part of the word was actually causing the error. For the overview on the side, the words are deliberatly written in their corrected version already so that the error is not highlighted too much.</p>
             <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac tamen hic mallet non dolere. </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> Nescio quo modo praetervolavit oratio. Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
-           <p>This is where the <span class="text-wrong words" id="word3" data-colors="sometimes" data-id="wrong3" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">pronouncation</span> is important. Studies have shown that it takes time to get used to things.</p>
+           <p>This is where the <span class="text-wrong words" id="word3" data-colors="sometimes" data-id="wrong3" data-trigger="click focus" title="Check spelling." data-container="body" data-toggle="popover" data-placement="bottom" data-content="<del>pronouncation</del>
+           </br>
+          <em>pronuncation</em> <img src='media/volume.svg' data-word='pronuncation' />
+          </br>
+          pro ● nun ● ca ● tion">pron<del>o</del>uncation</span> is important. Studies have shown that it takes time to get used to things.</p>
             <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac tamen hic mallet non dolere. </p>
             
-            <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word4" data-id="wrong4" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">all together</span> a relaxing day for everyone. Quamquam te quidem video minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo. Nihil enim iam habes, quod ad corpus referas; </p>
+            <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word4" data-id="wrong4" data-trigger="click focus" title="Check spelling." data-container="body" data-toggle="popover" data-placement="bottom" data-content="<del>all together (as a group)</del>
+            </br>
+           <em>altogether</em> <img src='media/volume.svg' data-word='altogether' />
+           </br>
+          completely, entirely">al<del>l </del>together</span> a relaxing day for everyone. Quamquam te quidem video minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo. Nihil enim iam habes, quod ad corpus referas; </p>
            
          
             <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac tamen hic mallet non dolere. </p>
-            <p>Lorem ipsum dolor <span class="text-wrong words" id="word5" data-id="wrong5" data-colors="often" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">aquaintance</span> sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> 
+            <p>Lorem ipsum dolor <span class="text-wrong words" id="word5" data-id="wrong5" data-colors="often" data-trigger="click focus" title="Check spelling."  data-container="body" data-toggle="popover" data-placement="bottom" data-content="  <del>aquaintance</del>
+            </br>
+           <em>acquaintance</em> <img src='media/volume.svg' data-word='acquaintance' />
+           </br>
+           ac ● quain ● tance">a<b>c</b>quaintance</span> sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> 
                 Nescio quo modo praetervolavit oratio.
-                 Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum <span class="text-wrong words" data-colors="seldom" id="word6" data-id="wrong6" data-trigger="click focus" title="Popover Header" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">seperate</span> principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
+                 Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum <span class="text-wrong words" data-colors="seldom" id="word6" data-id="wrong6" data-trigger="click focus" title="Check spelling."  data-container="body" data-toggle="popover" data-placement="bottom" data-content="<del>seperate</del>
+                 </br>
+                <em>separate</em> <img src='media/volume.svg' data-word='separate' />
+                </br>
+                se ● pa ● rate">sep<del>e</del><b>a</b>rate</span> principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
             <p> Illa tamen simplicia, vestra versuta.  Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac tamen hic mallet non dolere. </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori non voluptas contraria est, sed doloris privatio. <i>Negare non possum.</i> Nescio quo modo praetervolavit oratio. Eam tum adesse, cum dolor omnis absit; Duo Reges: constructio interrete. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
             
@@ -65,22 +84,21 @@
             <div id="checkarea">
                 <div id="navspell">Spell Check</div>
                 <div id="wordscheck">
-                    <div class="check-wrong words" data-id="word1" id="wrong1" data-colors="seldom"><span class="mistake">The<del>y're</del><b>ir</b></span>
+                    <div class="check-wrong words" data-id="word1" id="wrong1" data-colors="seldom"><span class="mistake">the<del>y're</del><b>ir</b></span>
                     <div class="hidden checking" id="hidden-wrong1">
-                      <del> They're</del>
+                      <del> they're (they are)</del>
                      </br>
-                    <em>Their</em> <img src="media/volume.svg" data-word="Their" />
+                    <em>their</em> <img src="media/volume.svg" data-word="their" />
                     </br>
-                    Hi ● nt
+                    Their belong to them.
                   </br><hr>
-                  <div class="bar">
-                    <div class="progressbar tooltip-j"style="width: 82%;">error rate 82% 
-                      <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
+                  <span class="history">History</span>
+                  <div class="bar tooltip-j">&nbsp;error rate 9% <span class="tooltiptext">word spelled wrong 9% of the time</span>
+                    <div class="progressbar "style="width: 9%;">
+                      </div>
                   </div>
-                  <span class="pastsentence">Their father was embarrased.</br>
-                    She seemed faintly embarrassed to see us there.</br>
-                    You have no idea how embarrassed I was.</br>
-                    He felt embarrassed about undressing in front of the doctor.</span>
+                  <span class="pastsentence">Personally I noticed that for many words I do not know their right pronunciation, which affected my writing as well. </br>
+                    Going to the store was their idea.</span>
                 </div>
                  
                   </div>
@@ -93,11 +111,13 @@
                    </br>
                    em ● bar ● ras ● sed
                   </br><hr>
+                  <span class="history">History</span>
                   <div class="bar">
                     <div class="progressbar tooltip-j" style="width: 82%;">error rate 82% 
                       <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
                   </div>
-                   <span class="pastsentence">Their father was embarrased.</br>
+                   <span class="pastsentence">While one doesn't have to feel embarrassed for using the autocorrecting function to much, I feel that the relation between the mistake and correction can be improved.</br>
+                    Their father was embarrased.</br>
                     She seemed faintly embarrassed to see us there.</br>
                     You have no idea how embarrassed I was.</br>
                     He felt embarrassed about undressing in front of the doctor.</span>
@@ -107,56 +127,56 @@
                 <div class="hidden checking" id="hidden-wrong3">
                   <del>pronouncation</del>
                     </br>
-                   <em>pronuncation</em> <img src="media/volume.svg" data-word="pronuncation" />
+                   <em>pronuncation</em> <img src='media/volume.svg' data-word='pronuncation' />
                    </br>
                    pro ● nun ● ca ● tion
                   </br><hr>
+                  <span class="history">History</span>
                   <div class="bar">
-                    <div class="progressbar tooltip-j"style="width: 82%;">error rate 82% 
-                      <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
+                    <div class="progressbar tooltip-j"style="width: 59%;">error rate 59% 
+                      <span class="tooltiptext">word spelled wrong 59% of the time</span></div>
                   </div>
-                   <span class="pastsentence">Their father was embarrased.</br>
-                    She seemed faintly embarrassed to see us there.</br>
-                    You have no idea how embarrassed I was.</br>
-                    He felt embarrassed about undressing in front of the doctor.</span>
+                   <span class="pastsentence">This is where the pronuncation is important.</br>
+                    Please correct my pronunciation.</br>
+                    She gave him a few pointers on pronunciation.</br>
+                    Her pronunciation of his name was pleasantly accented.</span>
                     </div>
               </div>
             </br>
             <div class="check-wrong words" data-id="word4" data-colors="seldom" id="wrong4"><span class="mistake">al<del style="text-decoration: line-through underline;">l </del>together</span>
               <div class="hidden checking" id="hidden-wrong4">
-                <del>all together</del>
+                <del>all together (as a group)</del>
                   </br>
-                 <em>altogether</em> <img src="media/volume.svg" data-word="altogether" />
+                 <em>altogether</em> <img src='media/volume.svg' data-word='altogether' />
                  </br>
-                 pro ● nun ● ca ● tion
-                </br><hr>
-                <div class="bar">
-                  <div class="progressbar tooltip-j"style="width: 82%;">error rate 82% 
-                    <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
+                completely, entirely
+                </br><hr> 
+                <span class="history">History</span>
+                <div class="bar tooltip-j"><span class="tooltiptext">word spelled wrong 2% of the time</span>
+                  <div class="progressbar"style="width: 2%;"></div>&nbsp;error rate 2% 
                 </div>
-                 <span class="pastsentence">Their father was embarrased.</br>
-                  She seemed faintly embarrassed to see us there.</br>
-                  You have no idea how embarrassed I was.</br>
-                  He felt embarrassed about undressing in front of the doctor.</span>
+                 <span class="pastsentence">
+                  It had been all together a relaxing day for everyone.</span>
                   </div>
                 </div>
         </br>
         <div class="check-wrong words" data-id="word5" data-colors="often"id="wrong5"><span class="mistake">a<b>c</b>quaintance</span>
-        <div class="hidden checking" id="hidden-wrong3">
+        <div class="hidden checking" id="hidden-wrong5">
           <del>aquaintance</del>
             </br>
-           <em>acquaintance</em> <img src="media/volume.svg" data-word="acquaintance" />
+           <em>acquaintance</em> <img src='media/volume.svg' data-word='acquaintance' />
            </br>
            ac ● quain ● tance
           </br><hr>
+          <span class="history">History</span>
           <div class="bar">
-            <div class="progressbar tooltip-j"style="width: 82%;">error rate 82% 
-              <span class="tooltiptext">word spelled wrong 82% of the time</span></div>
+            <div class="progressbar tooltip-j"style="width: 78%;">error rate 78% 
+              <span class="tooltiptext">word spelled wrong 78% of the time</span></div>
           </div>
-           <span class="pastsentence">Their father was embarrased.</br>
-            She seemed faintly embarrassed to see us there.</br>
-            You have no idea how embarrassed I was.</br>
-            He felt embarrassed about undressing in front of the doctor.</span>
+           <span class="pastsentence">The acquaintance at my job made me feel uncomfortable.</br>
+            Everyone treated me as their acquaintance.</br>
+            Ms. Smith was embarrassed that she didn’t know the name of the acquaintance who recognized her at the store.</br>
+            Acquaintances are people, you slightly know.</span>
             </div>
       </div>
     </br>
@@ -164,18 +184,17 @@
     <div class="hidden checking" id="hidden-wrong6">
       <del>seperate</del>
         </br>
-       <em>separate</em> <img src="media/volume.svg" data-word="separate" />
+       <em>separate</em> <img src='media/volume.svg' data-word='separate' />
        </br>
        se ● pa ● rate
       </br><hr>
-      <div class="bar">
-        <div class="progressbar tooltip-j"style="width: 5%;">error rate 5% 
-          <span class="tooltiptext">word spelled wrong 5% of the time</span></div>
+     <span class="history">History</span>
+      <div class="bar tooltip-j"><span class="tooltiptext">word spelled wrong 5% of the time</span>
+        <div class="progressbar"style="width: 5%;"></div>&nbsp;error rate 5% 
       </div>
-       <span class="pastsentence">Their father was embarrased.</br>
-        She seemed faintly embarrassed to see us there.</br>
-        You have no idea how embarrassed I was.</br>
-        He felt embarrassed about undressing in front of the doctor.</span>
+       <span class="pastsentence">
+        This was a separate issue.</br>
+        It's important to separate.</span>
         </div>
   </div>
                 </div>

@@ -1,10 +1,26 @@
 function changevisible(name) {
     var x = document.getElementById(name);
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    if (x.classList.contains('display')) {
+      x.classList.remove('display');
     } else {
-      x.style.display = "none";
+      x.classList.add('display');
     }
+    $(".text-wrong").each(function(index, value) {
+      if ($(this).isInViewport() && $('#checkcontainer').hasClass('display')){
+          // console.log("change active");
+      //    activateStyle($(this).attr("data-id"));
+      
+      $(this).addClass("active");
+         $("#"+$(this).attr("data-id")).addClass("active");
+      } 
+      else {
+          
+         $("#"+$(this).attr("data-id")).removeClass("active"); 
+          $(this).removeClass("active");
+      }
+      
+  });
+      // x.classList.toggle('.display');
   }
 
   function activateStyle(name) {
@@ -44,7 +60,7 @@ wrapper.scrollTo({top: count, left: 0, behavior: 'smooth'})
 }
 $(document).ready(function(){
     $(".text-wrong").each(function(index, value) {
-        if ($(this).isInViewport()){
+        if ($(this).isInViewport() && $('#checkcontainer').hasClass('display')){
             // console.log("change active");
         //    activateStyle($(this).attr("data-id"));
         
@@ -61,7 +77,7 @@ $(document).ready(function(){
 })
 $("*").scroll(function() {
     $(".text-wrong").each(function(index, value) {
-        if ($(this).isInViewport()){
+        if ($(this).isInViewport() && $('#checkcontainer').hasClass('display')){
             // console.log("change active");
         //    activateStyle($(this).attr("data-id"));
         
@@ -77,7 +93,6 @@ $("*").scroll(function() {
     });
 
 });
-
 // var myDefaultWhiteList = $.fn.popover.Constructor.DEFAULTS.whiteList
 
 // // To allow table elements
@@ -86,19 +101,21 @@ $("*").scroll(function() {
 // // To allow td elements and data-option attributes on td elements
 // myDefaultWhiteList.div = ['data-colors']
 
-$(function () {
-    $('.text-wrong').popover({
-      trigger: 'click',
-        sanitize: false,
-        html: true, 
-        template: '<div class="popover"><div class="arrow"></div>'+
-                  '<div class="popover-body">'+
-                  '</div><div class="popover-footer">'+
-                  '<span class="popover-cancel">X'+
-                  ' </span><span class="popover-check">✓'+
-                  '</span></div></div>' 
-    })
-  });
+$(function () {$('[data-toggle="popover"]').each( function() {
+  $('.text-wrong').popover({
+    trigger: 'click',
+      sanitize: false,
+      html: true, 
+      template: '<div class="popover"><div class="arrow"></div>'+
+                '<div class="popover-body">'+
+                '</div><div class="popover-footer">'+
+                '<span class="popover-cancel">X'+
+                ' </span><span class="popover-check">✓'+
+                '</span></div></div>' 
+  })
+});
+});
+
   $('.words').on('click', function (e) {
     $('.words').not(this).popover('hide');
     $('.words').on('shown.bs.popover', function () {
@@ -110,22 +127,40 @@ $(function () {
 $('.words').on('hidden.bs.popover', function () {
   $(this).removeClass('enabled');
 })
-$('*').not('.words .text-wrong del b').on('click', function (e) {
-  console.log($(this));
-  console.log($(this).hasClass('words'));
-  if(!$(this).hasClass('.words .popover') && !$(this).is('del b')){
-    $('.words').popover('hide');
-  }
-  e.stopPropagation();
+var currentpop;
+$('.text-wrong').on('inserted.bs.popover', function () {
+  currentpop = $(this);
+  return currentpop;
 })
+$('.popover-cancel').on('click', function (e) {});
+$('.popover-check').on('click', function (e) {
+  var correct = $('.popover-body > em').innerHTML();
+  console.log(correct);
+});
+// $('*').not('#checkarea').on('click', function (e) {
+//   console.log($(this));
+//   console.log($(this).hasClass('words'));
+//   if(!$(this).hasClass('.words .popover') && !$(this).is('del b')){
+//     $('.words').popover('hide');
+//   }
+//   // e.stopPropagation();
+// })
 // $('*').not(".popover .text-wrong").click(function()
 // {  $('[data-toggle="popover"]').popover('hide');
 // });
 
-
+$('.text-wrong').hover(function() {
+  $(this).addClass("active");
+}, function () {
+  if(!$('#checkcontainer').hasClass('display')){
+    $(this).removeClass("active");
+  }
+});
   $(".words").hover(function(){
-    $(this).addClass("active-hover");
-    $("#"+$(this).attr("data-id")).addClass("active-hover");
+    // if($('#checkcontainer').hasClass('display')){
+      $(this).addClass("active-hover");
+      $("#"+$(this).attr("data-id")).addClass("active-hover");
+    // }
     }, function(){
     $(this).removeClass("active-hover");
     
