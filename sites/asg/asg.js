@@ -1,27 +1,27 @@
 function changevisible(name) {
-    var x = document.getElementById(name);
-    if (x.classList.contains('display')) {
-      x.classList.remove('display');
-    } else {
-      x.classList.add('display');
-    }
-    $(".text-wrong").each(function(index, value) {
-      if ($(this).isInViewport() && $('#checkcontainer').hasClass('display')){
-          // console.log("change active");
-      //    activateStyle($(this).attr("data-id"));
-      
-      $(this).addClass("active");
-         $("#"+$(this).attr("data-id")).addClass("active");
-      } 
-      else {
-          
-         $("#"+$(this).attr("data-id")).removeClass("active"); 
-          $(this).removeClass("active");
-      }
-      
-  });
-      // x.classList.toggle('.display');
+  var x = document.getElementById(name);
+  if (x.classList.contains('display')) {
+    x.classList.remove('display');
+  } else {
+    x.classList.add('display');
   }
+  $(".text-wrong").each(function(index, value) {
+    if ($(this).isInViewport() && $('#checkcontainer').hasClass('display')){
+        // console.log("change active");
+    //    activateStyle($(this).attr("data-id"));
+    
+    $(this).addClass("active");
+       $("#"+$(this).attr("data-id")).addClass("active");
+    } 
+    else {
+        
+       $("#"+$(this).attr("data-id")).removeClass("active"); 
+        $(this).removeClass("active");
+    }
+    
+});
+    // x.classList.toggle('.display');
+}
 
   function activateStyle(name) {
     var element = document.getElementById(name);
@@ -101,9 +101,10 @@ $("*").scroll(function() {
 // // To allow td elements and data-option attributes on td elements
 // myDefaultWhiteList.div = ['data-colors']
 
+
 $(function () {$('[data-toggle="popover"]').each( function() {
   $('.text-wrong').popover({
-    trigger: 'click',
+    // trigger: 'focus',
       sanitize: false,
       html: true, 
       template: '<div class="popover"><div class="arrow"></div>'+
@@ -119,7 +120,9 @@ $(function () {$('[data-toggle="popover"]').each( function() {
   $('.words').on('click', function (e) {
     $('.words').not(this).popover('hide');
     $('.words').on('shown.bs.popover', function () {
-      $(this).addClass('enabled');   
+      $(this).addClass('enabled'); 
+      $('.currentpop').removeClass('currentpop'); 
+      $(this).addClass('currentpop');
     $('.popover').addClass($(this).attr("data-colors"));
     })
 
@@ -127,16 +130,38 @@ $(function () {$('[data-toggle="popover"]').each( function() {
 $('.words').on('hidden.bs.popover', function () {
   $(this).removeClass('enabled');
 })
-var currentpop;
-$('.text-wrong').on('inserted.bs.popover', function () {
-  currentpop = $(this);
-  return currentpop;
-})
-$('.popover-cancel').on('click', function (e) {});
-$('.popover-check').on('click', function (e) {
-  var correct = $('.popover-body > em').innerHTML();
+// $(document).on('click', '#text', function(e){
+//   if(!$(e.target).contains('span') )
+//    {   
+//     $('.words').not(this).popover('hide');             
+//    }
+// });
+$(document).on('click', '.popover-check', function (e) {
+  var correct = $('div.popover-body > em').html();
   console.log(correct);
+  $("#"+$('.currentpop').attr("data-id")).remove();
+  $('.currentpop').removeClass().html(correct).popover('dispose');
 });
+
+$(document).on('click', '.popover-cancel', function (e) {
+  var wrong = $('div.popover-body > del').html();
+  $('.currentpop').removeClass().html(wrong).popover('dispose');
+});
+
+$(document).on('click', '.check', function (e) {
+  var nameid = $(this).closest('div').attr('data-id');
+  var correct =  $("#hidden-"+ $(this).closest('div').attr('id') + " > em").html();
+  $('#'+nameid).removeClass().html(correct);
+  $(this).closest('div').remove();
+});
+
+$(document).on('click', '.cancel', function (e) {
+  var nameid = $(this).closest('div').attr('data-id');
+  var wrong =  $("#hidden-"+ $(this).closest('div').attr('id') + " > del").html();
+  $('#'+nameid).removeClass().html(wrong);
+  $(this).closest('div').remove();
+});
+
 // $('*').not('#checkarea').on('click', function (e) {
 //   console.log($(this));
 //   console.log($(this).hasClass('words'));
@@ -166,18 +191,22 @@ $('.text-wrong').hover(function() {
     
     $("#"+$(this).attr("data-id")).removeClass("active-hover");
   });
-
-  $("img").click(function(e) {
+  $(document).on('click', 'img', function(e) {
     if($(this).attr("data-word")) {
       speak($(this).attr("data-word"));
+     
     }
-    e.stopPropagation();
+e.stopPropagation();
  });
+$("img").click(function(e) {
+  if($(this).attr("data-word")) {
+    speak($(this).attr("data-word"));
+  }
+  e.stopPropagation();
+});
 
   $('.check-wrong').click(function(){
-    if($(this).is( "img" )){
-      
-    } else {
+    
       clickCheck($(this).attr("data-id"));
       let name = "#hidden-" + $(this).attr("id");
       $('.hidden:not('+name+')').css('display', 'none');
@@ -189,7 +218,7 @@ $('.text-wrong').hover(function() {
       $(this).addClass('show');
         $(name).css('display', 'block');
     }
-    }
+    
   });
 
   var speech= new SpeechSynthesisUtterance();
