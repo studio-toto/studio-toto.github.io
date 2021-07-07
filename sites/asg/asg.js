@@ -2,8 +2,10 @@ function changevisible(name) {
   var x = document.getElementById(name);
   if (x.classList.contains('display')) {
     x.classList.remove('display');
+    $("#menubutton").removeClass('display');
   } else {
     x.classList.add('display');
+    $("#menubutton").addClass('display');
   }
   $(".text-wrong").each(function(index, value) {
     if ($(this).isInViewport() && $('#checkcontainer').hasClass('display')){
