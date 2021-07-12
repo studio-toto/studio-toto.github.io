@@ -1,3 +1,19 @@
+document.getElementsByClassName("tablink")[0].click();
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-light-grey");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.classList.add("w3-light-grey");
+}
+
 function changevisible(name) {
   var x = document.getElementById(name);
   if (x.classList.contains('display')) {
@@ -60,6 +76,14 @@ wrapper.scrollTo({top: count, left: 0, behavior: 'smooth'})
     // document.getElementById(name).scrollIntoView({ behavior: 'smooth'});
     // window.scrollBy(0, -vh(10));
 }
+// $(document).ready(function(){
+//   $('#checkcontainer').scrollTop($('#checkcontainer').height());
+//  var offset = $("#checkcontainer").height() - $('#checkcontainer').scrollTop();
+//   $('#textcontainer').scroll(function(){
+//     var length = $("#textcontainer").scrollTop();
+//     $('#checkcontainer').scrollTop($('#checkcontainer').innerHeight()-length-offset);
+//   });
+// });
 $(document).ready(function(){
     $(".text-wrong").each(function(index, value) {
         if ($(this).isInViewport() && $('#checkcontainer').hasClass('display')){
@@ -85,6 +109,13 @@ $("*").scroll(function() {
         
         $(this).addClass("active");
            $("#"+$(this).attr("data-id")).addClass("active");
+          //  if(!$("#"+$(this).attr("data-id")).isInViewport()){
+          
+          //   let item =  $("#"+$(this).attr("data-id")); // what we want to scroll to
+          //   let count = item.offsetTop // xx = any extra distance from top ex. 60
+          //   let wrapper = document.getElementById('checkcontainer');
+          //   wrapper.scrollTo({top: count, left: 0, behavior: 'smooth'})
+          //  }
         } 
         else {
             

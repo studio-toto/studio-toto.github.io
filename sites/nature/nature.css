@@ -1,0 +1,13 @@
+body {
+    background: rgb(0,77,50);
+    background: radial-gradient(circle, rgba(0,77,50,1) 0%, rgba(0,17,11,1) 100%);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation: zoom 10s linear;
+}
+
+@keyframes zoom {
+    50% {transform: scale(1.5);}
+    
+}

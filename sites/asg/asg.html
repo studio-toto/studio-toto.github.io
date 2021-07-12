@@ -13,11 +13,12 @@
   <link rel="manifest" href="../../media/favicon_io//site.webmanifest">
 
   <title>Interface Spell Checker</title>
-
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
   <link rel="stylesheet" href="google.css" />
   <link rel="stylesheet" href="asg.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -28,7 +29,46 @@
   <div id="nav">
     <img src="media/menubasic2.jpg" />
     <button id="menubutton" title="Spellcheck" onclick="changevisible('checkcontainer')">
-      <img onclick="changevisible('checkcontainer')" src="media/spellcheck.svg" /></button><button id="help" title="Information">?</button>
+      <img onclick="changevisible('checkcontainer')" src="media/spellcheck.svg" /></button>
+        <button id="help" title="Information" onclick="document.getElementById('id01').style.display='block'">?</button> 
+        <div id="id01" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-padding">
+          <header class="w3-container"> 
+           <h2>Header </h2>
+           
+          </header>
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-large w3-display-topright w3-padding-small" style="color: black; background-color: grey;">&times;</span>
+          <div class="w3-bar w3-border-bottom">
+           <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Guide')">Guide</button>
+           <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'About')">About</button>
+          </div>
+        
+          <div id="Guide" class="w3-container city">
+           <h1>Guide</h1>
+           <img src="media/spellcheck.gif"/>
+           <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        
+          <div id="Paris" class="w3-container city">
+           <h1>Paris</h1>
+           <p>Paris is the capital of France.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        
+          <div id="Usecase" class="w3-container city">
+           <h1>Tokyo</h1>
+           <p>Tokyo is the capital of Japan.</p><br>
+          </div>
+        
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-button w3-white w3-border" 
+           onclick="document.getElementById('id01').style.display='none'">Close</button>
+          </div>
+         </div>
+        
+        </div>
   </div>
 
   <div id="maincontainer">
@@ -133,7 +173,160 @@
             principes extiterunt. Quam ob rem tandem, inquit, non satisfacit? Ut id aliis narrare gestiant? Certe non
             potest. <i>Hos contra singulos dici est melius.</i> Si mala non sunt, iacet omnis ratio Peripateticorum. Sin
             te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? </p>
-
+<!-- testing are -->
+            <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae
+              tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word7"
+                data-id="wrong7" data-trigger="click focus" title="Check spelling." data-container="body"
+                data-toggle="popover" data-placement="bottom" data-content=" <del>Placeholta</del>
+              </br>
+              <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+              </br>
+              Placeholder hint">Placehol<del>ta</del><b>der</b></span> a relaxing day for everyone. Quamquam te quidem video
+              minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita
+              credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo.
+              Nihil enim iam habes, quod ad corpus referas; </p>
+  
+  
+            <p> Illa tamen simplicia, vestra versuta. Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se
+              oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est
+              accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac
+              tamen hic mallet non dolere. </p>
+              <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae
+                tamen esse possunt. It had been <span class="text-wrong words" data-colors="often" id="word8"
+                  data-id="wrong8" data-trigger="click focus" title="Check spelling." data-container="body"
+                  data-toggle="popover" data-placement="bottom" data-content=" <del>Placeholta</del>
+                </br>
+                <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+                </br>
+                Placeholder hint">Placehol<del>ta</del><b>der</b></span> a relaxing day for everyone. Quamquam te quidem video
+                minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita
+                credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo.
+                Nihil enim iam habes, quod ad corpus referas.
+                 He appreciated the <span class="text-wrong words" data-colors="unsure" id="word9"
+                data-id="wrong9" data-trigger="click focus" title="Check spelling." data-container="body"
+                data-toggle="popover" data-placement="bottom" data-content=" <del>wrap</del> (food)
+    </br>
+    <em>rap</em> <img src='media/volume.svg' data-word='rap' />
+    </br>
+    <i>Unsure:</i> Did you mean wrap or rap (music)?">wrap<b>/rap</b></span></p>
+     <!--
+    
+              <p> Illa tamen simplicia, vestra versuta. Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se
+                oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est
+                accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac
+                tamen hic mallet non dolere. </p>
+                a relaxing day for everyone. Quamquam te quidem video
+                  minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita
+                  credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo.
+                  Nihil enim iam habes, quod ad corpus referas; </p>
+      
+      
+                <p> Illa tamen simplicia, vestra versuta. Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se
+                  oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est
+                  accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac
+                  tamen hic mallet non dolere. </p>
+                  <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae
+                    tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word10"
+                      data-id="wrong10" data-trigger="click focus" title="Check spelling." data-container="body"
+                      data-toggle="popover" data-placement="bottom" data-content=" <del>Placeholta</del>
+                    </br>
+                    <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+                    </br>
+                    Placeholder hint">Placehol<del>ta</del><b>der</b></span> a relaxing day for everyone. Quamquam te quidem video
+                    minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita
+                    credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo.
+                    Nihil enim iam habes, quod ad corpus referas; </p>
+        
+        
+                  <p> Illa tamen simplicia, vestra versuta. Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se
+                    oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est
+                    accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac
+                    tamen hic mallet non dolere. </p>
+                    <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae
+                      tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word11"
+                        data-id="wrong11" data-trigger="click focus" title="Check spelling." data-container="body"
+                        data-toggle="popover" data-placement="bottom" data-content=" <del>Placeholta</del>
+                      </br>
+                      <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+                      </br>
+                      Placeholder hint">Placehol<del>ta</del><b>der</b></span> a relaxing day for everyone. Quamquam te quidem video
+                      minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita
+                      credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo.
+                      Nihil enim iam habes, quod ad corpus referas; </p>
+          
+          
+                    <p> Illa tamen simplicia, vestra versuta. Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se
+                      oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est
+                      accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac
+                      tamen hic mallet non dolere. </p>
+                      <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae
+                        tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word12"
+                          data-id="wrong12" data-trigger="click focus" title="Check spelling." data-container="body"
+                          data-toggle="popover" data-placement="bottom" data-content=" <del>Placeholta</del>
+                        </br>
+                        <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+                        </br>
+                        Placeholder hint">Placehol<del>ta</del><b>der</b></span> a relaxing day for everyone. Quamquam te quidem video
+                        minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita
+                        credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo.
+                        Nihil enim iam habes, quod ad corpus referas; </p>
+            
+            
+                      <p> Illa tamen simplicia, vestra versuta. Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se
+                        oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est
+                        accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac
+                        tamen hic mallet non dolere. </p>
+                        <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae
+                          tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word13"
+                            data-id="wrong13" data-trigger="click focus" title="Check spelling." data-container="body"
+                            data-toggle="popover" data-placement="bottom" data-content=" <del>Placeholta</del>
+                          </br>
+                          <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+                          </br>
+                          Placeholder hint">Placehol<del>ta</del><b>der</b></span> a relaxing day for everyone. Quamquam te quidem video
+                          minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita
+                          credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo.
+                          Nihil enim iam habes, quod ad corpus referas; </p>
+              
+              
+                        <p> Illa tamen simplicia, vestra versuta. Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se
+                          oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est
+                          accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac
+                          tamen hic mallet non dolere. </p>
+                          <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae
+                            tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word14"
+                              data-id="wrong14" data-trigger="click focus" title="Check spelling." data-container="body"
+                              data-toggle="popover" data-placement="bottom" data-content=" <del>Placeholta</del>
+                            </br>
+                            <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+                            </br>
+                            Placeholder hint">Placehol<del>ta</del><b>der</b></span> a relaxing day for everyone. Quamquam te quidem video
+                            minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita
+                            credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo.
+                            Nihil enim iam habes, quod ad corpus referas; </p>
+                
+                
+                          <p> Illa tamen simplicia, vestra versuta. Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se
+                            oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est
+                            accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac
+                            tamen hic mallet non dolere. </p>
+                            <p>Si autem id non concedatur, non continuo vita beata tollitur. Quamvis enim depravatae non sint, pravae
+                              tamen esse possunt. It had been <span class="text-wrong words" data-colors="seldom" id="word15"
+                                data-id="wrong15" data-trigger="click focus" title="Check spelling." data-container="body"
+                                data-toggle="popover" data-placement="bottom" data-content=" <del>Placeholta</del>
+                              </br>
+                              <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+                              </br>
+                              Placeholder hint">Placehol<del>ta</del><b>der</b></span> a relaxing day for everyone. Quamquam te quidem video
+                              minime esse deterritum. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Ita
+                              credo. <b>Non est igitur voluptas bonum.</b> Nam memini etiam quae nolo, oblivisci non possum quae volo.
+                              Nihil enim iam habes, quod ad corpus referas; </p>
+                  
+                  
+                            <p> Illa tamen simplicia, vestra versuta. Etsi qui potest intellegi aut cogitari esse aliquod animal, quod se
+                              oderit? <b>Quo tandem modo?</b> Ergo omni animali illud, quod appetiti positum est in eo, quod naturae est
+                              accommodatum. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Ac
+                              tamen hic mallet non dolere. </p> -->
         </div>
       </div>
 
@@ -276,6 +469,173 @@
                 It's important to separate.</span>
             </div>
           </div>
+
+          
+          <div class="check-wrong words" data-id="word7" data-colors="seldom" id="wrong7"><span
+            class="mistake">Placehol<del>ta</del><b>der</b><span class="cancel">X</span><span class="check">✓</span></span>
+          <div class="hidden checking" id="hidden-wrong7">
+            <del>Placeholta</del>
+            </br>
+            <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+            </br>
+            Placeholder hint
+            </br>
+            <hr>
+            <span class="history">History</span>
+            <div class="bar tooltip-j"><span class="tooltiptext">word spelled wrong 5% of the time</span>
+              <div class="progressbar" style="width: 5%;"></div>&nbsp;error rate 5%
+            </div>
+            <span class="pastsentence">
+              This is a placeholder</br>
+             Another Sentence.</span>
+          </div>
+        </div>
+        <div class="check-wrong words" data-id="word8" data-colors="often" id="wrong8"><span
+          class="mistake">Placehol<del>ta</del><b>der</b><span class="cancel">X</span><span class="check">✓</span></span>
+        <div class="hidden checking" id="hidden-wrong8">
+          <del>Placeholta</del>
+          </br>
+          <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+          </br>
+          Placeholder hint
+          </br>
+          <hr>
+          <span class="history">History</span>
+          <div class="bar ">
+            <div class="progressbar tooltip-j" style="width: 95%;">error rate 95%<span class="tooltiptext">word spelled wrong 95% of the time</span></div>
+          </div>
+          <span class="pastsentence">
+            This is a placeholder</br>
+           Another Sentence.</span>
+        </div>
+      </div>
+      <div class="check-wrong words" data-id="word9" data-colors="unsure" id="wrong9"><span
+        class="mistake">wrap<b>/rap</b><span class="cancel">X</span><span class="check">✓</span></span>
+      <div class="hidden checking" id="hidden-wrong9">
+        <del>wrap</del> (food)
+        </br>
+        <em>rap</em> <img src='media/volume.svg' data-word='rap' />
+        </br>
+        <i>Unsure:</i> Did you mean wrap or rap (music)?
+        </br>
+      </div>
+    </div>
+     <!--
+    <div class="check-wrong words" data-id="word10" data-colors="seldom" id="wrong10"><span
+      class="mistake">Placehol<del>ta</del><b>der</b><span class="cancel">X</span><span class="check">✓</span></span>
+    <div class="hidden checking" id="hidden-wrong10">
+      <del>Placeholta</del>
+      </br>
+      <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+      </br>
+      Placeholder hint
+      </br>
+      <hr>
+      <span class="history">History</span>
+      <div class="bar tooltip-j"><span class="tooltiptext">word spelled wrong 5% of the time</span>
+        <div class="progressbar" style="width: 5%;"></div>&nbsp;error rate 5%
+      </div>
+      <span class="pastsentence">
+        This is a placeholder</br>
+       Another Sentence.</span>
+    </div>
+  </div>
+  <div class="check-wrong words" data-id="word11" data-colors="seldom" id="wrong11"><span
+    class="mistake">Placehol<del>ta</del><b>der</b><span class="cancel">X</span><span class="check">✓</span></span>
+  <div class="hidden checking" id="hidden-wrong11">
+    <del>Placeholta</del>
+    </br>
+    <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+    </br>
+    Placeholder hint
+    </br>
+    <hr>
+    <span class="history">History</span>
+    <div class="bar tooltip-j"><span class="tooltiptext">word spelled wrong 5% of the time</span>
+      <div class="progressbar" style="width: 5%;"></div>&nbsp;error rate 5%
+    </div>
+    <span class="pastsentence">
+      This is a placeholder</br>
+     Another Sentence.</span>
+  </div>
+</div>
+<div class="check-wrong words" data-id="word12" data-colors="seldom" id="wrong12"><span
+  class="mistake">Placehol<del>ta</del><b>der</b><span class="cancel">X</span><span class="check">✓</span></span>
+<div class="hidden checking" id="hidden-wrong12">
+  <del>Placeholta</del>
+  </br>
+  <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+  </br>
+  Placeholder hint
+  </br>
+  <hr>
+  <span class="history">History</span>
+  <div class="bar tooltip-j"><span class="tooltiptext">word spelled wrong 5% of the time</span>
+    <div class="progressbar" style="width: 5%;"></div>&nbsp;error rate 5%
+  </div>
+  <span class="pastsentence">
+    This is a placeholder</br>
+   Another Sentence.</span>
+</div>
+</div>
+<div class="check-wrong words" data-id="word13" data-colors="seldom" id="wrong13"><span
+  class="mistake">Placehol<del>ta</del><b>der</b><span class="cancel">X</span><span class="check">✓</span></span>
+<div class="hidden checking" id="hidden-wrong13">
+  <del>Placeholta</del>
+  </br>
+  <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+  </br>
+  Placeholder hint
+  </br>
+  <hr>
+  <span class="history">History</span>
+  <div class="bar tooltip-j"><span class="tooltiptext">word spelled wrong 5% of the time</span>
+    <div class="progressbar" style="width: 5%;"></div>&nbsp;error rate 5%
+  </div>
+  <span class="pastsentence">
+    This is a placeholder</br>
+   Another Sentence.</span>
+</div>
+</div>
+<div class="check-wrong words" data-id="word14" data-colors="seldom" id="wrong14"><span
+  class="mistake">Placehol<del>ta</del><b>der</b><span class="cancel">X</span><span class="check">✓</span></span>
+<div class="hidden checking" id="hidden-wrong14">
+  <del>Placeholta</del>
+  </br>
+  <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+  </br>
+  Placeholder hint
+  </br>
+  <hr>
+  <span class="history">History</span>
+  <div class="bar tooltip-j"><span class="tooltiptext">word spelled wrong 5% of the time</span>
+    <div class="progressbar" style="width: 5%;"></div>&nbsp;error rate 5%
+  </div>
+  <span class="pastsentence">
+    This is a placeholder</br>
+   Another Sentence.</span>
+</div>
+</div>
+<div class="check-wrong words" data-id="word15" data-colors="seldom" id="wrong15"><span
+  class="mistake">Placehol<del>ta</del><b>der</b><span class="cancel">X</span><span class="check">✓</span></span>
+<div class="hidden checking" id="hidden-wrong15">
+  <del>Placeholta</del>
+  </br>
+  <em>Placeholder</em> <img src='media/volume.svg' data-word='Placeholder' />
+  </br>
+  Placeholder hint
+  </br>
+  <hr>
+  <span class="history">History</span>
+  <div class="bar tooltip-j"><span class="tooltiptext">word spelled wrong 5% of the time</span>
+    <div class="progressbar" style="width: 5%;"></div>&nbsp;error rate 5%
+  </div>
+  <span class="pastsentence">
+    This is a placeholder</br>
+   Another Sentence.</span>
+</div>
+</div> -->
+
         </div>
       </div>
     </div>
