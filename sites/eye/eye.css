@@ -1,3 +1,6 @@
+body {
+    background: linear-gradient(rgba(10,10,10,.6),rgba(0,0,0,.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px);
+}
 .container {
     position: absolute;
     top: 35vh;
@@ -5,6 +8,14 @@
     height: 30vh;
     background-color: beige;
     border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    
+    border-bottom-left-radius: 50%;   
+}
+
+.moving {
+    background-color: black;
+position: relative;
+top: 50%;
+left: 50%;
+height: 50%;
+width: 50%;
 }
