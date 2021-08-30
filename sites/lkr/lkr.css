@@ -51,10 +51,11 @@ font-size: 8vmin;
 }
 
 .element-wrap {
-    height: 7vh;
+    height: 15vh;
+    overflow-y: hidden;
 }
 .element-wrap img {
     display:inline;
-    height: 7vh;
+    height: 15vh;
     width: auto;
 }
