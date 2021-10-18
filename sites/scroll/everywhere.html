@@ -1,3 +1,5 @@
+<!-- TO DO Button for ordered, random and add more
+Infinite scroll -->
 <!DOCTYPE html>
 
 <html lang="en-us">
@@ -5,37 +7,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <link rel="stylesheet" href="../../libs/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="../../libs/jquery-ui.min.css"> -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="../../media/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../media/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../media/favicon_io/favicon-16x16.png">
+
     <link rel="manifest" href="../../media/favicon_io//site.webmanifest">
 
     <title>scroll everywhere</title>
 
     <link rel="stylesheet" href="up.css"/>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../libs/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
     <script src="../../libs/jquery-ui.min.js"></script>
   </head>
 
   <body>
+    <div class="progress"></div>
   <div id="main">
       <!-- <div class="static" id="mountain">test</div> -->
      
   </div>
   <div id="wrapper1"> 
-    <img class="scrollimage" data-scroll="bottom" id="scrollimage" src="media/coin1.png" />
-    <img class="scrollimage" data-scroll="right" id="scrollimage1" src="media/coin1.png" />
-    <img class="scrollimage" data-scroll="top" id="scrollimage2" src="media/coin1.png" />
-    <img class="scrollimage" data-scroll="left" id="scrollimage3" src="media/coin1.png" />
+    <img class="scrollimage scrollimage0" data-scroll="bottom" id="scrollimage" src="media/coin5.png" />
+    <img class="scrollimage scrollimage1" data-scroll="right" id="scrollimage1" src="media/coin5.png" />
+    <img class="scrollimage scrollimage2" data-scroll="top" id="scrollimage2" src="media/coin5.png" />
+    <img class="scrollimage scrollimage3" data-scroll="left" id="scrollimage3" src="media/coin5.png" />
+  </div>
+  <div id="wrapper2"> 
+    <img class="scrollimage scrollimage0" data-scroll="bottom"  src="media/coin2.png" />
+    <img class="scrollimage scrollimage1" data-scroll="right"src="media/coin2.png" />
+    <img class="scrollimage scrollimage2" data-scroll="top" src="media/coin2.png" />
+    <img class="scrollimage scrollimage3" data-scroll="left" src="media/coin2.png" />
+  </div>
+  <div id="wrapper3"> 
+    <img class="scrollimage scrollimage0" data-scroll="bottom"  src="media/coin1.png" />
+    <img class="scrollimage scrollimage1" data-scroll="right"src="media/coin1.png" />
+    <img class="scrollimage scrollimage2" data-scroll="top" src="media/coin1.png" />
+    <img class="scrollimage scrollimage3" data-scroll="left" src="media/coin1.png" />
   </div>
     <!-- <img class="scrollimage innerWrapper" data-scroll="bottom" id="scrollimage" src="media/coin1.png" />
     <img class="scrollimage innerWrapper" data-scroll="right" id="scrollimage1" src="media/coin1.png" />
     <img class="scrollimage innerWrapper" data-scroll="top" id="scrollimage2" src="media/coin1.png" />
     <img class="scrollimage innerWrapper" data-scroll="left" id="scrollimage3" src="media/coin1.png" /> -->
-  <script type="text/javascript" src="up.js"></script>
+  <script type="text/javascript" src="eternal.js"></script>
   </body>
   
 </html>
