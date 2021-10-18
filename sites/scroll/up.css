@@ -12,7 +12,20 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.buttons {
+    position:absolute; 
+    width: 10%;
+    top: 4000px;
+    left: 45%;
+    z-index: 11; 
+    color: rgb(158, 158, 132);
+    background-color: transparent;
+    border: 0.2 rgb(158, 158, 132);
+    cursor: pointer;
+}
+#random {top: 3000px;}
 
+#more {top: 2000px;}
 #wrapper1 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('media/wallet2.jpg');
     background-size: cover;
@@ -27,18 +40,27 @@ body {
 #wrapper2 {
 
     position: fixed;
-    left: 15vh;
-    top: 15vh;
-    width: calc(100% - 30vh);
-    height: calc(100% - 30vh);
+    left: 12.5vh;
+    top: 12.5vh;
+    width: calc(100% - 25vh);
+    height: calc(100% - 25vh);
     /* background-color: blue; */
 }
 #wrapper3 {
     position: fixed;
-    left: 30vh;
-    top: 30vh;
-    width: calc(100% - 60vh);
-    height: calc(100% - 60vh);
+    left: 25vh;
+    top: 25vh;
+    width: calc(100% - 50vh);
+    height: calc(100% - 50vh);
+    /* background-color: green; */
+}
+#wrapper4 {
+    position: fixed;
+    left: 37.5vh;
+    top: 37.5vh;
+    width: calc(100% - 75vh);
+    height: calc(100% - 75vh);
+    
     /* background-color: green; */
 }
 #main {
@@ -116,7 +138,7 @@ body::-webkit-scrollbar-thumb {
 .scrollimage {
    display: block;
     position: absolute;
-    height: 15vh;
+    height: 12.5vh;
     width: auto;
     /* visibility: hidden; */
     transition: all 1ms linear;
