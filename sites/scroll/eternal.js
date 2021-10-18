@@ -8,19 +8,9 @@ var scrollPos = 0;
 $(window).ready(function () {
     history.scrollRestoration = "manual";
     window.onload = scrollToHalf;
-
-    // const circle = document.getElementsByClassName("scrollimage");
     const docHeight = document.body.offsetHeight;
-    // var container = circle[0].parentNode.getBoundingClientRect();
-    // var bound = circle[0].getBoundingClientRect();
-
-    // const keyframes = [{left: 0 +"px", top: 0+"px"}, {left: container.right-circle[0].clientWidth + "px",  top: 0 +"px"}, {left:container.right-circle[0].clientWidth  + "px", top: container.bottom-circle[0].clientHeight + "px"}, {left: 0 + "px", top: container.bottom-circle[0].clientHeight + "px"}, {left: 0 +"px", top: 0 +"px"}];
-    // console.log(container.right-circle[0].clientWidth*2 + "px");
-    // console.log(bound.width);
-    // console.log(window.innerWidth);
-    // const keyframesRight = keyframes;
+ 
     const anim = [];
-    // console.log($(".scrollimage"));
 
     function changeToOrdered() {
         anim.length = 0;
@@ -58,33 +48,7 @@ $(window).ready(function () {
         })
     }
     changeToOrdered();
-    // $(".scrollimage").each((index, element) => {
-    //     // console.log(element);
-    //     let container = element.parentNode.getBoundingClientRect();
-    // let bound = element.getBoundingClientRect();
-    // // console.log(container.width-bound.width + "px");
-    // // console.log(bound.width);
-    // // console.log(window.innerWidth);
 
-    //     let keyframes = [{left: 0 +"px", top: 0+"px"}, {left: 100-100*bound.width/container.width + "%",  top: 0 +"px"}, {left:100-100*bound.width/container.width + "%",  top: 100-bound.height/container.height*100 + "%"}, {left: 0 + "px", top: 100-bound.height/container.height*100 + "%"}, {left: 0 +"px", top: 0 +"px"}];
-    // //console.log(keyframes);
-    //   anim.push(element.animate(keyframes, {
-    //     duration: 10,
-    //     iterations: Infinity,
-    //    iterationStart: index/4,
-    //     fill: "both"
-    //   }));
-
-    //   return anim;
-    // });
-
-    // var anim = circle[0].animate(keyframes, {
-    //   duration: 1,
-    //   iterations: Infinity,
-    //   iterationStart: 0.1,
-    //   fill: "both"
-    // });
-    // console.log(anim);
     anim.forEach((animation) => {
         animation.pause();
     })

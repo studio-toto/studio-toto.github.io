@@ -1,14 +1,47 @@
 * {
     --menu-color: #F4F3F3;
+    --image-size: 10vh;
 }
 
-
+:root {
+    --index: 0;
+  }
+  
+  *:nth-child(1) {
+    --index: 0;
+  }
+  
+  *:nth-child(2) {
+    --index: 1;
+  }
+  
+  *:nth-child(3) {
+    --index: 2;
+  }
+  *:nth-child(4) {
+    --index: 3;
+  }
+  *:nth-child(5) {
+    --index: 4;
+  }
+  *:nth-child(6) {
+    --index: 5;
+  }
+  *:nth-child(7) {
+    --index: 6;
+  }
+  *:nth-child(8) {
+    --index: 7;
+  }
+  *:nth-child(9) {
+    --index: 8;
+  }
 body, html {
 margin: 0;
 background-color: white;
 }
 header {
-    /* height: 10vh; */
+    height: 10vh;
   /* width: 100vw; */
   display:flex;
   flex-flow: wrap row;
@@ -48,14 +81,64 @@ font-size: 8vmin;
     /* height: 90vh; */
  padding: 1vh 4vw;
  background-color: white;
+ width: 92vw;
 }
 
 .element-wrap {
+    display: flex;
     height: 15vh;
-    overflow-y: hidden;
+    white-space: nowrap;
+    flex-direction: row;
+    width: 92vw;
+    /* overflow-x: auto;
+    overflow-y: visible; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
 }
-.element-wrap img {
-    display:inline;
-    height: 15vh;
+.element-wrap:hover{
+  /* flex-direction: column; */
+
+}
+/* .element-wrap img:hover {
+    animation-play-state: running;
+} */
+.element-wrap::-webkit-scrollbar {
+    display: none;
+}
+.element-wrap  img {
+    /* display:inline-block; */
+    height: var(--image-size);
     width: auto;
+    top: 0;
+    margin-top: 0;
+    position: absolute;
+    /* left: calc(var(--image-size)*var(--index)); */
+    transition: all 2s ease-in;
+    /* animation: transformer 10s linear; */
+}
+/* .element-wrap img:first-child {
+    left: 0;
+}
+.element-wrap img:nth-child(2) {
+   
+}
+.element-wrap img:nth-child(3) {
+    left: 20vw;
+} */
+.element-wrap:hover img {  
+    /* flex-direction: column;
+    align-items: center;   */
+    /* position: absolute; */
+    left: 50%;
+    margin-left: - calc(var(--image-size)/2);
+    margin-top: calc(var(--image-size)*var(--index));
+  }
+@keyframes transformer {
+    from {  top: 0;
+        }
+    to {
+        top: 100px;
+    }
+    
 }
