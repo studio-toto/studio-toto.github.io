@@ -3,6 +3,11 @@
   src: url("cac_champagne.ttf") format("truetype");
 }
 
+canvas {
+  position: absolute;
+  top: 0;
+}
+
 html,
 body {
   overflow: hidden;
