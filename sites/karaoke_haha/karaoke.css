@@ -112,6 +112,22 @@ img {
   overflow: hidden;
 }
 
+.hat {
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 96.5%;
+	transform: translate(-50%, -50%);
+	opacity: 0.8;
+	width:4vw;
+	left: 2.2%;
+}
+
+.eye {
+	left: 3.5%;
+}
+
 video {
   opacity: 0%;
 }
