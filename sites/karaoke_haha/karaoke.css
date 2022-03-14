@@ -5,7 +5,9 @@
 
 canvas {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 html,
@@ -13,7 +15,8 @@ body {
   overflow: hidden;
   height: 100%;
   margin: 0;
-  background-image: url("media/velvet.jpeg");
+  background-image: url("media/skies.png");
+  background-size: cover;
 }
 .scroll {
   position: sticky;
@@ -30,7 +33,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 70px;
-  top: 45vh;
+  top: 43vh;
   margin: auto;
   text-align: center;
   color: white;
@@ -107,6 +110,10 @@ img {
   display: block;
   width: 100%;
   overflow: hidden;
+}
+
+video {
+  opacity: 0%;
 }
 
 /* width */
