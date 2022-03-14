@@ -66,6 +66,11 @@ var listData = {
         "description": "Drag your favoured styles to a area to make the whole page appear like that.",
         "link": ""
     }
+
+    "karaoke haha": {
+        "description": "“Canon lets AI cameras in its Chinese offices that only let smiling workers inside” — this news article led to many discussions about the ethics of surveillance capitalism. I tried to think about a form of surveillance that can reach beyond the corporate policies and authoritarian governments' panopticons, to bring the uncomfortable concept to an absurd level. I consider karaoke to be one of the most stress-relieving activities. Haha karaoke website is only letting people sing if the face recognition technology detects one of them smiling. So to sing the song properly at least one person should constantly smile. ",
+        "link": "sites/haha_karaoke/karaoke.html"
+    },
 };
 
 var toDoList = document.getElementById("toDoList");
